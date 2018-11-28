@@ -63,7 +63,8 @@ html, body {
 
   .logo-custom {
     display: block;
-    color: #00B5AD;
+    // color: #aa2936;
+    color: #FFF7F7;
     max-width: 100%;
     margin-bottom: $logo-margin;
     font-size: x-large;
@@ -533,7 +534,8 @@ html, body {
 
   blockquote {
     &>p {
-      background-color: #3a6f5e;
+      // background-color: #3a6f5e;
+      background-color: #95242f;
       padding: $code-annotation-padding 2em;
       color: #eee;
     }

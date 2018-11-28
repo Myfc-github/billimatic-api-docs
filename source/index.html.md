@@ -10,27 +10,6 @@ toc_footers:
 includes:
   - welcome
   - autenticacao
-  - skudeProdutos
-  - estoques
-  - skuProdEstoque
-  - organizacoes
-  - pedidos
-  - camposNodesPedidos
-  - consultaPedido
-  - confirmaEntregaPedido
-  - solDevoluçãoParcialPedido
-  - SolCancelamentoPedido
-  - volumePedidos
-  - canaisDeVenda
-  - consultaCanalDeVenda
-  - marcas
-  - consultaMarca
-  - fabricantes
-  - consultaFabricante
-  - webhooks
-  - webhookEstoque
-  - webhookProduto
-  - webhookPedido
 
 search: true
 ---
