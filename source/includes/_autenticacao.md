@@ -1,8 +1,7 @@
-# Informações básicas
 
 ## Autenticação
 
-Todo acesso à API é feito do ponto de vista de uma conta existente no Estoka. Assim sendo, toda requisição à API deverá ser autenticada.
+Todo acesso à API é feito do ponto de vista de uma conta existente no Billimatic. Assim sendo, toda requisição à API deverá ser autenticada.
 
 A autenticação é feita via token, que deve ser informado no header de cada requisição efetuada.
 
@@ -25,7 +24,7 @@ Veja o exemplo ao lado em como fazer sua autenticação ;)
 
 
 ```shell
-GET http://nexaas-estoka-production.herokuapp.com/api/v1/organizations \
+GET http://app.billimatic.com.br/api/v1/organizations \
 -H 'authorization: Token token=3d12813150rd61l126216n17605zs1q4' \
 -H 'content-type: application/json'
 
