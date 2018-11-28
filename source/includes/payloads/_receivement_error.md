@@ -1,4 +1,4 @@
-### confirm_receival
+## confirm_receival
 
 <strong>Payload:</strong> confirm_receival
 

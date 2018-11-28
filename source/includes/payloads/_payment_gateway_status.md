@@ -1,4 +1,4 @@
-### payment_gateway_status
+## payment_gateway_status
 
 <strong>Payload:</strong> payment_gateway_status
 
