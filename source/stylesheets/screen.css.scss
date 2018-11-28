@@ -63,14 +63,13 @@ html, body {
 
   .logo-custom {
     display: block;
-    // color: #aa2936;
-    color: #FFF7F7;
+    color: #ecb7b2;
     max-width: 100%;
     margin-bottom: $logo-margin;
     font-size: x-large;
-    padding: 27px 15px 7px 57px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    letter-spacing: 3px;
+    padding: 27px 15px 7px 43px;
+    font-family: 'Open Sans', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 2px;
   }
 
   &>.search {
@@ -535,7 +534,8 @@ html, body {
   blockquote {
     &>p {
       // background-color: #3a6f5e;
-      background-color: #95242f;
+      // background-color: #880000;
+      background-color: #c0392b;
       padding: $code-annotation-padding 2em;
       color: #eee;
     }
