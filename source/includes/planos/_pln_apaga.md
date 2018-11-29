@@ -14,11 +14,29 @@ Exclui um plano
 
 ```json
 {
-  "paramType": "header",
-  "name": "Authorization",
-  "type": "string",
-  "description": "Token de autenticação. Formato: Token token=123456",
-  "required": true
+  [
+    {
+      "paramType": "header",
+      "name": "Authorization",
+      "type": "string",
+      "description": "Token de autenticação. Formato: Token token=123456",
+      "required": true
+    },
+    {
+      "paramType": "path",
+      "name": "organization_id",
+      "type": "integer",
+      "description": "ID da organização",
+      "required": true
+    },
+    {
+      "paramType": "path",
+      "name": "id",
+      "type": "integer",
+      "description": "ID do plano",
+      "required": true
+    }
+  ]
 }
 ```
 
@@ -26,10 +44,17 @@ Exclui um plano
 
 ```json
 {
-  "paramType": "path",
-  "name": "organization_id",
-  "type": "integer",
-  "description": "ID da organização",
-  "required": true
+  [
+    {
+      "code": 204,
+      "responseModel": null,
+      "message": "No Content"
+    },
+    {
+      "code": 404,
+      "responseModel": null,
+      "message": "Not Found"
+    }
+  ]
 }
 ```

@@ -14,11 +14,22 @@ Lista todos os planos de uma organização
 
 ```json
 {
-  "paramType": "header",
-  "name": "Authorization",
-  "type": "string",
-  "description": "Token de autenticação. Formato: Token token=123456",
-  "required": true
+  [
+    {
+      "paramType": "header",
+      "name": "Authorization",
+      "type": "string",
+      "description": "Token de autenticação. Formato: Token token=123456",
+      "required": true
+    },
+    {
+      "paramType": "path",
+      "name": "organization_id",
+      "type": "integer",
+      "description": "ID da organização",
+      "required": true
+    }
+  ]
 }
 ```
 
@@ -26,10 +37,17 @@ Lista todos os planos de uma organização
 
 ```json
 {
-  "paramType": "path",
-  "name": "organization_id",
-  "type": "integer",
-  "description": "ID da organização",
-  "required": true
+  [
+    {
+      "code": 200,
+      "responseModel": null,
+      "message": "Ok"
+    },
+    {
+      "code": 404,
+      "responseModel": null,
+      "message": "Not Found"
+    }
+  ]
 }
 ```

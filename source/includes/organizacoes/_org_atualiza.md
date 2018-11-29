@@ -14,11 +14,29 @@ Atualiza uma organização
 
 ```json
 {
-  "paramType": "header",
-  "name": "Authorization",
-  "type": "string",
-  "description": "Token de autenticação. Formato: Token token=123456",
-  "required": true
+  [
+    {
+      "paramType": "header",
+      "name": "Authorization",
+      "type": "string",
+      "description": "Token de autenticação. Formato: Token token=123456",
+      "required": true
+    },
+    {
+      "paramType": "path",
+      "name": "id",
+      "type": "integer",
+      "description": "ID da organização",
+      "required": true
+    },
+    {
+      "paramType": "body",
+      "name": "body",
+      "type": "Organization",
+      "description": "Representação em JSON da organização que será alterada",
+      "required": true
+    }
+  ]
 }
 ```
 
@@ -26,10 +44,17 @@ Atualiza uma organização
 
 ```json
 {
-  "paramType": "path",
-  "name": "id",
-  "type": "integer",
-  "description": "ID da organização",
-  "required": true
+  [
+    {
+      "code": 200,
+      "responseModel": null,
+      "message": "Ok"
+    },
+    {
+      "code": 422,
+      "responseModel": null,
+      "message": "Unprocessable Entity"
+    }
+  ]
 }
 ```

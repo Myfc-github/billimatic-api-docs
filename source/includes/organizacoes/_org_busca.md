@@ -14,11 +14,22 @@ Realiza busca de organizações
 
 ```json
 {
-  "paramType": "header",
-  "name": "Authorization",
-  "type": "string",
-  "description": "Token de autenticação. Formato: Token token=123456",
-  "required": true
+  [
+    {
+      "paramType": "header",
+      "name": "Authorization",
+      "type": "string",
+      "description": "Token de autenticação. Formato: Token token=123456",
+      "required": true
+    },
+    {
+      "paramType": "query",
+      "name": "cnpj",
+      "type": "string",
+      "description": "CNPJ",
+      "required": true
+    }
+  ]
 }
 ```
 
@@ -26,10 +37,17 @@ Realiza busca de organizações
 
 ```json
 {
-  "paramType": "query",
-  "name": "cnpj",
-  "type": "string",
-  "description": "CNPJ",
-  "required": true
+  [
+    {
+      "code": 200,
+      "responseModel": null,
+      "message": "Ok"
+    },
+    {
+      "code": 400,
+      "responseModel": null,
+      "message": "Bad Request"
+    }
+  ]
 }
 ```
