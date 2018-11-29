@@ -1,11 +1,11 @@
-## confirm_receival
+## receivement_error
 
-<strong>Payload:</strong> confirm_receival
+<strong>Payload:</strong> receivement_error
 
 <strong>Entidade:</strong> Invoice
 
 <strong>Evento:</strong>
-Quando é <strong>confirmado o recebimento</strong> do faturamento
+Quando há <strong>erro no recebimento</strong> do faturamento (pagamento em cartão de crédito)
 
 <div class="api-endpoint">
   <div class="endpoint-data">
@@ -18,7 +18,7 @@ Quando é <strong>confirmado o recebimento</strong> do faturamento
 
 ```json
 {
-  "event": "confirm_receival",
+  "event": "receivement_error",
   "object_type": "Invoice",
   "object_id": "id-da-entidade",
   "contract_token": "token-do-contrato"

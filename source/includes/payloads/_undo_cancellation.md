@@ -1,11 +1,11 @@
-## receivement_error
+## undo_cancellation
 
-<strong>Payload:</strong> receivement_error
+<strong>Payload:</strong> undo_cancellation
 
 <strong>Entidade:</strong> Invoice
 
 <strong>Evento:</strong>
-Quando há <strong>erro no recebimento</strong> do faturamento (pagamento em cartão de crédito)
+Quando é <strong>desfeito o cancelamento</strong> do faturamento
 
 <div class="api-endpoint">
   <div class="endpoint-data">
@@ -18,7 +18,7 @@ Quando há <strong>erro no recebimento</strong> do faturamento (pagamento em car
 
 ```json
 {
-  "event": "receivement_error",
+  "event": "undo_cancellation",
   "object_type": "Invoice",
   "object_id": "id-da-entidade",
   "contract_token": "token-do-contrato"

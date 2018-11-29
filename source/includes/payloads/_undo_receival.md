@@ -1,11 +1,11 @@
-## confirm_receival
+## undo_receival
 
-<strong>Payload:</strong> confirm_receival
+<strong>Payload:</strong> undo_receival
 
 <strong>Entidade:</strong> Invoice
 
 <strong>Evento:</strong>
-Quando é <strong>confirmado o recebimento</strong> do faturamento
+Quando é <strong>desfeito o recebimento</strong> do faturamento
 
 <div class="api-endpoint">
   <div class="endpoint-data">
@@ -18,7 +18,7 @@ Quando é <strong>confirmado o recebimento</strong> do faturamento
 
 ```json
 {
-  "event": "confirm_receival",
+  "event": "undo_receival",
   "object_type": "Invoice",
   "object_id": "id-da-entidade",
   "contract_token": "token-do-contrato"

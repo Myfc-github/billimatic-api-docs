@@ -21,9 +21,10 @@ includes:
   - payloads/confirm_receival
   - payloads/undo_receival
   - payloads/receivement_error
-  - payloads/undo_cancellation
   - payloads/payment_gateway_status
   - payloads/change_plan
+  - organizacoes/organizacoes
+  - organizacoes/org_busca
 
 search: true
 ---
