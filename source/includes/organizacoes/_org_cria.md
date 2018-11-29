@@ -1,11 +1,11 @@
-## Buscar
+## Criar
 
-Realiza busca de organizações
+Cria nova organização
 
 <div class="api-endpoint">
   <div class="endpoint-data">
-    <i class="label label-get">GET</i>
-     api/v1/organizations/search
+    <i class="label label-get">POST</i>
+     api/v1/organizations
   </div>
 </div>
 
@@ -26,10 +26,10 @@ Realiza busca de organizações
 
 ```json
 {
-  "paramType": "query",
-  "name": "cnpj",
-  "type": "string",
-  "description": "CNPJ",
+  "paramType": "body",
+  "name": "body",
+  "type": "Organization",
+  "description": "Representação em JSON da organização que será criada",
   "required": true
 }
 ```

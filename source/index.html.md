@@ -25,6 +25,10 @@ includes:
   - payloads/change_plan
   - organizacoes/organizacoes
   - organizacoes/org_busca
+  - organizacoes/org_cria
+  - organizacoes/org_atualiza
+  - organizacoes/org_apaga
+  - planos/planos
 
 search: true
 ---

@@ -1,11 +1,11 @@
-## Buscar
+## Excluir
 
-Realiza busca de organizações
+Exclui uma organização
 
 <div class="api-endpoint">
   <div class="endpoint-data">
-    <i class="label label-get">GET</i>
-     api/v1/organizations/search
+    <i class="label label-get">DELETE</i>
+     api/v1/organizations/{id}
   </div>
 </div>
 
@@ -26,10 +26,10 @@ Realiza busca de organizações
 
 ```json
 {
-  "paramType": "query",
-  "name": "cnpj",
-  "type": "string",
-  "description": "CNPJ",
+  "paramType": "path",
+  "name": "id",
+  "type": "integer",
+  "description": "ID da organização",
   "required": true
 }
 ```
