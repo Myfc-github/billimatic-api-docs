@@ -48,6 +48,11 @@ includes:
   - subscriptions/sub_cria
   - subscriptions/sub_detalhes
   - subscriptions/sub_cancelar
+  - invoices/invoices
+  - invoices/inv_busca
+  - invoices/inv_inadimplementes
+  - invoices/inv_bloqueio
+  - invoices/inv_aprova
 
 search: true
 ---
