@@ -29,6 +29,8 @@ includes:
   - organizacoes/org_atualiza
   - organizacoes/org_apaga
   - planos/planos
+  - planos/pln_lista
+  - planos/pln_cria
 
 search: true
 ---

@@ -1,4 +1,4 @@
-## Buscar
+## Buscar Organizações
 
 Realiza busca de organizações
 
