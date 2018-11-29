@@ -44,6 +44,10 @@ includes:
   - checkouts/chk_checkout
   - plan_modifications/plan_modifications
   - payment_informations/payment_informations
+  - subscriptions/subscriptions
+  - subscriptions/sub_cria
+  - subscriptions/sub_detalhes
+  - subscriptions/sub_cancelar
 
 search: true
 ---
