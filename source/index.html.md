@@ -42,6 +42,7 @@ includes:
   - contratos/ctt_apaga
   - checkouts/checkouts
   - checkouts/chk_checkout
+  - plan_modifications/plan_modifications
 
 search: true
 ---
