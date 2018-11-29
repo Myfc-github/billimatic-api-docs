@@ -1,4 +1,4 @@
-# Trocas de plano de assinaturas
+# Plano de assinaturas
 
 
 ## Trocas de plano de assinaturas
