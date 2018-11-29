@@ -33,6 +33,8 @@ includes:
   - planos/pln_cria
   - planos/pln_atualiza
   - planos/pln_apaga
+  - contratos/contratos
+  - contratos/ctt_lista
 
 search: true
 ---
