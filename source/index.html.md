@@ -43,6 +43,7 @@ includes:
   - checkouts/checkouts
   - checkouts/chk_checkout
   - plan_modifications/plan_modifications
+  - payment_informations/payment_informations
 
 search: true
 ---
