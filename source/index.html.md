@@ -35,6 +35,11 @@ includes:
   - planos/pln_apaga
   - contratos/contratos
   - contratos/ctt_lista
+  - contratos/ctt_detalhes
+  - contratos/ctt_busca
+  - contratos/ctt_cria
+  - contratos/ctt_atualiza
+  - contratos/ctt_apaga
 
 search: true
 ---
