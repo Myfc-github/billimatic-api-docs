@@ -533,9 +533,8 @@ html, body {
 
   blockquote {
     &>p {
-      // background-color: #3a6f5e;
-      // background-color: #880000;
-      background-color: #c0392b;
+      // background-color: #c0392b;
+      background-color: #b2212f;
       padding: $code-annotation-padding 2em;
       color: #eee;
     }
