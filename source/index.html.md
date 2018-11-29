@@ -31,6 +31,8 @@ includes:
   - planos/planos
   - planos/pln_lista
   - planos/pln_cria
+  - planos/pln_atualiza
+  - planos/pln_apaga
 
 search: true
 ---
