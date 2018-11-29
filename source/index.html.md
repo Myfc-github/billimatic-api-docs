@@ -40,6 +40,8 @@ includes:
   - contratos/ctt_cria
   - contratos/ctt_atualiza
   - contratos/ctt_apaga
+  - checkouts/checkouts
+  - checkouts/chk_checkout
 
 search: true
 ---
