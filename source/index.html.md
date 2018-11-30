@@ -69,6 +69,13 @@ includes:
   - companies/cmp_detalhes
   - companies/cmp_atualiza
   - companies/cmp_apaga
+  - people/people
+  - people/plp_busca
+  - people/plp_lista
+  - people/plp_cria
+  - people/plp_detalhes
+  - people/plp_atualiza
+  - people/plp_apaga
 
 search: true
 ---
