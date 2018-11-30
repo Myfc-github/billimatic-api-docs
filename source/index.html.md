@@ -57,6 +57,11 @@ includes:
   - invoices/inv_bloqueio
   - invoices/inv_aprova
   - invoices/inv_apaga
+  - invoices_rules/invoices_rules
+  - invoices_rules/invrule_cria
+  - invoices_rules/invrule_lista
+  - invoices_rules/invrule_atualiza
+  - invoices_rules/invrule_apaga
 
 search: true
 ---
