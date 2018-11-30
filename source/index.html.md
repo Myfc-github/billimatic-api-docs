@@ -76,6 +76,11 @@ includes:
   - people/plp_detalhes
   - people/plp_atualiza
   - people/plp_apaga
+  - service_items/service_items
+  - service_items/srv_cria
+  - service_items/srv_busca
+  - service_items/srv_atualiza
+  - service_items/srv_apaga
 
 search: true
 ---
