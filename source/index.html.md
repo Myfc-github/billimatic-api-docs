@@ -24,20 +24,20 @@ includes:
   - payloads/payment_gateway_status
   - payloads/change_plan
   - organizacoes/organizacoes
-  - organizacoes/org_busca
   - organizacoes/org_cria
+  - organizacoes/org_busca
   - organizacoes/org_atualiza
   - organizacoes/org_apaga
   - planos/planos
-  - planos/pln_lista
   - planos/pln_cria
+  - planos/pln_lista
   - planos/pln_atualiza
   - planos/pln_apaga
   - contratos/contratos
-  - contratos/ctt_lista
-  - contratos/ctt_detalhes
-  - contratos/ctt_busca
   - contratos/ctt_cria
+  - contratos/ctt_lista
+  - contratos/ctt_busca
+  - contratos/ctt_detalhes
   - contratos/ctt_atualiza
   - contratos/ctt_apaga
   - checkouts/checkouts
@@ -70,9 +70,9 @@ includes:
   - companies/cmp_atualiza
   - companies/cmp_apaga
   - people/people
+  - people/plp_cria
   - people/plp_busca
   - people/plp_lista
-  - people/plp_cria
   - people/plp_detalhes
   - people/plp_atualiza
   - people/plp_apaga
