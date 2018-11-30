@@ -49,10 +49,14 @@ includes:
   - subscriptions/sub_detalhes
   - subscriptions/sub_cancelar
   - invoices/invoices
+  - invoices/inv_cria
+  - invoices/inv_detalhes
+  - invoices/inv_atualiza
   - invoices/inv_busca
   - invoices/inv_inadimplementes
   - invoices/inv_bloqueio
   - invoices/inv_aprova
+  - invoices/inv_apaga
 
 search: true
 ---
