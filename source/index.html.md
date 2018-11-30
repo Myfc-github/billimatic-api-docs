@@ -62,6 +62,13 @@ includes:
   - invoices_rules/invrule_lista
   - invoices_rules/invrule_atualiza
   - invoices_rules/invrule_apaga
+  - companies/companies
+  - companies/cmp_cria
+  - companies/cmp_busca
+  - companies/cmp_lista_emp
+  - companies/cmp_detalhes
+  - companies/cmp_atualiza
+  - companies/cmp_apaga
 
 search: true
 ---
