@@ -75,7 +75,8 @@ $phone-width: $tablet-width - $nav-width !default; // min width before reverting
 }
 
 %header-font {
-  @extend %default-font;
+  // @extend %default-font;
+  font-family: 'Open Sans', 'Raleway', Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: bold;
 }
 
