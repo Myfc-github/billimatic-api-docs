@@ -34,8 +34,9 @@
         data-languages="<%=h language_tabs.map{ |lang| lang.is_a?(Hash) ? lang.keys.first : lang }.to_json %>" >
 
     <div class="toc-wrapper">
+
       <div class='logo-custom'>
-        Billimatic
+        <%= image_tag('logo_Billi.png', class: 'image-logo-custom' ) %>
       </div>
 
       <% if language_tabs.any? %>
