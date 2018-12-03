@@ -14,29 +14,11 @@ Atualiza uma organização
 
 ```json
 {
-  [
-    {
-      "paramType": "header",
-      "name": "Authorization",
-      "type": "string",
-      "description": "Token de autenticação. Formato: Token token=123456",
-      "required": true
-    },
-    {
-      "paramType": "path",
-      "name": "id",
-      "type": "integer",
-      "description": "ID da organização",
-      "required": true
-    },
-    {
-      "paramType": "body",
-      "name": "body",
-      "type": "Organization",
-      "description": "Representação em JSON da organização que será alterada",
-      "required": true
-    }
-  ]
+  "organization": {
+      "name": "Lnz Bills",
+      "cnpj": "57.757.975/0001-86",
+      "address": "Nossa Senhora das Graças"
+  }
 }
 ```
 
@@ -44,17 +26,20 @@ Atualiza uma organização
 
 ```json
 {
-  [
-    {
-      "code": 200,
-      "responseModel": null,
-      "message": "Ok"
-    },
-    {
-      "code": 422,
-      "responseModel": null,
-      "message": "Unprocessable Entity"
-    }
-  ]
+  "organization": {
+      "id": 14008,
+      "account_id": 29,
+      "name": "Lnz Bills",
+      "company_name": "Mattos Bills Ltda",
+      "cnpj": "57.757.975/0001-86",
+      "address": "Nossa Senhora das Graças",
+      "number": "390",
+      "complement": "-",
+      "zipcode": "02460100",
+      "district": "Centro",
+      "city": "São Paulo",
+      "state": "SP",
+      "created_at": "03/12/2018 11:39:15 -02:00"
+  }
 }
 ```

@@ -14,40 +14,14 @@ Realiza busca de organizações
 
 ```json
 {
-  [
-    {
-      "paramType": "header",
-      "name": "Authorization",
-      "type": "string",
-      "description": "Token de autenticação. Formato: Token token=123456",
-      "required": true
-    },
-    {
-      "paramType": "query",
-      "name": "cnpj",
-      "type": "string",
-      "description": "CNPJ",
-      "required": true
-    }
-  ]
+  "organization": {
+    "cnpj": "57.757.975/0001-86"
+  }
 }
 ```
 
 > Exemplo do retorno
 
 ```json
-{
-  [
-    {
-      "code": 200,
-      "responseModel": null,
-      "message": "Ok"
-    },
-    {
-      "code": 400,
-      "responseModel": null,
-      "message": "Bad Request"
-    }
-  ]
-}
+
 ```

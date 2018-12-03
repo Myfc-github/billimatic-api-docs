@@ -13,46 +13,11 @@ Exclui uma organização
 > Exemplo de Corpo
 
 ```json
-{
-  [
-    {
-      "paramType": "header",
-      "name": "Authorization",
-      "type": "string",
-      "description": "Token de autenticação. Formato: Token token=123456",
-      "required": true
-    },
-    {
-      "paramType": "path",
-      "name": "id",
-      "type": "integer",
-      "description": "ID da organização",
-      "required": true
-    }
-  ]
-}
+  "Essa requisição não possoui corpo"
 ```
 
 > Exemplo do retorno
 
 ```json
-{
-  [
-    {
-      "code": 204,
-      "responseModel": null,
-      "message": "No Content"
-    },
-    {
-      "code": 404,
-      "responseModel": null,
-      "message": "Not Found"
-    },
-    {
-      "code": 422,
-      "responseModel": null,
-      "message": "Unprocessable Entity"
-    }
-  ]
-}
+  "Não há conteudo de retorno ao deletar"
 ```
