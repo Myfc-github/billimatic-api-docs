@@ -1,4 +1,4 @@
-## emit
+## Emit
 
 <strong>Payload:</strong> emit
 

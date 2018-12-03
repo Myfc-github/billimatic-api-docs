@@ -1,4 +1,4 @@
-## cancel
+## Cancel
 
 <strong>Payload:</strong> cancel
 

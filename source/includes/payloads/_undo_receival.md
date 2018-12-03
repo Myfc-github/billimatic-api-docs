@@ -1,4 +1,4 @@
-## undo_receival
+## Undo_receival
 
 <strong>Payload:</strong> undo_receival
 
