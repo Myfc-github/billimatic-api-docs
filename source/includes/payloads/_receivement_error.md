@@ -1,4 +1,4 @@
-## receivement_error
+## Receivement_error
 
 <strong>Payload:</strong> receivement_error
 
