@@ -14,22 +14,9 @@ Cria novo serviço
 
 ```json
 {
-  [
-    {
-      "paramType": "header",
-      "name": "Authorization",
-      "type": "string",
-      "description": "Token de autenticação. Formato: Token token=123456",
-      "required": true
-    },
-    {
-      "paramType": "body",
-      "name": "body",
-      "type": "ServiceItem",
-      "description": "Representação em JSON do serviço que será criado",
-      "required": true
-    }
-  ]
+  "name": "Teste Doc",
+  "description": "Descrição do item de Item de serviços ",
+  "value": "7900"
 }
 ```
 
@@ -37,17 +24,13 @@ Cria novo serviço
 
 ```json
 {
-  [
-    {
-      "code": 201,
-      "responseModel": null,
-      "message": "Created"
-    },
-    {
-      "code": 400,
-      "responseModel": null,
-      "message": "Bad Request"
-    }
-  ]
+  "service_item": {
+      "id": 943,
+      "account_id": 29,
+      "name": "Teste Doc",
+      "description": "Descrição do item de Item de serviços ",
+      "value": "7900.0",
+      "unit": "item"
+  }
 }
 ```

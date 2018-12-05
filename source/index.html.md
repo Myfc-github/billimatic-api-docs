@@ -48,6 +48,7 @@ includes:
   - service_items/service_items
   - service_items/srv_cria
   - service_items/srv_busca
+  - http_status/http_status
   - service_items/srv_atualiza
   - service_items/srv_apaga
   - planos/planos
