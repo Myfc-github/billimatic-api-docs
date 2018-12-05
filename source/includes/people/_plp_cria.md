@@ -15,22 +15,19 @@ Cria uma nova pessoa.
 
 ```json
 {
-  [
-    {
-      "paramType": "header",
-      "name": "Authorization",
-      "type": "string",
-      "description": "Token de autenticação. Formato: Token token=123456",
-      "required": true
-    },
-    {
-      "paramType": "body",
-      "name": "body",
-      "type": "Person",
-      "description": "Representação em JSON da pessoa que será criada",
-      "required": true
-    }
-  ]
+  "name": "Fulano de Tal",
+  "cpf": "82868688977",
+  "email": "fulano@email.com",
+  "zipcode": "02360100",
+  "address": "Rua Americanas",
+  "number": "12",
+  "complement": "",
+  "district": "Santana",
+  "city": "São Paulo",
+  "state": "SP",
+  "comments": "",
+  "client_since": "date"
+
 }
 ```
 
@@ -38,17 +35,24 @@ Cria uma nova pessoa.
 
 ```json
 {
-  [
-    {
-      "code": 201,
-      "responseModel": null,
-      "message": "Created"
-    },
-    {
-      "code": 422,
-      "responseModel": null,
-      "message": "Unprocessable Entity"
+    "person": {
+        "id": 1543,
+        "account_id": 29,
+        "name": "Fulano de Tal",
+        "cpf": "82868688977",
+        "email": "fulano@email.com",
+        "zipcode": "02360100",
+        "address": "Rua Americanas",
+        "number": "12",
+        "complement": "",
+        "district": "Santana",
+        "city": "São Paulo",
+        "state": "SP",
+        "comments": "",
+        "client_since": null,
+        "myfinance_customer_id": null,
+        "myfinance_errors": null,
+        "created_at": "05/12/2018 14:03:36 -02:00"
     }
-  ]
 }
 ```

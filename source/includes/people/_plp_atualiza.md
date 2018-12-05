@@ -14,29 +14,10 @@ Atualiza uma pessoa.
 
 ```json
 {
-  [
-    {
-      "paramType": "header",
-      "name": "Authorization",
-      "type": "string",
-      "description": "Token de autenticação. Formato: Token token=123456",
-      "required": true
-    },
-    {
-      "paramType": "path",
-      "name": "id",
-      "type": "integer",
-      "description": "ID da pessoa",
-      "required": true
-    },
-    {
-      "paramType": "body",
-      "name": "body",
-      "type": "Person",
-      "description": "Representação em JSON da pessoa que será alterada",
-      "required": true
-    }
-  ]
+  "person": {
+      "name": "Beltrano",
+      "cpf": "82868688977"
+  }
 }
 ```
 
@@ -44,17 +25,24 @@ Atualiza uma pessoa.
 
 ```json
 {
-  [
-    {
-      "code": 200,
-      "responseModel": null,
-      "message": "Ok"
-    },
-    {
-      "code": 404,
-      "responseModel": null,
-      "message": "Not Found"
+    "person": {
+        "id": 1543,
+        "account_id": 29,
+        "name": "Beltrano",
+        "cpf": "82868688977",
+        "email": "fulano@email.com",
+        "zipcode": "02360100",
+        "address": "Rua Americanas",
+        "number": "12",
+        "complement": "",
+        "district": "Santana",
+        "city": "São Paulo",
+        "state": "SP",
+        "comments": "",
+        "client_since": null,
+        "myfinance_customer_id": 2416551,
+        "myfinance_errors": null,
+        "created_at": "05/12/2018 14:03:36 -02:00"
     }
-  ]
 }
 ```

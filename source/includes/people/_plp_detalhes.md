@@ -2,7 +2,6 @@
 
 Mostra os detalhes de uma pessoa.
 
-
 <div class="api-endpoint">
   <div class="endpoint-data">
     <i class="label label-get">GET</i>
@@ -14,41 +13,31 @@ Mostra os detalhes de uma pessoa.
 > Exemplo de Corpo
 
 ```json
-{
-  [
-    {
-      "paramType": "header",
-      "name": "Authorization",
-      "type": "string",
-      "description": "Token de autenticação. Formato: Token token=123456",
-      "required": true
-    },
-    {
-      "paramType": "path",
-      "name": "id",
-      "type": "integer",
-      "description": "ID da pessoa",
-      "required": true
-    }
-  ]
-}
+ "Essa requisição não possoui corpo"
 ```
 
 > Exemplo do retorno
 
 ```json
 {
-  [
-    {
-      "code": 200,
-      "responseModel": null,
-      "message": "Ok"
-    },
-    {
-      "code": 404,
-      "responseModel": null,
-      "message": "Not Found"
-    }
-  ]
+  "person": {
+      "id": 1543,
+      "account_id": 29,
+      "name": "Fulano de Tal",
+      "cpf": "82868688977",
+      "email": "fulano@email.com",
+      "zipcode": "02360100",
+      "address": "Rua Americanas",
+      "number": "12",
+      "complement": "",
+      "district": "Santana",
+      "city": "São Paulo",
+      "state": "SP",
+      "comments": "",
+      "client_since": null,
+      "myfinance_customer_id": 2416551,
+      "myfinance_errors": null,
+      "created_at": "05/12/2018 14:03:36 -02:00"
+  }
 }
 ```

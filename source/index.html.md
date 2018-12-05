@@ -40,6 +40,7 @@ includes:
   - people/people
   - people/plp_cria
   - people/plp_busca
+  - http_status/http_status
   - people/plp_lista
   - people/plp_detalhes
   - people/plp_atualiza

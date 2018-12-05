@@ -5,48 +5,41 @@ Realiza busca de pessoas
 <div class="api-endpoint">
   <div class="endpoint-data">
     <i class="label label-get">GET</i>
-     api/v1/people/search
+     api/v1/people/search?cpf=82868688977
   </div>
 </div>
 
+Onde cpf=82868688977 será o número do cpf que deseja efetuar a busca.
 
 > Exemplo de Corpo
 
 ```json
-{
-  [
-    {
-      "paramType": "header",
-      "name": "Authorization",
-      "type": "string",
-      "description": "Token de autenticação. Formato: Token token=123456",
-      "required": true
-    },
-    {
-      "paramType": "query",
-      "name": "cpf",
-      "type": "string",
-      "description": "CPF",
-      "required": true
-    }
-  ]
-}
+ "Essa requisição não possoui corpo"
 ```
 
 > Exemplo do retorno
 
 ```json
 {
-  [
+  "people": [
     {
-      "code": 200,
-      "responseModel": null,
-      "message": "Ok"
-    },
-    {
-      "code": 400,
-      "responseModel": null,
-      "message": "Bad Request"
+      "id": 1543,
+      "account_id": 29,
+      "name": "Fulano de Tal",
+      "cpf": "82868688977",
+      "email": "fulano@email.com",
+      "zipcode": "02360100",
+      "address": "Rua Americanas",
+      "number": "12",
+      "complement": "",
+      "district": "Santana",
+      "city": "São Paulo",
+      "state": "SP",
+      "comments": "",
+      "client_since": null,
+      "myfinance_customer_id": 2416551,
+      "myfinance_errors": null,
+      "created_at": "05/12/2018 14:03:36 -02:00"
     }
   ]
 }
