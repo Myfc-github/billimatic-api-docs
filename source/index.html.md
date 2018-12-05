@@ -26,6 +26,7 @@ includes:
   - organizacoes/organizacoes
   - organizacoes/org_cria
   - organizacoes/org_busca
+  - http_status/http_status
   - organizacoes/org_atualiza
   - organizacoes/org_apaga
   - companies/companies
