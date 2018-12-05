@@ -5,7 +5,7 @@ Mostra os detalhes de uma empresa
 <div class="api-endpoint">
   <div class="endpoint-data">
     <i class="label label-get">GET</i>
-     api/v1/companies
+     GET api/v1/companies/{id}
   </div>
 </div>
 
@@ -13,41 +13,36 @@ Mostra os detalhes de uma empresa
 > Exemplo de Corpo
 
 ```json
-{
-  [
-    {
-      "paramType": "header",
-      "name": "Authorization",
-      "type": "string",
-      "description": "Token de autenticação. Formato: Token token=123456",
-      "required": true
-    },
-    {
-      "paramType": "path",
-      "name": "id",
-      "type": "integer",
-      "description": "ID da empresa",
-      "required": true
-    }
-  ]
-}
+  "Essa requisição não possoui corpo"
 ```
 
 > Exemplo do retorno
 
 ```json
 {
-  [
-    {
-      "code": 200,
-      "responseModel": null,
-      "message": "Ok"
-    },
-    {
-      "code": 404,
-      "responseModel": null,
-      "message": "Not Found"
-    }
-  ]
+  "company": {
+    "id": 7828,
+    "account_id": 29,
+    "name": "Gol de Placa",
+    "company_name": "Gol de Placa",
+    "cnpj": "31.710.541/0002-59",
+    "state_inscription": "",
+    "city_inscription": "",
+    "address": "Rua Alfredo Gusmoes",
+    "number": "1982",
+    "zipcode": "80220050",
+    "district": "Rebouças",
+    "complement": "",
+    "city": "Curitiba",
+    "state": "PR",
+    "contacts": "ROCHINHA",
+    "billing_contacts": "goldeplaca@email.com.br",
+    "kind": "company",
+    "comments": "#PINGOID20093",
+    "client_since": null,
+    "myfinance_customer_id": 2240155,
+    "myfinance_errors": null,
+    "created_at": "28/04/2018 11:41:53 -03:00"
+  }
 }
 ```

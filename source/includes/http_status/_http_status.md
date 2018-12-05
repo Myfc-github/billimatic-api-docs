@@ -1,6 +1,9 @@
 <br>
 
 | HTTP Status Code  | Observações
-| ----------------- | -------------------- |
-| 200               | Encontrado           |
-| 404               | Não Encontrado       |
+| ----------------- | ------------------------- |
+| 200               | Encontrado                |
+| 400               | Bad Request               |
+| 401               | Não Autorizado            |
+| 404               | Não Encontrado            |
+| 422               | Entidade não processável  |

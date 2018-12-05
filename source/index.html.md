@@ -32,6 +32,7 @@ includes:
   - companies/companies
   - companies/cmp_cria
   - companies/cmp_busca
+  - http_status/http_status
   - companies/cmp_lista_emp
   - companies/cmp_detalhes
   - companies/cmp_atualiza
