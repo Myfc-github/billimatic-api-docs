@@ -27,12 +27,14 @@ includes:
   - payloads/change_plan
   - organizacoes/organizacoes
   - organizacoes/org_cria
+  - organizacoes/org_campos
   - organizacoes/org_busca
   - http_status/http_status
   - organizacoes/org_atualiza
   - organizacoes/org_apaga
   - companies/companies
   - companies/cmp_cria
+  - companies/cmp_campos
   - companies/cmp_busca
   - http_status/http_status
   - companies/cmp_lista_emp
@@ -41,6 +43,7 @@ includes:
   - companies/cmp_apaga
   - people/people
   - people/plp_cria
+  - people/plp_campos
   - people/plp_busca
   - http_status/http_status
   - people/plp_lista
@@ -49,6 +52,7 @@ includes:
   - people/plp_apaga
   - service_items/service_items
   - service_items/srv_cria
+  - service_items/srv_campos
   - service_items/srv_busca
   - http_status/http_status
   - service_items/srv_atualiza
@@ -61,6 +65,7 @@ includes:
   - planos/pln_apaga
   - contratos/contratos
   - contratos/ctt_cria
+  - contratos/ctt_campos
   - contratos/ctt_lista
   - contratos/ctt_busca
   - contratos/ctt_detalhes
@@ -68,6 +73,7 @@ includes:
   - contratos/ctt_apaga
   - subscriptions/subscriptions
   - subscriptions/sub_cria
+  - subscriptions/sub_campos
   - subscriptions/sub_detalhes
   - subscriptions/sub_cancelar
   - checkouts/checkouts
