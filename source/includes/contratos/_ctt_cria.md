@@ -14,22 +14,7 @@ Cria novo contrato
 
 ```json
 {
-  [
-    {
-      "paramType": "header",
-      "name": "Authorization",
-      "type": "string",
-      "description": "Token de autenticação. Formato: Token token=123456",
-      "required": true
-    },
-    {
-      "paramType": "body",
-      "name": "body",
-      "type": "Contract",
-      "description": "Representação em JSON do contrato que será criado",
-      "required": true
-    }
-  ]
+
 }
 ```
 
@@ -37,17 +22,6 @@ Cria novo contrato
 
 ```json
 {
-  [
-    {
-      "code": 201,
-      "responseModel": null,
-      "message": "Created"
-    },
-    {
-      "code": 422,
-      "responseModel": null,
-      "message": "Unprocessable Entity"
-    }
-  ]
+
 }
 ```
