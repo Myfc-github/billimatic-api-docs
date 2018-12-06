@@ -55,6 +55,7 @@ includes:
   - service_items/srv_apaga
   - planos/planos
   - planos/pln_cria
+  - planos/pln_campos
   - planos/pln_lista
   - planos/pln_atualiza
   - planos/pln_apaga
