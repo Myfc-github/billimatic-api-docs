@@ -1,9 +1,10 @@
 <br>
+<p><strong>HTTP Status Code</strong></p>
 
-| HTTP Status Code  | Observações
-| ----------------- | ------------------------- |
-| 200               | Encontrado                |
-| 400               | Bad Request               |
-| 401               | Não Autorizado            |
-| 404               | Não Encontrado            |
-| 422               | Entidade não processável  |
+| Code  | Observações
+| ------| ------------------------- |
+| 200   | Encontrado                |
+| 400   | Bad Request               |
+| 401   | Não Autorizado            |
+| 404   | Não Encontrado            |
+| 422   | Entidade não processável  |

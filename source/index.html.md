@@ -11,6 +11,8 @@ includes:
   - welcome
   - informacoesbasicas
   - autenticacao
+  - http_status/http_info
+  - http_status/http_status
   - payloads/payloads
   - payloads/teste
   - payloads/update
