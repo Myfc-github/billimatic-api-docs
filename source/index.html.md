@@ -82,6 +82,7 @@ includes:
   - payment_informations/payment_informations
   - invoices/invoices
   - invoices/inv_cria
+  - invoices/inv_campos
   - invoices/inv_detalhes
   - invoices/inv_atualiza
   - invoices/inv_busca
@@ -91,6 +92,7 @@ includes:
   - invoices/inv_apaga
   - invoices_rules/invoices_rules
   - invoices_rules/invrule_cria
+  - invoices_rules/invrule_campos
   - invoices_rules/invrule_lista
   - invoices_rules/invrule_atualiza
   - invoices_rules/invrule_apaga
