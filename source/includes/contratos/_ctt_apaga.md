@@ -14,22 +14,7 @@ Exclui um contrato
 
 ```json
 {
-  [
-    {
-      "paramType": "header",
-      "name": "Authorization",
-      "type": "string",
-      "description": "Token de autenticação. Formato: Token token=123456",
-      "required": true
-    },
-    {
-      "paramType": "path",
-      "name": "id",
-      "type": "integer",
-      "description": "ID do contrato",
-      "required": true
-    }
-  ]
+
 }
 ```
 
@@ -37,17 +22,6 @@ Exclui um contrato
 
 ```json
 {
-  [
-    {
-      "code": 204,
-      "responseModel": null,
-      "message": "No Content"
-    },
-    {
-      "code": 404,
-      "responseModel": null,
-      "message": "Not Found"
-    }
-  ]
+
 }
 ```
