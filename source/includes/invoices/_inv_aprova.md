@@ -22,22 +22,6 @@ Aprova um faturamento
 
 ```json
 {
-  [
-    {
-      "code": 200,
-      "responseModel": null,
-      "message": "Ok"
-    },
-    {
-      "code": 404,
-      "responseModel": null,
-      "message": "Not Found"
-    },
-    {
-      "code": 422,
-      "responseModel": null,
-      "message": "Unprocessable Entity"
-    }
-  ]
+
 }
 ```
