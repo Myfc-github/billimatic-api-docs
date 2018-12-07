@@ -57,12 +57,14 @@ includes:
   - http_status/http_status
   - service_items/srv_atualiza
   - service_items/srv_apaga
+  - http_status/http_status
   - planos/planos
   - planos/pln_cria
   - planos/pln_campos
   - planos/pln_lista
   - planos/pln_atualiza
   - planos/pln_apaga
+  - http_status/http_status
   - contratos/contratos
   - contratos/ctt_cria
   - contratos/ctt_campos
@@ -71,6 +73,7 @@ includes:
   - contratos/ctt_detalhes
   - contratos/ctt_atualiza
   - contratos/ctt_apaga
+  - http_status/http_status
   - subscriptions/subscriptions
   - subscriptions/sub_cria
   - subscriptions/sub_campos
