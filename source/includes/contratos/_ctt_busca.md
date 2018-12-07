@@ -14,22 +14,7 @@ Realiza busca de contratos
 
 ```json
 {
-  [
-    {
-      "paramType": "header",
-      "name": "Authorization",
-      "type": "string",
-      "description": "Token de autenticação. Formato: Token token=123456",
-      "required": true
-    },
-    {
-      "paramType": "query",
-      "name": "name",
-      "type": "string",
-      "description": "Nome do contrato (URL encoded)",
-      "required": true
-    }
-  ]
+
 }
 ```
 
@@ -37,17 +22,6 @@ Realiza busca de contratos
 
 ```json
 {
-  [
-    {
-      "code": 200,
-      "responseModel": null,
-      "message": "Ok"
-    },
-    {
-      "code": 400,
-      "responseModel": null,
-      "message": "Bad Request"
-    }
-  ]
+
 }
 ```

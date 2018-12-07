@@ -14,29 +14,7 @@ Mostra detalhes de um contrato através de seu id
 
 ```json
 {
-  [
-    {
-      "paramType": "header",
-      "name": "Authorization",
-      "type": "string",
-      "description": "Token de autenticação. Formato: Token token=123456",
-      "required": true
-    },
-    {
-      "paramType": "path",
-      "name": "organization_id",
-      "type": "integer",
-      "description": "ID da organização",
-      "required": true
-    },
-    {
-      "paramType": "path",
-      "name": "id",
-      "type": "integer",
-      "description": "ID do contrato",
-      "required": true
-    }
-  ]
+
 }
 ```
 
@@ -44,17 +22,6 @@ Mostra detalhes de um contrato através de seu id
 
 ```json
 {
-  [
-    {
-      "code": 200,
-      "responseModel": null,
-      "message": "Ok"
-    },
-    {
-      "code": 404,
-      "responseModel": null,
-      "message": "Not Found"
-    }
-  ]
+
 }
 ```

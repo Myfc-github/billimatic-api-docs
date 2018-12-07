@@ -15,22 +15,7 @@ Cria uma assinatura de degustação
 
 ```json
 {
-  [
-    {
-      "paramType": "header",
-      "name": "Authorization",
-      "type": "string",
-      "description": "Token de autenticação. Formato: Token token=123456",
-      "required": true
-    },
-    {
-      "paramType": "body",
-      "name": "body",
-      "type": "Subscription",
-      "description": "Representação em JSON da assinatura de degustação a ser criada.",
-      "required": true
-    }
-  ]
+
 }
 ```
 
@@ -38,22 +23,6 @@ Cria uma assinatura de degustação
 
 ```json
 {
-  [
-    {
-      "code": 201,
-      "responseModel": null,
-      "message": "Created"
-    },
-    {
-      "code": 404,
-      "responseModel": null,
-      "message": "Not Found"
-    },
-    {
-      "code": 422,
-      "responseModel": null,
-      "message": "Unprocessable Entity"
-    }
-  ]
+
 }
 ```

@@ -14,22 +14,10 @@ Cria uma nova empresa
 
 ```json
 {
-  [
-    {
-      "paramType": "header",
-      "name": "Authorization",
-      "type": "string",
-      "description": "Token de autenticação. Formato: Token token=123456",
-      "required": true
-    },
-    {
-      "paramType": "body",
-      "name": "body",
-      "type": "Company",
-      "description": "Representação em JSON da empresa que será criada",
-      "required": true
-    }
-  ]
+  "company": {
+	  "name": "JSkank Company Bills",
+	  "cnpj": "38.624.936/0001-66"
+  }
 }
 ```
 
@@ -37,17 +25,29 @@ Cria uma nova empresa
 
 ```json
 {
-  [
-    {
-      "code": 201,
-      "responseModel": null,
-      "message": "Created"
-    },
-    {
-      "code": 400,
-      "responseModel": null,
-      "message": "Bad Request"
+    "company": {
+        "id": 14009,
+        "account_id": 29,
+        "name": "JSkank Company Bills",
+        "company_name": null,
+        "cnpj": "38.624.936/0001-66",
+        "state_inscription": null,
+        "city_inscription": null,
+        "address": null,
+        "number": null,
+        "zipcode": null,
+        "district": null,
+        "complement": null,
+        "city": null,
+        "state": null,
+        "contacts": null,
+        "billing_contacts": null,
+        "kind": "company",
+        "comments": null,
+        "client_since": null,
+        "myfinance_customer_id": null,
+        "myfinance_errors": null,
+        "created_at": "03/12/2018 12:35:54 -02:00"
     }
-  ]
 }
 ```

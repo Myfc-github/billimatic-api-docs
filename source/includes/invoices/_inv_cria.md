@@ -14,29 +14,7 @@ Cria um faturamento
 
 ```json
 {
-  [
-    {
-      "paramType": "header",
-      "name": "Authorization",
-      "type": "string",
-      "description": "Token de autenticação. Formato: Token token=123456",
-      "required": true
-    },
-    {
-      "paramType": "path",
-      "name": "contract_id",
-      "type": "integer",
-      "description": "ID do contrato",
-      "required": true
-    },
-    {
-      "paramType": "body",
-      "name": "body",
-      "type": "Invoice",
-      "description": "Representação em JSON do faturamento que será criado",
-      "required": true
-    }
-  ]
+
 }
 ```
 
@@ -44,17 +22,6 @@ Cria um faturamento
 
 ```json
 {
-  [
-    {
-      "code": 201,
-      "responseModel": null,
-      "message": "Created"
-    },
-    {
-      "code": 422,
-      "responseModel": null,
-      "message": "Unprocessable Entity"
-    }
-  ]
+
 }
 ```

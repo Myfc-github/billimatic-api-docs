@@ -9,52 +9,16 @@ Exclui um plano
   </div>
 </div>
 
+Exemplo: api/v1/organizations/2159/plans/33
 
 > Exemplo de Corpo
 
 ```json
-{
-  [
-    {
-      "paramType": "header",
-      "name": "Authorization",
-      "type": "string",
-      "description": "Token de autenticação. Formato: Token token=123456",
-      "required": true
-    },
-    {
-      "paramType": "path",
-      "name": "organization_id",
-      "type": "integer",
-      "description": "ID da organização",
-      "required": true
-    },
-    {
-      "paramType": "path",
-      "name": "id",
-      "type": "integer",
-      "description": "ID do plano",
-      "required": true
-    }
-  ]
-}
+  "Essa requisição não possoui corpo"
 ```
 
 > Exemplo do retorno
 
 ```json
-{
-  [
-    {
-      "code": 204,
-      "responseModel": null,
-      "message": "No Content"
-    },
-    {
-      "code": 404,
-      "responseModel": null,
-      "message": "Not Found"
-    }
-  ]
-}
+  "Não há conteudo de retorno ao deletar"
 ```

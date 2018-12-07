@@ -14,22 +14,18 @@ Cria nova organização
 
 ```json
 {
-  [
-    {
-      "paramType": "header",
-      "name": "Authorization",
-      "type": "string",
-      "description": "Token de autenticação. Formato: Token token=123456",
-      "required": true
-    },
-    {
-      "paramType": "body",
-      "name": "body",
-      "type": "Organization",
-      "description": "Representação em JSON da organização que será criada",
-      "required": true
-    }
-  ]
+  "organization": {
+      "name": "Mattos Bills",
+      "company_name": "Mattos Bills Ltda",
+      "cnpj": "57.757.975/0001-86",
+      "address": "Nossa Senhora das Graças",
+      "number": "390",
+      "complement": "-",
+      "zipcode": "02460100",
+      "district": "Centro",
+      "city": "São Paulo",
+      "state": "SP"
+  }
 }
 ```
 
@@ -37,17 +33,20 @@ Cria nova organização
 
 ```json
 {
-  [
-    {
-      "code": 201,
-      "responseModel": null,
-      "message": "Created"
-    },
-    {
-      "code": 400,
-      "responseModel": null,
-      "message": "Bad Request"
-    }
-  ]
+  "organization": {
+      "id": 14008,
+      "account_id": 29,
+      "name": "Mattos Bills",
+      "company_name": "Mattos Bills Ltda",
+      "cnpj": "57.757.975/0001-86",
+      "address": "Nossa Senhora das Graças",
+      "number": "390",
+      "complement": "-",
+      "zipcode": "02460100",
+      "district": "Centro",
+      "city": "São Paulo",
+      "state": "SP",
+      "created_at": "03/12/2018 11:39:15 -02:00"
+  }
 }
 ```

@@ -10,33 +10,14 @@ Atualiza um serviço
 </div>
 
 
+
 > Exemplo de Corpo
 
 ```json
 {
-  [
-    {
-      "paramType": "header",
-      "name": "Authorization",
-      "type": "string",
-      "description": "Token de autenticação. Formato: Token token=123456",
-      "required": true
-    },
-    {
-      "paramType": "path",
-      "name": "id",
-      "type": "integer",
-      "description": "ID do serviço",
-      "required": true
-    },
-    {
-      "paramType": "body",
-      "name": "body",
-      "type": "ServiceItem",
-      "description": "Representação em JSON do serviço que será alterado",
-      "required": true
-    }
-  ]
+  "name": "Novo Item de serviço",
+  "description": "Teste para Doc - Novo Item de Serviço",
+  "value": "4600"
 }
 ```
 
@@ -44,17 +25,13 @@ Atualiza um serviço
 
 ```json
 {
-  [
-    {
-      "code": 200,
-      "responseModel": null,
-      "message": "Ok"
-    },
-    {
-      "code": 422,
-      "responseModel": null,
-      "message": "Unprocessable Entity"
+    "service_item": {
+        "id": 943,
+        "account_id": 29,
+        "name": "Novo Item de serviço",
+        "description": "Teste para Doc - Novo Item de Serviço",
+        "value": "4600.0",
+        "unit": "item"
     }
-  ]
 }
 ```

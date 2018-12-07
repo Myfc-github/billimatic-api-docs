@@ -14,29 +14,7 @@ Atualiza um contrato
 
 ```json
 {
-  [
-    {
-      "paramType": "header",
-      "name": "Authorization",
-      "type": "string",
-      "description": "Token de autenticação. Formato: Token token=123456",
-      "required": true
-    },
-    {
-      "paramType": "path",
-      "name": "id",
-      "type": "integer",
-      "description": "ID do contrato",
-      "required": true
-    },
-    {
-      "paramType": "body",
-      "name": "body",
-      "type": "Contract",
-      "description": "Representação em JSON do contrato que será alterado",
-      "required": true
-    }
-  ]
+
 }
 ```
 
@@ -44,17 +22,6 @@ Atualiza um contrato
 
 ```json
 {
-  [
-    {
-      "code": 200,
-      "responseModel": null,
-      "message": "Ok"
-    },
-    {
-      "code": 422,
-      "responseModel": null,
-      "message": "Unprocessable Entity"
-    }
-  ]
+
 }
 ```

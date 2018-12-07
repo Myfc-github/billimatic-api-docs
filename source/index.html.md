@@ -11,6 +11,8 @@ includes:
   - welcome
   - informacoesbasicas
   - autenticacao
+  - http_status/http_info
+  - http_status/http_status
   - payloads/payloads
   - payloads/teste
   - payloads/update
@@ -25,35 +27,45 @@ includes:
   - payloads/change_plan
   - organizacoes/organizacoes
   - organizacoes/org_cria
+  - organizacoes/org_campos
   - organizacoes/org_busca
+  - http_status/http_status
   - organizacoes/org_atualiza
   - organizacoes/org_apaga
   - companies/companies
   - companies/cmp_cria
+  - companies/cmp_campos
   - companies/cmp_busca
+  - http_status/http_status
   - companies/cmp_lista_emp
   - companies/cmp_detalhes
   - companies/cmp_atualiza
   - companies/cmp_apaga
   - people/people
   - people/plp_cria
+  - people/plp_campos
   - people/plp_busca
+  - http_status/http_status
   - people/plp_lista
   - people/plp_detalhes
   - people/plp_atualiza
   - people/plp_apaga
   - service_items/service_items
   - service_items/srv_cria
+  - service_items/srv_campos
   - service_items/srv_busca
+  - http_status/http_status
   - service_items/srv_atualiza
   - service_items/srv_apaga
   - planos/planos
   - planos/pln_cria
+  - planos/pln_campos
   - planos/pln_lista
   - planos/pln_atualiza
   - planos/pln_apaga
   - contratos/contratos
   - contratos/ctt_cria
+  - contratos/ctt_campos
   - contratos/ctt_lista
   - contratos/ctt_busca
   - contratos/ctt_detalhes
@@ -61,6 +73,7 @@ includes:
   - contratos/ctt_apaga
   - subscriptions/subscriptions
   - subscriptions/sub_cria
+  - subscriptions/sub_campos
   - subscriptions/sub_detalhes
   - subscriptions/sub_cancelar
   - checkouts/checkouts
@@ -69,6 +82,7 @@ includes:
   - payment_informations/payment_informations
   - invoices/invoices
   - invoices/inv_cria
+  - invoices/inv_campos
   - invoices/inv_detalhes
   - invoices/inv_atualiza
   - invoices/inv_busca
@@ -78,6 +92,7 @@ includes:
   - invoices/inv_apaga
   - invoices_rules/invoices_rules
   - invoices_rules/invrule_cria
+  - invoices_rules/invrule_campos
   - invoices_rules/invrule_lista
   - invoices_rules/invrule_atualiza
   - invoices_rules/invrule_apaga
