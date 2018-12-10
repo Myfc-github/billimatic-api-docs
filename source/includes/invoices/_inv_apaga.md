@@ -13,15 +13,11 @@ Excluir um faturamento
 > Exemplo de Corpo
 
 ```json
-{
-
-}
+  "Essa requisição não possoui corpo"
 ```
 
 > Exemplo do retorno
 
 ```json
-{
-
-}
+  "Não há conteudo de retorno ao deletar"
 ```

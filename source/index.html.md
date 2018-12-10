@@ -93,6 +93,7 @@ includes:
   - invoices/inv_bloqueio
   - invoices/inv_aprova
   - invoices/inv_apaga
+  - http_status/http_status
   - invoices_rules/invoices_rules
   - invoices_rules/invrule_cria
   - invoices_rules/invrule_campos
