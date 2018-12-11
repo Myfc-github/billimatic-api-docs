@@ -4506,14 +4506,157 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
 <p>Exemplo de Corpo</p>
 </blockquote>
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-
+  </span><span class="s2">"invoice_rule"</span><span class="p">:</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"contract_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">11986</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"gross_value"</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Regra de faturamento teste para Doc"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"nfe_body"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Nfe Teste para Regra de Faturamento"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"charge_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"fixed_day"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"additional_information"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Teste Documentacao"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"init_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"01-12-2018"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"period_unit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"monthly"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"month_quantity"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"accrual_month_quantity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"same_month"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="s2">"management_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"manual"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"days_until_automatic_nfe_emission"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"services"</span><span class="p">:[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"service_item_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">383</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Teste"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"units"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"unit_value"</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">],</span><span class="w">
+      </span><span class="s2">"scheduled_updates"</span><span class="p">:</span><span class="w">
+      </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"service_item_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">383</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"init_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"12-12-2018"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"month_quantity"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"price_index"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ipca"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"days_until_update"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+      </span><span class="p">],</span><span class="w">
+      </span><span class="s2">"receivables_additional_information"</span><span class="p">:</span><span class="w">
+       </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"parcel_number"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"day_number"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"day_quantity"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"only_business_days"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"month_quantity"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
+       </span><span class="p">},</span><span class="w">
+      </span><span class="s2">"payment_information"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+         </span><span class="s2">"payment_method"</span><span class="p">:</span><span class="w"> </span><span class="s2">"billet"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
 <blockquote>
 <p>Exemplo do retorno</p>
 </blockquote>
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-
+    </span><span class="s2">"invoice_rule"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">184574</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"contract_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">11986</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"issue_date"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"estimated_issue_date"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"gross_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"100.0"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"payment_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"100.0"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Regra de faturamento teste para Doc"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"to_emit"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"cancelled_automatically"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"nfe_service"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"nfe_verification"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"nfe_issue_date"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"nfe_body"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Nfe Teste para Regra de Faturamento"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"nfe_issued"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"number"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10/12/2018 17:03:19 -02:00"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"management_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"manual"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"accrual_date"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"comments"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"customer_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1954</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"customer_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Company"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"emites_service_values_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"emites_service_value_name"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"finance_category"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"finance_revenue_center"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"myfinance_sale_account_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"myfinance_sale_account_name"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"cobrato_charge_config_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"cobrato_charge_config_name"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"cobrato_charge_template_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"cobrato_charge_template_name"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"days_until_automatic_nfe_emission"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"automatic_nfe_issue_date"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"automatic_email_template_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"approval_status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"approved"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"notification_ruler_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"notify_customer"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"apply_negative_updates"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"receivables"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+        </span><span class="s2">"services"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">246219</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Serviço Teste Doc"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Teste"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"unit_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"100.0"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"units"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1.0"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"100.0"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">],</span><span class="w">
+        </span><span class="s2">"attachments"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+        </span><span class="s2">"payment_information"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">28410</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"payment_method"</span><span class="p">:</span><span class="w"> </span><span class="s2">"billet"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"cobrato_card_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"--"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"card_expiration_month"</span><span class="p">:</span><span class="w"> </span><span class="s2">"--"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"card_expiration_year"</span><span class="p">:</span><span class="w"> </span><span class="s2">"--"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"installments"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10/12/2018 17:03:19 -02:00"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"additional_information"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">7683</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"init_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-12-01"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Teste Documentacao"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"period_unit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"monthly"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"month_quantity"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"end_date"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10/12/2018 17:03:19 -02:00"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"accrual_month_quantity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"same_month"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"scheduled_updates"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">527</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"invoice_rule_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">184574</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"execution_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-12-12"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"month_quantity"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"price_index"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ipca"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-12-10T17:03:19.193-02:00"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-12-10T17:03:19.193-02:00"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"init_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-12-12"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"days_until_update"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"remind_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-12-02"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"notified"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"service_item_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">383</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">],</span><span class="w">
+        </span><span class="s2">"receivables_additional_information"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">7690</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"day_number"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"parcel_number"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"invoice_rule_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">184574</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-12-10T17:03:19.196-02:00"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-12-10T17:03:19.196-02:00"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"day_quantity"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"month_quantity"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"only_business_days"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
           <p><br>
@@ -4819,15 +4962,325 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
 <blockquote>
 <p>Exemplo de Corpo</p>
 </blockquote>
-<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-
-</span><span class="p">}</span><span class="w">
+<pre class="highlight json tab-json"><code><span class="w">  </span><span class="s2">"Essa requisição não possoui corpo"</span><span class="w">
 </span></code></pre>
 <blockquote>
 <p>Exemplo do retorno</p>
 </blockquote>
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-
+    </span><span class="s2">"invoice_rules"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">184574</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"contract_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">11986</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"issue_date"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"estimated_issue_date"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"gross_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"100.0"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"payment_value"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Regra de faturamento teste para Doc"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"to_emit"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"cancelled_automatically"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"nfe_service"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"nfe_verification"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"nfe_issue_date"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"nfe_body"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Nfe Teste para Regra de Faturamento"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"nfe_issued"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"number"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10/12/2018 17:03:19 -02:00"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"management_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"manual"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"accrual_date"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"comments"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"customer_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1954</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"customer_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Company"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"emites_service_values_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"emites_service_value_name"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"finance_category"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"finance_revenue_center"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"myfinance_sale_account_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"myfinance_sale_account_name"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"cobrato_charge_config_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"cobrato_charge_config_name"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"cobrato_charge_template_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"cobrato_charge_template_name"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"days_until_automatic_nfe_emission"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"automatic_nfe_issue_date"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"automatic_email_template_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"approval_status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"approved"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"notification_ruler_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"notify_customer"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"apply_negative_updates"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"receivables"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+            </span><span class="s2">"services"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">246219</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Serviço Teste Doc"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Teste"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"unit_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"100.0"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"units"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1.0"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"100.0"</span><span class="w">
+                </span><span class="p">}</span><span class="w">
+            </span><span class="p">],</span><span class="w">
+            </span><span class="s2">"attachments"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+            </span><span class="s2">"payment_information"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">28410</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"payment_method"</span><span class="p">:</span><span class="w"> </span><span class="s2">"billet"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"cobrato_card_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"--"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"card_expiration_month"</span><span class="p">:</span><span class="w"> </span><span class="s2">"--"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"card_expiration_year"</span><span class="p">:</span><span class="w"> </span><span class="s2">"--"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"installments"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10/12/2018 17:03:19 -02:00"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="s2">"additional_information"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">7683</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"init_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-12-01"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Teste Documentacao"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"period_unit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"monthly"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"month_quantity"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"end_date"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10/12/2018 17:03:19 -02:00"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"accrual_month_quantity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"same_month"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="s2">"scheduled_updates"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">527</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"invoice_rule_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">184574</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"execution_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-12-12"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"month_quantity"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"price_index"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ipca"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-12-10T17:03:19.193-02:00"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-12-10T17:03:19.193-02:00"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"init_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-12-12"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"days_until_update"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"remind_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-12-02"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"notified"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"service_item_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">383</span><span class="w">
+                </span><span class="p">}</span><span class="w">
+            </span><span class="p">],</span><span class="w">
+            </span><span class="s2">"receivables_additional_information"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">7690</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"day_number"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"parcel_number"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"invoice_rule_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">184574</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-12-10T17:03:19.196-02:00"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-12-10T17:03:19.196-02:00"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"day_quantity"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"month_quantity"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"only_business_days"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">184573</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"contract_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">11986</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"issue_date"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"estimated_issue_date"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"gross_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"100.0"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"payment_value"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Regra de faturamento teste para Doc"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"to_emit"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"cancelled_automatically"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"nfe_service"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"nfe_verification"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"nfe_issue_date"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"nfe_body"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Nfe Teste para Regra de Faturamento"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"nfe_issued"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"number"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10/12/2018 16:32:26 -02:00"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"management_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"manual"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"accrual_date"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"comments"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"customer_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1954</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"customer_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Company"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"emites_service_values_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"emites_service_value_name"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"finance_category"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"finance_revenue_center"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"myfinance_sale_account_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"myfinance_sale_account_name"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"cobrato_charge_config_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"cobrato_charge_config_name"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"cobrato_charge_template_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"cobrato_charge_template_name"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"days_until_automatic_nfe_emission"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"automatic_nfe_issue_date"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"automatic_email_template_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"approval_status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"approved"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"notification_ruler_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"notify_customer"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"apply_negative_updates"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"receivables"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+            </span><span class="s2">"services"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+            </span><span class="s2">"attachments"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+            </span><span class="s2">"payment_information"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">28409</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"payment_method"</span><span class="p">:</span><span class="w"> </span><span class="s2">"billet"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"cobrato_card_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"--"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"card_expiration_month"</span><span class="p">:</span><span class="w"> </span><span class="s2">"--"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"card_expiration_year"</span><span class="p">:</span><span class="w"> </span><span class="s2">"--"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"installments"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10/12/2018 16:32:26 -02:00"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="s2">"additional_information"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"scheduled_updates"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+            </span><span class="s2">"receivables_additional_information"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">7689</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"day_number"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"parcel_number"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"invoice_rule_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">184573</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-12-10T16:32:26.606-02:00"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-12-10T16:32:26.606-02:00"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"day_quantity"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"month_quantity"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"only_business_days"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">184572</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"contract_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">11986</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"issue_date"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"estimated_issue_date"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"gross_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"100.0"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"payment_value"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Regra de faturamento teste para Doc"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"to_emit"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"cancelled_automatically"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"nfe_service"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"nfe_verification"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"nfe_issue_date"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"nfe_body"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Nfe Teste para Regra de Faturamento"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"nfe_issued"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"number"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10/12/2018 16:31:47 -02:00"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"management_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"manual"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"accrual_date"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"comments"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"customer_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1954</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"customer_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Company"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"emites_service_values_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"emites_service_value_name"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"finance_category"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"finance_revenue_center"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"myfinance_sale_account_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"myfinance_sale_account_name"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"cobrato_charge_config_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"cobrato_charge_config_name"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"cobrato_charge_template_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"cobrato_charge_template_name"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"days_until_automatic_nfe_emission"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"automatic_nfe_issue_date"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"automatic_email_template_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"approval_status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"approved"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"notification_ruler_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"notify_customer"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"apply_negative_updates"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"receivables"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+            </span><span class="s2">"services"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+            </span><span class="s2">"attachments"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+            </span><span class="s2">"payment_information"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">28408</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"payment_method"</span><span class="p">:</span><span class="w"> </span><span class="s2">"billet"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"cobrato_card_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"--"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"card_expiration_month"</span><span class="p">:</span><span class="w"> </span><span class="s2">"--"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"card_expiration_year"</span><span class="p">:</span><span class="w"> </span><span class="s2">"--"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"installments"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10/12/2018 16:31:47 -02:00"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="s2">"additional_information"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"scheduled_updates"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+            </span><span class="s2">"receivables_additional_information"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">7688</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"day_number"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"parcel_number"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"invoice_rule_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">184572</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-12-10T16:31:47.812-02:00"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-12-10T16:31:47.812-02:00"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"day_quantity"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"month_quantity"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"only_business_days"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">184521</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"contract_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">11986</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"issue_date"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"estimated_issue_date"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"gross_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"700.0"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"payment_value"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"teste"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"to_emit"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"cancelled_automatically"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"nfe_service"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"nfe_verification"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"nfe_issue_date"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"nfe_body"</span><span class="p">:</span><span class="w"> </span><span class="s2">"$DESCRICAO"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"nfe_issued"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"number"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10/12/2018 10:02:38 -02:00"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"management_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"manual"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"accrual_date"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"comments"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"customer_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1954</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"customer_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Company"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"emites_service_values_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"emites_service_value_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"finance_category"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"finance_revenue_center"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"myfinance_sale_account_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"myfinance_sale_account_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"cobrato_charge_config_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"cobrato_charge_config_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"cobrato_charge_template_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"cobrato_charge_template_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"days_until_automatic_nfe_emission"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"automatic_nfe_issue_date"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"automatic_email_template_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"approval_status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"approved"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"notification_ruler_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"notify_customer"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"apply_negative_updates"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"receivables"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+            </span><span class="s2">"services"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">246189</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Serviço Teste Doc"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Serviço criado para testes internos da documentação"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"unit_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"700.0"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"units"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1.0"</span><span class="p">,</span><span class="w">
+                    </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"700.0"</span><span class="w">
+                </span><span class="p">}</span><span class="w">
+            </span><span class="p">],</span><span class="w">
+            </span><span class="s2">"attachments"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+            </span><span class="s2">"payment_information"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">28378</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"payment_method"</span><span class="p">:</span><span class="w"> </span><span class="s2">"billet"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"cobrato_card_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"--"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"card_expiration_month"</span><span class="p">:</span><span class="w"> </span><span class="s2">"--"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"card_expiration_year"</span><span class="p">:</span><span class="w"> </span><span class="s2">"--"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"installments"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10/12/2018 10:02:38 -02:00"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="s2">"additional_information"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">7682</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"init_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-12-10"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Regra de Fat Teste"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"period_unit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"monthly"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"month_quantity"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"end_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-12-31"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10/12/2018 10:02:38 -02:00"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"accrual_month_quantity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"same_month"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="s2">"scheduled_updates"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+            </span><span class="s2">"receivables_additional_information"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">7687</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"day_number"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"parcel_number"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"invoice_rule_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">184521</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-12-10T10:02:38.824-02:00"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-12-10T10:02:38.824-02:00"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"day_quantity"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"month_quantity"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"only_business_days"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
           <h2 id='atualiza-regra-faturamento'>Atualiza Regra Faturamento</h2>
@@ -4844,14 +5297,114 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
 <p>Exemplo de Corpo</p>
 </blockquote>
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-
+  </span><span class="s2">"invoice_rule"</span><span class="p">:</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Edição da Regra de faturamento teste para Doc"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
 <blockquote>
 <p>Exemplo do retorno</p>
 </blockquote>
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-
+    </span><span class="s2">"invoice_rule"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">184574</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"contract_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">11986</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"issue_date"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"estimated_issue_date"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"gross_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"100.0"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"payment_value"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Edição da Regra de faturamento teste para Doc"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"to_emit"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"cancelled_automatically"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"nfe_service"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"nfe_verification"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"nfe_issue_date"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"nfe_body"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Nfe Teste para Regra de Faturamento"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"nfe_issued"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"number"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10/12/2018 17:03:19 -02:00"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"management_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"manual"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"accrual_date"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"comments"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"customer_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1954</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"customer_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Company"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"emites_service_values_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"emites_service_value_name"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"finance_category"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"finance_revenue_center"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"myfinance_sale_account_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"myfinance_sale_account_name"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"cobrato_charge_config_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"cobrato_charge_config_name"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"cobrato_charge_template_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"cobrato_charge_template_name"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"days_until_automatic_nfe_emission"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"automatic_nfe_issue_date"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"automatic_email_template_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"approval_status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"approved"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"notification_ruler_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"notify_customer"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"apply_negative_updates"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"receivables"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+        </span><span class="s2">"services"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">246219</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Serviço Teste Doc"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Teste"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"unit_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"100.0"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"units"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1.0"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"100.0"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">],</span><span class="w">
+        </span><span class="s2">"attachments"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+        </span><span class="s2">"payment_information"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">28410</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"payment_method"</span><span class="p">:</span><span class="w"> </span><span class="s2">"billet"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"cobrato_card_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"--"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"card_expiration_month"</span><span class="p">:</span><span class="w"> </span><span class="s2">"--"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"card_expiration_year"</span><span class="p">:</span><span class="w"> </span><span class="s2">"--"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"installments"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10/12/2018 17:03:19 -02:00"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"additional_information"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">7683</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"init_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-12-01"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Teste Documentacao"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"period_unit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"monthly"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"month_quantity"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"end_date"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10/12/2018 17:03:19 -02:00"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"accrual_month_quantity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"same_month"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"scheduled_updates"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">527</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"invoice_rule_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">184574</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"execution_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-12-12"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"month_quantity"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"price_index"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ipca"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-12-10T17:03:19.193-02:00"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-12-11T00:00:35.064-02:00"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"init_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-12-12"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"days_until_update"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"remind_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-12-02"</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"notified"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"service_item_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">383</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">],</span><span class="w">
+        </span><span class="s2">"receivables_additional_information"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">7690</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"day_number"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"parcel_number"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"invoice_rule_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">184574</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-12-10T17:03:19.196-02:00"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-12-10T17:03:19.196-02:00"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"day_quantity"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"month_quantity"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"only_business_days"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
           <h2 id='excluir-regra-faturamento'>Excluir Regra Faturamento</h2>
@@ -4867,17 +5420,44 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
 <blockquote>
 <p>Exemplo de Corpo</p>
 </blockquote>
-<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-
-</span><span class="p">}</span><span class="w">
+<pre class="highlight json tab-json"><code><span class="w">    </span><span class="s2">"Essa requisição não possoui corpo"</span><span class="w">
 </span></code></pre>
 <blockquote>
 <p>Exemplo do retorno</p>
 </blockquote>
-<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-
-</span><span class="p">}</span><span class="w">
+<pre class="highlight json tab-json"><code><span class="w">    </span><span class="s2">"Não há conteudo de retorno ao deletar"</span><span class="w">
 </span></code></pre>
+          <p><br>
+<p><strong>HTTP Status Code</strong></p></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Observações</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td>Encontrado</td>
+</tr>
+<tr>
+<td>400</td>
+<td>Bad Request</td>
+</tr>
+<tr>
+<td>401</td>
+<td>Não Autorizado</td>
+</tr>
+<tr>
+<td>404</td>
+<td>Não Encontrado</td>
+</tr>
+<tr>
+<td>422</td>
+<td>Entidade não processável</td>
+</tr>
+</tbody></table>
+
       </div>
     </div>
 
