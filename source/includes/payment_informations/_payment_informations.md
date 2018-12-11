@@ -16,15 +16,11 @@ Realiza troca de forma de pagamento em uma assinatura
 > Exemplo de Corpo
 
 ```json
-{
 
-}
 ```
 
 > Exemplo do retorno
 
 ```json
-{
 
-}
 ```
