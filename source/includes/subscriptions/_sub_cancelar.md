@@ -14,9 +14,7 @@ Cancela uma assinatura
 > Exemplo de Corpo
 
 ```json
-{
-
-}
+  "Essa requisição não possoui corpo"
 ```
 
 > Exemplo do retorno

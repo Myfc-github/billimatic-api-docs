@@ -14,15 +14,11 @@ Mostra detalhes de uma assinatura através de seu token
 > Exemplo de Corpo
 
 ```json
-{
-
-}
+  "Essa requisição não possoui corpo"
 ```
 
 > Exemplo do retorno
 
 ```json
-{
 
-}
 ```
