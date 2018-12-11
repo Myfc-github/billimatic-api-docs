@@ -100,6 +100,7 @@ includes:
   - invoices_rules/invrule_lista
   - invoices_rules/invrule_atualiza
   - invoices_rules/invrule_apaga
+  - http_status/http_status
 
 search: true
 ---
