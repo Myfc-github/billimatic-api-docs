@@ -6,9 +6,13 @@ Atualiza um contrato
   <div class="endpoint-data">
     <i class="label label-get">PATCH</i>
      api/v1/contracts/{id}
+     api/v1/contracts/11985
   </div>
 </div>
 
+Onde 11985 é o ID do contrato que deseja atualizar
+
+O corpo da requisição deverá conter somente o(s) campo(s) que deseja(m) ser atualizado(s), tomando como base a mesma estrutura de criação.
 
 > Exemplo de Corpo
 

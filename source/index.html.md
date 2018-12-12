@@ -83,6 +83,7 @@ includes:
   - checkouts/chk_checkout
   - plan_modifications/plan_modifications
   - payment_informations/payment_informations
+  - payment_informations/pay_inf_campos
   - invoices/invoices
   - invoices/inv_cria
   - invoices/inv_campos

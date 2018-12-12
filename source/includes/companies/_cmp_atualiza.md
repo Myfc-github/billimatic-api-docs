@@ -9,27 +9,13 @@ Atualiza uma empresa
   </div>
 </div>
 
+ O corpo da requisição deverá conter somente o(s) campo(s) que deseja(m) ser atualizado(s), tomando como base a mesma estrutura de criação.
 
 > Exemplo de Corpo
 
 ```json
 {
-  "name": "",
-  "company_name": "",
-  "cnpj": "",
-  "state_inscription": "",
-  "city_inscription": "",
   "address": "Nossa Senhora das Vitórias",
-  "number": "",
-  "complement": "",
-  "district": "",
-  "zipcode": "",
-  "city": "",
-  "state": "",
-  "contacts": "",
-  "billing_contacts": "",
-  "comments": "",
-  "client_since": "date"
 }
 ```
 
