@@ -9,53 +9,14 @@ Atualiza um faturamento
   </div>
 </div>
 
+O corpo da requisição deverá conter somente o(s) campo(s) que deseja(m) ser atualizado(s), tomando como base a mesma estrutura de criação.
 
 > Exemplo de Corpo
 
 ```json
 {
   "invoice": {
-      "contract_id": 11986,
-      "gross_value": 700.0,
-      "number": 2,
-      "issue_date": "02-12-2018",
-      "estimated_issue_date": "date",
-      "accrual_date": "",
       "description": "Teste de alteração da descrição do faturamento para doc",
-      "approval_status": "",
-      "nfse_service": "",
-      "nfse_verification": "",
-      "payment_value": "decimal",
-      "finance_category": "",
-      "finance_revenue_center": "",
-      "myfinance_sale_account_id": "",
-      "myfinance_sale_account_name": "",
-      "nfe_body": "Nfe teste",
-      "management_type": "",
-      "automatic_email_template_id": "",
-      "notification_ruler_id": "",
-      "days_until_automatic_nfe_emission": 0,
-      "comments": 0,
-      "receivables":
-      [
-          {
-        	"id": 182348,
-            "value": 100,
-            "due_date": "02-12-2019"
-          }
-      ],
-      "services": [
-        {
-        "service_item_id": "383",
-        "description": "Teste",
-        "units": 100,
-        "unit_value": 100,
-        "value": 100
-        }
-      ],
-      "payment_information": {
-        "payment_method": "billet"
-      }
     }
 }
 

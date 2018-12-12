@@ -9,6 +9,7 @@ Atualiza uma regra de faturamento
   </div>
 </div>
 
+O corpo da requisição deverá conter somente o(s) campo(s) que deseja(m) ser atualizado(s), tomando como base a mesma estrutura de criação.
 
 > Exemplo de Corpo
 
