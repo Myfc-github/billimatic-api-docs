@@ -14,7 +14,7 @@ Onde "teste" deverá ser o nome do seu contrato
 > Exemplo de Corpo
 
 ```json
-  "Essa requisição não possoui corpo"
+  "Essa requisição não possui corpo"
 ```
 
 > Exemplo do retorno

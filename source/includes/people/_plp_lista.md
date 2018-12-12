@@ -14,7 +14,7 @@ Lista as pessoas em uma conta
 > Exemplo de Corpo
 
 ```json
- "Essa requisição não possoui corpo"
+ "Essa requisição não possui corpo"
 ```
 
 > Exemplo do retorno

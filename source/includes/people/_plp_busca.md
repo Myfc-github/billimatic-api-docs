@@ -14,7 +14,7 @@ Onde cpf=82868688977 será o número do cpf que deseja efetuar a busca.
 > Exemplo de Corpo
 
 ```json
- "Essa requisição não possoui corpo"
+ "Essa requisição não possui corpo"
 ```
 
 > Exemplo do retorno

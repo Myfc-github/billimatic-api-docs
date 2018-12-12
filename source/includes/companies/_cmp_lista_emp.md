@@ -14,7 +14,7 @@ Lista as empresas em uma conta
 
 ```json
 {
-  "Essa requisição não possoui corpo"
+  "Essa requisição não possui corpo"
 }
 ```
 

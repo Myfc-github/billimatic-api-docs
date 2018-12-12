@@ -13,7 +13,7 @@ Lista as regras de faturamento em um contrato
 > Exemplo de Corpo
 
 ```json
-  "Essa requisição não possoui corpo"
+  "Essa requisição não possui corpo"
 ```
 
 > Exemplo do retorno

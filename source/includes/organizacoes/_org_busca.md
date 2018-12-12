@@ -14,7 +14,7 @@ Onde o cnpj=57757975000186 deverá conter o número do cnpj desejado
 > Exemplo de Corpo
 
 ```json
-   "Essa requisição não possoui corpo"
+   "Essa requisição não possui corpo"
 ```
 
 > Exemplo do retorno

@@ -13,7 +13,7 @@ Mostra os detalhes de uma empresa
 > Exemplo de Corpo
 
 ```json
-  "Essa requisição não possoui corpo"
+  "Essa requisição não possui corpo"
 ```
 
 > Exemplo do retorno
