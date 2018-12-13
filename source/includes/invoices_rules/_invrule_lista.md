@@ -1,4 +1,4 @@
-## Lista Regras Faturamento
+## Lista Regra(s) Faturamento(s)
 
 Lista as regras de faturamento em um contrato
 
@@ -13,7 +13,7 @@ Lista as regras de faturamento em um contrato
 > Exemplo de Corpo
 
 ```json
-  "Essa requisição não possoui corpo"
+  "Essa requisição não possui corpo"
 ```
 
 > Exemplo do retorno

@@ -1,4 +1,4 @@
-## Lista Planos
+## Lista Plano(s)
 
 Lista todos os planos de uma organização
 
@@ -14,7 +14,7 @@ Exemplo: api/v1/organizations/2115/plans
 > Exemplo de Corpo
 
 ```json
-  "Essa requisição não possoui corpo"
+  "Essa requisição não possui corpo"
 ```
 
 > Exemplo do retorno

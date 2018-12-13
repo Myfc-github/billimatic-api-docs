@@ -18,16 +18,14 @@ Exemplo:<br>
 </code>
 <br>
 
-Veja o exemplo ao lado em como fazer sua autenticação ;)
+Veja o exemplo abaixo em como fazer sua autenticação ;)
 
 > Exemplo de requisição para autenticação
 
-
 ```shell
-GET http://app.billimatic.com.br/api/v1/organizations \
--H 'authorization: Token token=3d12813150rd61l126216n17605zs1q4' \
--H 'content-type: application/json'
-
+  GET http://app.billimatic.com.br/api/v1/organizations \
+  -H 'authorization: Token token=3d12813150rd61l126216n17605zs1q4' \
+  -H 'content-type: application/json'
 ```
 > Exemplo do retorno
 

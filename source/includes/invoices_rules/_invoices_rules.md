@@ -1,1 +1,1 @@
-# Regras de Faturamento
+# Regra de Faturamentos

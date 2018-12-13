@@ -1,4 +1,4 @@
-## Criar Contrato
+## Cria Contrato
 
 Cria novo contrato
 

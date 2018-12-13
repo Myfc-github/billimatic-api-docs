@@ -1,4 +1,4 @@
-## Criar Plano
+## Cria Plano
 
 Cria um novo plano
 

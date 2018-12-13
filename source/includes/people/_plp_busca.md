@@ -1,6 +1,6 @@
-## Busca Pessoas
+## Busca Pessoa
 
-Realiza busca de pessoas
+Realiza busca de uma pessoa pelo seu cpf
 
 <div class="api-endpoint">
   <div class="endpoint-data">
@@ -14,7 +14,7 @@ Onde cpf=82868688977 será o número do cpf que deseja efetuar a busca.
 > Exemplo de Corpo
 
 ```json
- "Essa requisição não possoui corpo"
+ "Essa requisição não possui corpo"
 ```
 
 > Exemplo do retorno

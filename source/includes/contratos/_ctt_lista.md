@@ -1,4 +1,4 @@
-## Lista Contratos
+## Lista Contrato(s)
 
 Lista os contratos ativos de uma organização
 
@@ -13,7 +13,7 @@ Lista os contratos ativos de uma organização
 > Exemplo de Corpo
 
 ```json
-  "Essa requisição não possoui corpo"
+  "Essa requisição não possui corpo"
 ```
 
 > Exemplo do retorno

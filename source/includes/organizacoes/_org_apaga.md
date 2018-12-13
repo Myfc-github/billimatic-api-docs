@@ -1,4 +1,4 @@
-## Excluir Organização
+## Exclui Organização
 
 Exclui uma organização
 
@@ -13,7 +13,7 @@ Exclui uma organização
 > Exemplo de Corpo
 
 ```json
-  "Essa requisição não possoui corpo"
+  "Essa requisição não possui corpo"
 ```
 
 > Exemplo do retorno

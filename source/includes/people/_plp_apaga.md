@@ -1,4 +1,4 @@
-## Excluir Pessoa
+## Exclui Pessoa
 
 Excluir uma pessoa.
 
@@ -13,7 +13,7 @@ Excluir uma pessoa.
 > Exemplo de Corpo
 
 ```json
-  "Essa requisição não possoui corpo"
+  "Essa requisição não possui corpo"
 ```
 
 > Exemplo do retorno

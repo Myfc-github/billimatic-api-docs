@@ -1,7 +1,6 @@
-## Lista Pessoas
+## Lista Pessoa(s)
 
-Lista as pessoas em uma conta
-
+Lista a(s) pessoa(s) em uma conta
 
 <div class="api-endpoint">
   <div class="endpoint-data">
@@ -14,7 +13,7 @@ Lista as pessoas em uma conta
 > Exemplo de Corpo
 
 ```json
- "Essa requisição não possoui corpo"
+ "Essa requisição não possui corpo"
 ```
 
 > Exemplo do retorno

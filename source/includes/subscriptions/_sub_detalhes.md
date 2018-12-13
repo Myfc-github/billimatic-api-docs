@@ -15,7 +15,7 @@ Onde c6dd212d12c665938616475c8fd6e528 deve ser o token da assinatura em que dese
 > Exemplo de Corpo
 
 ```json
-  "Essa requisição não possoui corpo"
+  "Essa requisição não possui corpo"
 ```
 
 > Exemplo do retorno

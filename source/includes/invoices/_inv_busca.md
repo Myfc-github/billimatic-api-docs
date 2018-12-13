@@ -15,7 +15,7 @@ Onde deseja que o faturamento esteja entre as datas 01/04/2018 a 31/12/2018
 > Exemplo de Corpo
 
 ```json
-  "Essa requisição não possoui corpo"
+  "Essa requisição não possui corpo"
 ```
 
 > Exemplo do retorno

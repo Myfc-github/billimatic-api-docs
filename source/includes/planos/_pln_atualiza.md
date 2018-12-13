@@ -1,4 +1,4 @@
-## Atualizar Plano
+## Atualiza Plano
 
 Atualiza um plano
 

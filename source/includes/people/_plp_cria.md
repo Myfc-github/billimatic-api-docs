@@ -1,4 +1,4 @@
-## Cria Pessoas
+## Cria Pessoa
 
 Cria uma nova pessoa.
 

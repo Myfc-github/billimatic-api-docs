@@ -1,4 +1,4 @@
-## Exluir Plano
+## Exclui Plano
 
 Exclui um plano
 
@@ -14,7 +14,7 @@ Exemplo: api/v1/organizations/2159/plans/33
 > Exemplo de Corpo
 
 ```json
-  "Essa requisição não possoui corpo"
+  "Essa requisição não possui corpo"
 ```
 
 > Exemplo do retorno

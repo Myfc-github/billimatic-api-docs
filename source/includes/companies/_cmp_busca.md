@@ -1,6 +1,6 @@
-## Busca Empresas
+## Busca Empresa
 
-Realiza busca de empresas
+Realiza busca de empresa pelo número de cnpj
 
 <div class="api-endpoint">
   <div class="endpoint-data">
@@ -14,7 +14,7 @@ Onde o cnpj=55391268000193 deverá conter o número do cnpj desejado
 > Exemplo de Corpo
 
 ```json
-  "Essa requisição não possoui corpo"
+  "Essa requisição não possui corpo"
 ```
 
 > Exemplo do retorno

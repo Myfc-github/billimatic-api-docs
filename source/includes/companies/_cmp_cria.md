@@ -1,4 +1,4 @@
-## Cria Empresas
+## Cria Empresa
 
 Cria uma nova empresa
 
