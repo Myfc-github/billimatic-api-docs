@@ -1,4 +1,4 @@
-## Atualiza Empresas
+## Atualiza Empresa
 
 Atualiza uma empresa
 

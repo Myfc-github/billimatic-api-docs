@@ -1,4 +1,4 @@
-## Lista Planos
+## Lista Plano(s)
 
 Lista todos os planos de uma organização
 

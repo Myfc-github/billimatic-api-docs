@@ -1,4 +1,4 @@
-## Criar Organização
+## Cria Organização
 
 Cria nova organização
 

@@ -1,4 +1,4 @@
-## Buscar Serviço
+## Busca Serviço
 
 Realiza busca de serviços
 

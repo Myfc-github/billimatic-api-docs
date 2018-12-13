@@ -1,4 +1,4 @@
-## Excluir Faturamento
+## Exclui Faturamento
 
 Excluir um faturamento
 

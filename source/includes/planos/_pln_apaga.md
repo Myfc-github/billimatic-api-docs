@@ -1,4 +1,4 @@
-## Exluir Plano
+## Exclui Plano
 
 Exclui um plano
 

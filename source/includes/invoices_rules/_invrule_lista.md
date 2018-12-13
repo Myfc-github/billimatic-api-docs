@@ -1,4 +1,4 @@
-## Lista Regras Faturamento
+## Lista Regra(s) Faturamento(s)
 
 Lista as regras de faturamento em um contrato
 

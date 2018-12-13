@@ -1,6 +1,6 @@
-## Busca Pessoas
+## Busca Pessoa
 
-Realiza busca de pessoas
+Realiza busca de uma pessoa pelo seu cpf
 
 <div class="api-endpoint">
   <div class="endpoint-data">

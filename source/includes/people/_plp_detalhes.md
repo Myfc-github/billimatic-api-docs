@@ -1,4 +1,4 @@
-## Detalhes Pessoas
+## Detalhes Pessoa
 
 Mostra os detalhes de uma pessoa.
 

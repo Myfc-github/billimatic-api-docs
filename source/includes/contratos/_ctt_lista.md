@@ -1,4 +1,4 @@
-## Lista Contratos
+## Lista Contrato(s)
 
 Lista os contratos ativos de uma organização
 

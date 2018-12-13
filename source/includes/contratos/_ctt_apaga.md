@@ -1,4 +1,4 @@
-## Excluir Contrato
+## Exclui Contrato
 
 Exclui um contrato
 

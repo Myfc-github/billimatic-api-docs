@@ -1,6 +1,6 @@
-## Busca Empresas
+## Busca Empresa
 
-Realiza busca de empresas
+Realiza busca de empresa pelo número de cnpj
 
 <div class="api-endpoint">
   <div class="endpoint-data">

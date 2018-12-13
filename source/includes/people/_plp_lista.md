@@ -1,7 +1,6 @@
-## Lista Pessoas
+## Lista Pessoa(s)
 
-Lista as pessoas em uma conta
-
+Lista a(s) pessoa(s) em uma conta
 
 <div class="api-endpoint">
   <div class="endpoint-data">

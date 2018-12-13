@@ -1,4 +1,4 @@
-## Excluir Empresa
+## Exclui Empresa
 
 Exclui uma empresa
 

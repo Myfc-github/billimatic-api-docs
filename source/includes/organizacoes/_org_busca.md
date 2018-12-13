@@ -1,6 +1,6 @@
-## Buscar Organizações
+## Busca Organização
 
-Realiza busca de organizações
+Realiza busca de uma organização pelo cnpj
 
 <div class="api-endpoint">
   <div class="endpoint-data">
@@ -9,7 +9,7 @@ Realiza busca de organizações
   </div>
 </div>
 
-Onde o cnpj=57757975000186 deverá conter o número do cnpj desejado
+Onde o cnpj=57757975000186 deverá conter o número do cnpj desejado da busca
 
 > Exemplo de Corpo
 

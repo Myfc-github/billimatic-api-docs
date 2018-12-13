@@ -1,4 +1,4 @@
-## Excluir Organização
+## Exclui Organização
 
 Exclui uma organização
 

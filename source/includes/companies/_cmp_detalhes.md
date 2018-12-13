@@ -1,4 +1,4 @@
-## Detalhes Empresas
+## Detalhes Empresa
 
 Mostra os detalhes de uma empresa
 

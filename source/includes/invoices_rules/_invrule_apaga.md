@@ -1,4 +1,4 @@
-## Excluir Regra Faturamento
+## Exclui Regra Faturamento
 
 Excluir uma regra de faturamento
 

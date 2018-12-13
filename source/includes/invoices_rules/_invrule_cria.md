@@ -1,4 +1,4 @@
-## Criar Regra Faturamento
+## Cria Regra Faturamento
 
 Cria uma regra de faturamento
 

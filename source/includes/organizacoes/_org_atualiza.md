@@ -1,4 +1,4 @@
-## Atualizar Organização
+## Atualiza Organização
 
 Atualiza uma organização
 
@@ -9,6 +9,8 @@ Atualiza uma organização
   </div>
 </div>
 
+
+O corpo deverá conter somente os campos que deseja ser atualizados, tomando como base a mesma estrutura de criação.
 
 > Exemplo de Corpo
 

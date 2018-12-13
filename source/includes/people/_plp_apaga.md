@@ -1,4 +1,4 @@
-## Excluir Pessoa
+## Exclui Pessoa
 
 Excluir uma pessoa.
 

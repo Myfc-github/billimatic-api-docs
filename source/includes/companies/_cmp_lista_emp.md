@@ -1,6 +1,6 @@
-## Lista Empresas
+## Lista Empresa(s)
 
-Lista as empresas em uma conta
+Lista a(s) empresa(s) em uma conta
 
 <div class="api-endpoint">
   <div class="endpoint-data">
