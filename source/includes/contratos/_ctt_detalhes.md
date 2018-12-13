@@ -1,4 +1,4 @@
-## Detalhes Contratos
+## Detalhes Contrato
 
 Mostra detalhes de um contrato através de seu id
 

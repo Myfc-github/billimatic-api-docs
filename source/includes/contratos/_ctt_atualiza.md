@@ -1,4 +1,4 @@
-## Atualizar Contratos
+## Atualizar Contrato
 
 Atualiza um contrato
 

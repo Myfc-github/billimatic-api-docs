@@ -1,4 +1,4 @@
-## Busca Contratos
+## Busca Contrato
 
 Realiza busca de contratos
 
