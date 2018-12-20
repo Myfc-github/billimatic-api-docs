@@ -31,6 +31,7 @@
 
 <br>
 <strong> Campos node receivables_additional_information </strong>
+<p> Configurações das informações adicionais sobre contas a receber </p>
 
 |         Campo                        |          Finalidade
 | ------------------------------------ | ---------------------------------------------------------- |
@@ -46,6 +47,7 @@
 
 <br>
 <strong> Campos node services </strong>
+<p> Configurações de Serviços (Array) </p>
 
 |         Campo                        |          Finalidade
 | ------------------------------------ | --------------------------------------------------- |
@@ -59,7 +61,7 @@
 
 <br>
 <strong> Campos node scheduled_updates </strong><br>
-Configurações de reajuste automático (Array)
+<p> Configurações de reajuste automático (Array) </p>
 
 |         Campo                        |          Finalidade
 | ------------------------------------ | --------------------------------------------------- |
