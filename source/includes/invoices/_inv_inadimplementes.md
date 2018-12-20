@@ -1,4 +1,4 @@
-## Faturamento Inadimplementes
+## Faturamentos inadimplentes
 
 Lista os faturamentos inadimplentes de um contrato
 
