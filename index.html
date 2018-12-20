@@ -443,7 +443,7 @@
                     <a href="#buscar-faturamento" class="toc-h2 toc-link" data-title="Buscar Faturamento">Buscar Faturamento</a>
                   </li>
                   <li>
-                    <a href="#faturamento-inadimplementes" class="toc-h2 toc-link" data-title="Faturamento Inadimplementes">Faturamento Inadimplementes</a>
+                    <a href="#faturamentos-inadimplentes" class="toc-h2 toc-link" data-title="Faturamentos inadimplentes">Faturamentos inadimplentes</a>
                   </li>
                   <li>
                     <a href="#bloqueia-faturamento" class="toc-h2 toc-link" data-title="Bloqueia Faturamento">Bloqueia Faturamento</a>
@@ -457,7 +457,7 @@
               </ul>
           </li>
           <li>
-            <a href="#regra-de-faturamentos" class="toc-h1 toc-link" data-title="Regra de Faturamentos">Regra de Faturamentos</a>
+            <a href="#regras-de-faturamento" class="toc-h1 toc-link" data-title="Regras de Faturamento">Regras de Faturamento</a>
               <ul class="toc-list-h2">
                   <li>
                     <a href="#cria-regra-faturamento" class="toc-h2 toc-link" data-title="Cria Regra Faturamento">Cria Regra Faturamento</a>
@@ -477,7 +477,7 @@
               </ul>
           </li>
           <li>
-            <a href="#modelo-de-faturamento" class="toc-h1 toc-link" data-title="Modelo de Faturamento">Modelo de Faturamento</a>
+            <a href="#modelos-de-faturamento" class="toc-h1 toc-link" data-title="Modelos de faturamento">Modelos de faturamento</a>
               <ul class="toc-list-h2">
                   <li>
                     <a href="#detalhes-modelo-de-faturamento" class="toc-h2 toc-link" data-title="Detalhes Modelo de Faturamento">Detalhes Modelo de Faturamento</a>
@@ -4557,7 +4557,7 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
     </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
-          <h2 id='faturamento-inadimplementes'>Faturamento Inadimplementes</h2>
+          <h2 id='faturamentos-inadimplentes'>Faturamentos inadimplentes</h2>
 <p>Lista os faturamentos inadimplentes de um contrato</p>
 
 <div class="api-endpoint">
@@ -4969,7 +4969,7 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
 </tr>
 </tbody></table>
 
-          <h1 id='regra-de-faturamentos'>Regra de Faturamentos</h1>
+          <h1 id='regras-de-faturamento'>Regras de Faturamento</h1>
           <h2 id='cria-regra-faturamento'>Cria Regra Faturamento</h2>
 <p>Cria uma regra de faturamento</p>
 
@@ -6106,7 +6106,7 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
 </tr>
 </tbody></table>
 
-          <h1 id='modelo-de-faturamento'>Modelo de Faturamento</h1>
+          <h1 id='modelos-de-faturamento'>Modelos de faturamento</h1>
           <h2 id='detalhes-modelo-de-faturamento'>Detalhes Modelo de Faturamento</h2>
 <p>Mostra os detalhes de um Modelo de Faturamento</p>
 
@@ -6217,6 +6217,253 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
+          <p><br>
+<strong> Campos node Invoice Template </strong></p>
+
+<table><thead>
+<tr>
+<th>Campo</th>
+<th>Finalidade</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>name (string)</td>
+<td>Nome do Modelo</td>
+</tr>
+<tr>
+<td>gross_value (string)</td>
+<td>Valor bruto de cada faturamento</td>
+</tr>
+<tr>
+<td>month_quantity (integer)</td>
+<td>Periodicidade de Cobrança 1-mensalmente 2-bimestralmente 3-trimestralmente 6-semestralmente 12-anualmente</td>
+</tr>
+<tr>
+<td>period_unit (string, optional)</td>
+<td>Base de periodicidade para criação de faturamentos: &#39;weekly&#39; para base semanal ou &#39;monthly&#39; para base mensal</td>
+</tr>
+<tr>
+<td>management_type (string, optional)</td>
+<td>Tipo de Faturamento. (Opções: &#39;manual&#39; ou &#39;automatic&#39;)</td>
+</tr>
+<tr>
+<td>automatic_email_template_id (integer, optional)</td>
+<td>ID do Modelo de Notificação Automática (obrigatório para faturamentos automáticos)</td>
+</tr>
+<tr>
+<td>notification_ruler_id (integer, optional)</td>
+<td>ID da Régua de Cobrança para os faturamentos da regra</td>
+</tr>
+<tr>
+<td>accrual_month_quantity (string)</td>
+<td>Competência do faturamento (same_month =&gt; No mesmo mês da data do faturamento / previous_month =&gt; No mês anterior à data do faturamento)</td>
+</tr>
+<tr>
+<td>description (string, optional)</td>
+<td>Descrição</td>
+</tr>
+<tr>
+<td>emites_service_values_id (integer, optional)</td>
+<td>ID do Modelo de NFS-e (Emites)</td>
+</tr>
+<tr>
+<td>emites_service_value_name (string, optional)</td>
+<td>Nome do Modelo de NFS-e (Emites)</td>
+</tr>
+<tr>
+<td>days_until_automatic_nfe_emission (integer, optional)</td>
+<td>Quantidade de dias úteis após o recebimento para emissão automática de NF-e (0 para emissão na data do faturamento)</td>
+</tr>
+<tr>
+<td>nfe_body (string)</td>
+<td>Corpo da NFS-e</td>
+</tr>
+<tr>
+<td>payment_method (string, optional)</td>
+<td>Forma de pagamento (&#39;billet&#39; para boleto bancário, &#39;payment_gateway&#39; para cartão de crédito, &#39;transfer&#39; para transferência bancária)</td>
+</tr>
+<tr>
+<td>cobrato_charge_config_id (integer, optional)</td>
+<td>ID da Configuração de Cobrança (Cobrato)</td>
+</tr>
+<tr>
+<td>cobrato_charge_config_name (string, optional)</td>
+<td>Nome da Configuração de Cobrança (Cobrato)</td>
+</tr>
+<tr>
+<td>cobrato_charge_template_id (integer, optional)</td>
+<td>ID do Modelo de Cobrança (Cobrato)</td>
+</tr>
+<tr>
+<td>cobrato_charge_template_name (string, optional)</td>
+<td>Nome do Modelo de Cobrança (Cobrato)</td>
+</tr>
+<tr>
+<td>finance_category (string, optional)</td>
+<td>Categoria</td>
+</tr>
+<tr>
+<td>finance_revenue_center (string, optional)</td>
+<td>Centro de Receita</td>
+</tr>
+<tr>
+<td>myfinance_sale_account_id (integer, optional)</td>
+<td>ID da Conta de Recebível (obrigatório para criação de recebível no Myfinance)</td>
+</tr>
+<tr>
+<td>myfinance_sale_account_name (string, optional)</td>
+<td>Nome da Conta de Recebível (obrigatório para criação de recebível no Myfinance)</td>
+</tr>
+<tr>
+<td>notify_customer (boolean, optional)</td>
+<td>Notificar o cliente via e-mail sobre o(s) reajuste(s)</td>
+</tr>
+<tr>
+<td>apply_negative_updates (boolean, optional)</td>
+<td>Permitir reajuste(s) negativo(s)</td>
+</tr>
+</tbody></table>
+
+<p><br>
+<strong> Campos node receivables_additional_information </strong>
+<p> Configurações das informações adicionais sobre contas a receber </p></p>
+
+<table><thead>
+<tr>
+<th>Campo</th>
+<th>Finalidade</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>charge_type (string)</td>
+<td>Tipo da cobrança dos vencimentos. (fixed_day =&gt; No próximo dia x após a data do faturamento / last_day_of_month =&gt; No último dia do mês após a data do faturamento / day_quantity =&gt; Após x dias da data do faturamento / fixed_day_and_month_quantity =&gt; No dia x após x mes(es) da data do faturamento</td>
+</tr>
+<tr>
+<td>day_number (integer, optional)</td>
+<td>Dia do mês do vencimento. (se charge_type for fixed_day ou fixed_day_and_month_quantity)</td>
+</tr>
+<tr>
+<td>day_quantity (integer, optional)</td>
+<td>Quantidade de dias para o vencimento (se charge_type for day_quantity)</td>
+</tr>
+<tr>
+<td>month_quantity (integer, optional)</td>
+<td>Quantidade de meses para o vencimento. (Se charge_type for fixed_day_and_month_quantity)</td>
+</tr>
+<tr>
+<td>parcel_number (integer, optional)</td>
+<td>Número de parcelas do vencimento</td>
+</tr>
+<tr>
+<td>only_business_days (boolean, optional)</td>
+<td>Considerar apenas dias úteis (se charge_type for day_quantity ou last_day_of_month)</td>
+</tr>
+<tr>
+<td>create_parcels (boolean, optional)</td>
+<td>Cria parcelas?</td>
+</tr>
+</tbody></table>
+
+<p><br>
+<strong> Campos node services </strong>
+<p> Configurações de Serviços (Array) </p></p>
+
+<table><thead>
+<tr>
+<th>Campo</th>
+<th>Finalidade</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>Id do serviço</td>
+</tr>
+<tr>
+<td>name</td>
+<td>Name do serviço</td>
+</tr>
+<tr>
+<td>description</td>
+<td>Descrição do serviço</td>
+</tr>
+<tr>
+<td>unit_value</td>
+<td>Valor Unitário</td>
+</tr>
+<tr>
+<td>units</td>
+<td>Quantidade</td>
+</tr>
+<tr>
+<td>value</td>
+<td>Valor</td>
+</tr>
+</tbody></table>
+
+<p><br>
+<strong> Campos node scheduled_updates </strong><br>
+<p> Configurações de reajuste automático (Array) </p></p>
+
+<table><thead>
+<tr>
+<th>Campo</th>
+<th>Finalidade</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id (integer)</td>
+<td>Id do reajuste automático</td>
+</tr>
+<tr>
+<td>invoice_rule_id  (integer)</td>
+<td>Id da Regra de faturamento - Sempre será null</td>
+</tr>
+<tr>
+<td>execution_date (date)</td>
+<td>Data da execução - sempre será null</td>
+</tr>
+<tr>
+<td>month_quantity (integer)</td>
+<td>Periodicidade mensal do reajuste</td>
+</tr>
+<tr>
+<td>price_index (string)</td>
+<td>Índice financeiro para o reajuste (igpm, ipca, igpdi, inpc ou ipcfipe)</td>
+</tr>
+<tr>
+<td>created_at (datetime)</td>
+<td>Data de criação do scheduled_update</td>
+</tr>
+<tr>
+<td>updated_at (datetime)</td>
+<td>Data de alteração do scheduled_update</td>
+</tr>
+<tr>
+<td>init_date (date)</td>
+<td>Data de início do reajuste</td>
+</tr>
+<tr>
+<td>days_until_update (integer)</td>
+<td>Quantidade de dias para notificação antes do reajuste -</td>
+</tr>
+<tr>
+<td>remind_at</td>
+<td>Data de lembrate - sempre será null</td>
+</tr>
+<tr>
+<td>notified</td>
+<td>Flag de notificação - sempre será null</td>
+</tr>
+<tr>
+<td>service_item_id</td>
+<td>Id do item de serviço</td>
+</tr>
+<tr>
+<td>invoice_template_id</td>
+<td>Id do modelo da faturamento</td>
+</tr>
+</tbody></table>
+
           <h2 id='lista-modelo-de-faturamento-s'>Lista Modelo de Faturamento(s)</h2>
 <p>Lista os modelos de faturamento(s)</p>
 
