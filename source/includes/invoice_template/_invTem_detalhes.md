@@ -5,10 +5,9 @@ Mostra os detalhes de um Modelo de Faturamento
 <div class="api-endpoint">
   <div class="endpoint-data">
     <i class="label label-get">GET</i>
-     api/v1/organizations/{organizations_id}/invoice_templates
+     api/v1/organizations/{organizations_id}/invoice_templates/14
   </div>
 </div>
-
 
 
 > Exemplo de Corpo
