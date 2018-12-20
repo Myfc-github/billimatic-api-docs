@@ -86,6 +86,7 @@ includes:
   - payment_informations/pay_inf_campos
   - invoices/invoices
   - invoices/inv_cria
+  - invoices/inv_cria_com_template
   - invoices/inv_campos
   - invoices/inv_detalhes
   - invoices/inv_atualiza
@@ -98,10 +99,13 @@ includes:
   - invoices_rules/invoices_rules
   - invoices_rules/invrule_cria
   - invoices_rules/invrule_campos
+  - invoices_rules/invrule_cria_com_template
   - invoices_rules/invrule_lista
   - invoices_rules/invrule_atualiza
   - invoices_rules/invrule_apaga
   - http_status/http_status
+  - invoice_template/invoice_template
+  - invoice_template/invTem_detalhes
 
 search: true
 ---
