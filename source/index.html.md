@@ -86,7 +86,6 @@ includes:
   - payment_informations/pay_inf_campos
   - invoices/invoices
   - invoices/inv_cria
-  - invoices/inv_cria_com_template
   - invoices/inv_campos
   - invoices/inv_detalhes
   - invoices/inv_atualiza
