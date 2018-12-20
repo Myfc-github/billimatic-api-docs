@@ -105,6 +105,7 @@ includes:
   - http_status/http_status
   - invoice_template/invoice_template
   - invoice_template/invTem_detalhes
+  - invoice_template/invTem_campos
   - invoice_template/invTem_listagem
 
 search: true
