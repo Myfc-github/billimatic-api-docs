@@ -99,6 +99,7 @@ includes:
   - invoices_rules/invrule_cria
   - invoices_rules/invrule_campos
   - invoices_rules/invrule_cria_com_template
+  - invoices_rules/invrule_campos_template
   - invoices_rules/invrule_lista
   - invoices_rules/invrule_atualiza
   - invoices_rules/invrule_apaga
