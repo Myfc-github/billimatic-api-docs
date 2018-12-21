@@ -5595,6 +5595,192 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
+          <p><br>
+<strong> Geral </strong></p>
+
+<table><thead>
+<tr>
+<th>Campo</th>
+<th>Finalidade</th>
+<th>Obrigatório</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>invoice_template_id</td>
+<td>ID do Modelo de faturamento a ser utilizado</td>
+<td>Apenas se for criar uma regra usando um modelo</td>
+</tr>
+<tr>
+<td>additional_information</td>
+<td>Informações adicionais da regra</td>
+<td>Sim</td>
+</tr>
+<tr>
+<td>charge_type</td>
+<td>Tipo de cobrança nos vencimentos</td>
+<td>Apenas se há necessidade de sobrescrever ou completar dados de vencimento no node receivables_additional_information</td>
+</tr>
+</tbody></table>
+
+<p><strong> 1.1 additional_information </strong></p>
+
+<table><thead>
+<tr>
+<th>Campo</th>
+<th>Finalidade</th>
+<th>Obrigatório</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>title</td>
+<td>Título da regra</td>
+<td>Sim</td>
+</tr>
+<tr>
+<td>init_date</td>
+<td>Data de início da regra</td>
+<td>Sim</td>
+</tr>
+<tr>
+<td>end_date</td>
+<td>Data de fim da regra</td>
+<td>Não. Apenas se a regra não for recorrente (possui fim)</td>
+</tr>
+<tr>
+<td>month_quantity</td>
+<td>Periodicidade da regra</td>
+<td>Não. Apenas se for sobrescrever o campo após escolha do modelo</td>
+</tr>
+<tr>
+<td>accrual_month_quantity</td>
+<td>Competência</td>
+<td>Não. Apenas se for sobrescrever o campo após escolha do modelo</td>
+</tr>
+</tbody></table>
+
+<p><strong> 1.2 receivables_additional_information </strong></p>
+
+<table><thead>
+<tr>
+<th>Campo</th>
+<th>Finalidade</th>
+<th>Obrigatório</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>day_number</td>
+<td>Dia do mês para o vencimento</td>
+<td>Sim para sobrescrever ou completar escolha do modelo e se charge_type for &#39;fixed_day&#39; ou &#39;fixed_day_and_month_quantity&#39;</td>
+</tr>
+<tr>
+<td>day_quantity</td>
+<td>Quantidade de dias para o vencimento</td>
+<td>Sim para sobrescrever ou completar escolha do modelo e se charge_type for &#39;day_quantity&#39;</td>
+</tr>
+<tr>
+<td>month_quantity</td>
+<td>Quantidade de meses para o vencimento</td>
+<td>Sim para sobrescrever ou completar escolha do modelo e se charge_type for &#39;fixed_day_and_month_quantity&#39;</td>
+</tr>
+<tr>
+<td>parcel_number</td>
+<td>Quantidade de parcelas</td>
+<td>Sim para sobrescrever ou completar escolha do modelo</td>
+</tr>
+<tr>
+<td>only_business_days</td>
+<td>Considerar apenas dias úteis</td>
+<td>Sim para sobrescrever ou completar escolha do modelo e se charge_type for &#39;day_quantity&#39; ou &#39;last_day_of_month&#39;</td>
+</tr>
+</tbody></table>
+
+<p><strong> 1.3 services </strong></p>
+
+<table><thead>
+<tr>
+<th>Campo</th>
+<th>Finalidade</th>
+<th>Obrigatório</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>service_item_id</td>
+<td>ID do serviço para aplicar o reajuste</td>
+<td>Não. Apenas se for sobrescrever a escolha no modelo</td>
+</tr>
+<tr>
+<td>description</td>
+<td>Descrição do serviç</td>
+<td>Não. Apenas se for sobrescrever a escolha no modelo</td>
+</tr>
+<tr>
+<td>units</td>
+<td>Quantidade</td>
+<td>Não. Apenas se for sobrescrever a escolha no modelo</td>
+</tr>
+<tr>
+<td>unit_value</td>
+<td>Valor Unitário</td>
+<td>Não. Apenas se for sobrescrever a escolha no modelo</td>
+</tr>
+<tr>
+<td>invoice_template_service_item_id</td>
+<td>ID do serviço presente no modelo escolhido ao qual deverá ocorrer sobrescrita de valores. Este campo representa o campo &quot;id&quot; de cada serviço no modelo</td>
+<td>Não. Apenas se for sobrescrever a escolha no modelo</td>
+</tr>
+<tr>
+<td>_destroy</td>
+<td>Excluir serviço</td>
+<td>Não. Apenas se for remover um serviço presente no modelo</td>
+</tr>
+</tbody></table>
+
+<p><strong> 1.4 scheduled_updates </strong></p>
+
+<table><thead>
+<tr>
+<th>Campo</th>
+<th>Finalidade</th>
+<th>Obrigatório</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>service_item_id</td>
+<td>ID do serviço para aplicar o reajuste</td>
+<td>Não. Apenas se for sobrescrever escolha no modelo</td>
+</tr>
+<tr>
+<td>init_date</td>
+<td>Data de início do reajuste</td>
+<td>Sim. Escolha de modelo com reajuste não atribui data de início</td>
+</tr>
+<tr>
+<td>month_quantity</td>
+<td>Periodicidade do reajuste</td>
+<td>Não. Apenas se for sobrescrever escolha no modelo</td>
+</tr>
+<tr>
+<td>price_index</td>
+<td>Índice financeiro para o reajuste</td>
+<td>Não. Apenas se for sobrescrever escolha no modelo</td>
+</tr>
+<tr>
+<td>days_until_update</td>
+<td>Quantidade de dias para notificação prévia do reajuste</td>
+<td>Não. Apenas se for sobrescrever escolha no modelo</td>
+</tr>
+<tr>
+<td>_destroy</td>
+<td>Excluir reajuste?</td>
+<td>Não. Apenas se for remover um reajuste presente no modelo</td>
+</tr>
+<tr>
+<td>invoice_template_scheduled_update_id</td>
+<td>ID do reajuste presente no modelo escolhido ao qual deverá ocorrer sobrescrita de valores. Este campo representa o campo &quot;id&quot; de cada reajuste no modelo</td>
+<td>Não. Apenas se for sobrescrever a escolha no modelo</td>
+</tr>
+</tbody></table>
+
           <h2 id='lista-regra-s-faturamento-s'>Lista Regra(s) Faturamento(s)</h2>
 <p>Lista as regras de faturamento em um contrato</p>
 
