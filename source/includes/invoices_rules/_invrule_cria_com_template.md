@@ -4,7 +4,7 @@ Cria uma regra de faturamento a partir de um modelo de faturamento
 
 <div class="api-endpoint">
   <div class="endpoint-data">
-    <i class="label label-get">GET</i>
+    <i class="label label-get">POST</i>
      api/v1/contracts/{contract_id}/invoice_rules
   </div>
 </div>
