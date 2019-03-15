@@ -336,6 +336,9 @@
             <a href="#servicos" class="toc-h1 toc-link" data-title="Serviços">Serviços</a>
               <ul class="toc-list-h2">
                   <li>
+                    <a href="#lista-servico-s" class="toc-h2 toc-link" data-title="Lista serviço(s)">Lista serviço(s)</a>
+                  </li>
+                  <li>
                     <a href="#cria-servico" class="toc-h2 toc-link" data-title="Cria Serviço">Cria Serviço</a>
                   </li>
                   <li>
@@ -1865,6 +1868,47 @@ de uma assinatura (e-commerce)</p>
 <pre class="highlight json tab-json"><code><span class="w">  </span><span class="s2">"Não há conteudo de retorno ao deletar"</span><span class="w">
 </span></code></pre>
           <h1 id='servicos'>Serviços</h1>
+          <h2 id='lista-servico-s'>Lista serviço(s)</h2>
+<p>Lista o(s) serviço(s) em uma conta</p>
+
+<div class="api-endpoint">
+  <div class="endpoint-data">
+    <i class="label label-get">GET</i>
+    api/v1/service_items
+  </div>
+</div>
+
+<blockquote>
+<p>Exemplo de Corpo</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"Essa requisição não possui corpo"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<blockquote>
+<p>Exemplo do retorno</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"service_items"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"account_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Serviço #2"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Descrição serviço 2"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"200.0"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"unit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"item"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"account_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Serviço #1"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Descrição serviço 1"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"100.0"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"unit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"item"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
           <h2 id='cria-servico'>Cria Serviço</h2>
 <p>Cria novo serviço</p>
 
