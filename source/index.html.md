@@ -51,6 +51,7 @@ includes:
   - people/plp_atualiza
   - people/plp_apaga
   - service_items/service_items
+  - service_items/srv_lista
   - service_items/srv_cria
   - service_items/srv_campos
   - service_items/srv_busca
