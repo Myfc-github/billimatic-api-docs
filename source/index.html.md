@@ -109,6 +109,8 @@ includes:
   - invoice_template/invTem_detalhes
   - invoice_template/invTem_campos
   - invoice_template/invTem_listagem
+  - email_templates/email_templates
+  - email_templates/email_templates_list
 
 search: true
 ---
