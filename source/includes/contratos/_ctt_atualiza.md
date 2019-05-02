@@ -18,7 +18,8 @@ O corpo da requisição deverá conter somente o(s) campo(s) que deseja(m) ser a
 
 ```json
 {
-  "comments": "Contrato de cliente vips"
+  "comments": "Contrato de cliente vips",
+  "overdue_automatic_management": true
 }
 ```
 
@@ -50,6 +51,7 @@ O corpo da requisição deverá conter somente o(s) campo(s) que deseja(m) ser a
         "cobrato_payment_gateway_charge_config_name": null,
         "cancel_date": null,
         "cancel_reason": null,
+        "overdue_automatic_management": true,
         "plan": null
     }
 }

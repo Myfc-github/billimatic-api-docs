@@ -52,6 +52,7 @@ Cria novo contrato
         "cobrato_payment_gateway_charge_config_name": null,
         "cancel_date": null,
         "cancel_reason": null,
+        "overdue_automatic_management": false,
         "plan": null
     }
 }}
