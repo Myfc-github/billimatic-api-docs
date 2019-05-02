@@ -2681,6 +2681,7 @@ de uma assinatura (e-commerce)</p>
         </span><span class="s2">"cobrato_payment_gateway_charge_config_name"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
         </span><span class="s2">"cancel_date"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
         </span><span class="s2">"cancel_reason"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"overdue_automatic_management"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
         </span><span class="s2">"plan"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
     </span><span class="p">}</span><span class="w">
 </span><span class="p">}}</span><span class="w">
@@ -2739,12 +2740,16 @@ de uma assinatura (e-commerce)</p>
 <td>Fim Formato: dd-mm-yyyy</td>
 </tr>
 <tr>
-<td>cobrato_payment_gateway_charge_config_id (integer,opt)</td>
+<td>cobrato_payment_gateway_charge_config_id (integer, optional)</td>
 <td>ID da Configuração de Cobrança para Cartão de Crédito</td>
 </tr>
 <tr>
-<td>cobrato_payment_gateway_charge_config_name (string, opt)</td>
+<td>cobrato_payment_gateway_charge_config_name (string, optional)</td>
 <td>Nome da Configuração de Cobrança para Cartão de Crédito</td>
+</tr>
+<tr>
+<td>overdue_automatic_management (boolean, optional)</td>
+<td>Permitir faturamento automático em caso de inadimplência. (Se &#39;registration_method&#39; for &#39;subscription&#39;, ou não informado, será false)</td>
 </tr>
 </tbody></table>
 
@@ -2792,6 +2797,7 @@ de uma assinatura (e-commerce)</p>
         </span><span class="s2">"cobrato_payment_gateway_charge_config_name"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
         </span><span class="s2">"cancel_date"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
         </span><span class="s2">"cancel_reason"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"overdue_automatic_management"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
         </span><span class="s2">"plan"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
       </span><span class="p">}</span><span class="w">
     </span><span class="p">]</span><span class="w">
@@ -2843,6 +2849,7 @@ de uma assinatura (e-commerce)</p>
             </span><span class="s2">"cobrato_payment_gateway_charge_config_name"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
             </span><span class="s2">"cancel_date"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
             </span><span class="s2">"cancel_reason"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"overdue_automatic_management"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
             </span><span class="s2">"plan"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
         </span><span class="p">}</span><span class="w">
     </span><span class="p">]</span><span class="w">
@@ -2891,6 +2898,7 @@ de uma assinatura (e-commerce)</p>
         </span><span class="s2">"cobrato_payment_gateway_charge_config_name"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
         </span><span class="s2">"cancel_date"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
         </span><span class="s2">"cancel_reason"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"overdue_automatic_management"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
         </span><span class="s2">"plan"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
     </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
@@ -2914,7 +2922,8 @@ de uma assinatura (e-commerce)</p>
 <p>Exemplo de Corpo</p>
 </blockquote>
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="s2">"comments"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Contrato de cliente vips"</span><span class="w">
+  </span><span class="s2">"comments"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Contrato de cliente vips"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"overdue_automatic_management"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
 <blockquote>
@@ -2945,6 +2954,7 @@ de uma assinatura (e-commerce)</p>
         </span><span class="s2">"cobrato_payment_gateway_charge_config_name"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
         </span><span class="s2">"cancel_date"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
         </span><span class="s2">"cancel_reason"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"overdue_automatic_management"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
         </span><span class="s2">"plan"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
     </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
