@@ -112,7 +112,7 @@ Onde deseja que o faturamento esteja entre as datas 01/04/2018 a 31/12/2018
                 "cobrato_card_id": "--",
                 "card_expiration_month": "--",
                 "card_expiration_year": "--",
-                "installments": 1,
+                "installments": null,
                 "created_at": "10/12/2018 11:36:23 -02:00"
             }
         },
@@ -191,7 +191,7 @@ Onde deseja que o faturamento esteja entre as datas 01/04/2018 a 31/12/2018
                 "cobrato_card_id": "--",
                 "card_expiration_month": "--",
                 "card_expiration_year": "--",
-                "installments": 1,
+                "installments": null,
                 "created_at": "10/12/2018 10:02:39 -02:00"
             }
         }

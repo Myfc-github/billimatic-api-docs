@@ -101,7 +101,7 @@ Aprova um faturamento
             "cobrato_card_id": "--",
             "card_expiration_month": "--",
             "card_expiration_year": "--",
-            "installments": 1,
+            "installments": null,
             "created_at": "10/12/2018 15:15:13 -02:00"
         }
     }

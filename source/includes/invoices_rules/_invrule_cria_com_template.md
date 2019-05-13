@@ -110,7 +110,7 @@ Cria uma regra de faturamento a partir de um modelo de faturamento
       "cobrato_card_id": "--",
       "card_expiration_month": "--",
       "card_expiration_year": "--",
-      "installments": 1,
+      "installments": null,
       "created_at": "20/12/2018 13:45:05 -02:00"
     },
     "additional_information": {

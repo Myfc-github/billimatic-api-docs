@@ -158,7 +158,7 @@ Cria um faturamento
             "cobrato_card_id": "--",
             "card_expiration_month": "--",
             "card_expiration_year": "--",
-            "installments": 1,
+            "installments": null,
             "created_at": "10/12/2018 10:55:10 -02:00"
         }
     }

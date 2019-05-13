@@ -17,6 +17,7 @@
 | days_until_automatic_nfe_emission (integer, optional)   | Quantidade de dias úteis após o recebimento para emissão automática de NF-e (0 para emissão na data do faturamento)|
 | nfe_body (string)                                       | Corpo da NFS-e                                                                  |
 | payment_method (string, optional)   | Forma de pagamento ('billet' para boleto bancário, 'payment_gateway' para cartão de crédito, 'transfer' para transferência bancária)|
+| card_installments                        |  Quantidade de parcelas para pagamento em cartão de crédito. Caso o ‘payment_method’ seja ‘billet’ ou ‘transfer’, o valor é null.
 | cobrato_charge_config_id (integer, optional)            | ID da Configuração de Cobrança (Cobrato)                                        |
 | cobrato_charge_config_name (string, optional)           | Nome da Configuração de Cobrança (Cobrato)                                      |
 | cobrato_charge_template_id (integer, optional)          | ID do Modelo de Cobrança (Cobrato)                                              |

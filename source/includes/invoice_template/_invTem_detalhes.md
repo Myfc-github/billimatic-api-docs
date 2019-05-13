@@ -47,6 +47,7 @@ Exemplo de chamada:  api/v1/organizations/1/invoice_templates/14
     "days_until_automatic_nfe_emission": 7,
     "nfe_body": "$DESCRICAO",
     "payment_method": "payment_gateway",
+    "card_installments": 12,
     "cobrato_charge_config_id": null,
     "cobrato_charge_config_name": "",
     "cobrato_charge_template_id": null,
