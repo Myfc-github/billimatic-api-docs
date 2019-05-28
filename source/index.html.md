@@ -23,7 +23,6 @@ includes:
   - payloads/confirm_receival
   - payloads/undo_receival
   - payloads/receivement_error
-  - payloads/payment_gateway_status
   - payloads/change_plan
   - organizacoes/organizacoes
   - organizacoes/org_cria
@@ -80,11 +79,7 @@ includes:
   - subscriptions/sub_campos
   - subscriptions/sub_detalhes
   - subscriptions/sub_cancelar
-  - checkouts/checkouts
-  - checkouts/chk_checkout
   - plan_modifications/plan_modifications
-  - payment_informations/payment_informations
-  - payment_informations/pay_inf_campos
   - invoices/invoices
   - invoices/inv_cria
   - invoices/inv_campos
