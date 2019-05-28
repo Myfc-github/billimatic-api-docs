@@ -262,9 +262,6 @@
                     <a href="#receivement_error" class="toc-h2 toc-link" data-title="Receivement_error">Receivement_error</a>
                   </li>
                   <li>
-                    <a href="#payment_gateway_status" class="toc-h2 toc-link" data-title="Payment_gateway_status">Payment_gateway_status</a>
-                  </li>
-                  <li>
                     <a href="#change_plan" class="toc-h2 toc-link" data-title="Change_plan">Change_plan</a>
                   </li>
               </ul>
@@ -407,26 +404,10 @@
               </ul>
           </li>
           <li>
-            <a href="#checkouts" class="toc-h1 toc-link" data-title="Checkouts">Checkouts</a>
-              <ul class="toc-list-h2">
-                  <li>
-                    <a href="#checkout-de-assinatura" class="toc-h2 toc-link" data-title="Checkout de Assinatura">Checkout de Assinatura</a>
-                  </li>
-              </ul>
-          </li>
-          <li>
             <a href="#plano-de-assinaturas" class="toc-h1 toc-link" data-title="Plano de assinaturas">Plano de assinaturas</a>
               <ul class="toc-list-h2">
                   <li>
                     <a href="#trocas-de-plano-de-assinaturas" class="toc-h2 toc-link" data-title="Trocas de plano de assinaturas">Trocas de plano de assinaturas</a>
-                  </li>
-              </ul>
-          </li>
-          <li>
-            <a href="#forma-de-pagamento-em-assinaturas" class="toc-h1 toc-link" data-title="Forma de pagamento em assinaturas">Forma de pagamento em assinaturas</a>
-              <ul class="toc-list-h2">
-                  <li>
-                    <a href="#trocas-de-forma-de-pagamento-em-assinaturas" class="toc-h2 toc-link" data-title="Trocas de forma de pagamento em assinaturas">Trocas de forma de pagamento em assinaturas</a>
                   </li>
               </ul>
           </li>
@@ -799,29 +780,6 @@ Quando há <strong>erro no recebimento</strong> do faturamento (pagamento em car
   </span><span class="s2">"object_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Invoice"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"object_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"id-da-entidade"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"contract_token"</span><span class="p">:</span><span class="w"> </span><span class="s2">"token-do-contrato"</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre>
-          <h2 id='payment_gateway_status'>Payment_gateway_status</h2>
-<p><strong>Payload:</strong> payment_gateway_status</p>
-
-<p><strong>Entidade:</strong> Contract</p>
-
-<p><strong>Evento:</strong>
-Quando é solicitada a <strong>troca de forma de pagamento para cartão de crédito</strong> (via API)</p>
-
-<div class="api-endpoint">
-  <div class="endpoint-data">
-      <i class="label label-get">POST</i>
-  </div>
-</div>
-
-<blockquote>
-<p>Exemplo de Corpo</p>
-</blockquote>
-<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="s2">"event"</span><span class="p">:</span><span class="s2">"payment_gateway_status"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"status"</span><span class="p">:</span><span class="s2">"status-do-cartão"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"contract_token"</span><span class="p">:</span><span class="s2">"token-do-contrato"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
           <h2 id='change_plan'>Change_plan</h2>
@@ -3392,128 +3350,6 @@ de uma assinatura (e-commerce)</p>
     </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
-          <h1 id='checkouts'>Checkouts</h1>
-          <h2 id='checkout-de-assinatura'>Checkout de Assinatura</h2>
-<p>Realiza processo de checkout (compra) de uma assinatura</p>
-
-<div class="api-endpoint">
-  <div class="endpoint-data">
-    <i class="label label-get">POST</i>
-    api/v1/subscriptions/checkout/0666d723565dc5f829935fd3060baf13
-  </div>
-</div>
-
-<p>Onde 0666d723565dc5f829935fd3060baf13 será o token da assinatura</p>
-
-<blockquote>
-<p>Exemplo de Corpo</p>
-</blockquote>
-<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="s2">"subscription"</span><span class="p">:</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="s2">"customer"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Company"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Empresa Teste Ltda"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"emp@email.com"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"document"</span><span class="p">:</span><span class="w"> </span><span class="s2">"58763913000140"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"state_inscription"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"city_inscription"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"address_information"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-        </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Rua do Carmo"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"43"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"complement"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"district"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Centro"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"zipcode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"20011020"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Rio de Janeiro"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"RJ"</span><span class="w">
-      </span><span class="p">}</span><span class="w">
-    </span><span class="p">},</span><span class="w">
-    </span><span class="s2">"payment_information"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"billet"</span><span class="p">,</span><span class="w">
-    </span><span class="p">}</span><span class="w">
-  </span><span class="p">}</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre>
-<blockquote>
-<p>Exemplo do retorno</p>
-</blockquote>
-<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-    </span><span class="s2">"subscription"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-        </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">11989</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Assinatura Empresa Teste Ltda - Plano Teste Doc Atualizado"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Assinatura Empresa Teste Ltda - Plano Teste Doc Atualizado"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"token"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0666d723565dc5f829935fd3060baf13"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"customer_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2123</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"supplier_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2115</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"supplier_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Company"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"active"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"comments"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"init_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"11/12/2018"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"end_date"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"11/12/2018 14:20:22 -02:00"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"kind"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sale"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"overdue"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"valid_until"</span><span class="p">:</span><span class="w"> </span><span class="s2">"11/03/2019"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"established"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"registration_method"</span><span class="p">:</span><span class="w"> </span><span class="s2">"subscription"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"cobrato_payment_gateway_charge_config_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"cobrato_payment_gateway_charge_config_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"cancel_date"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"cancel_reason"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"plan"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">783</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Plano Teste Doc Atualizado"</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Plano de testes para documentação"</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"redirect_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://nexaas.com"</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"price"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.0"</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"billing_period"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"translated_billing_period"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Trimestralmente"</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"charging_method"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"translated_charging_method"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-                </span><span class="s2">"pre_paid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Pré-pago"</span><span class="p">,</span><span class="w">
-                </span><span class="s2">"post_paid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Pós-pago"</span><span class="w">
-            </span><span class="p">},</span><span class="w">
-            </span><span class="s2">"has_trial"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"trial_period"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"features"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
-            </span><span class="s2">"readjustment_will_be_created"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"readjustment_month_quantity"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"price_index"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"readjustment_days_until_update"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"billet_notification_ruler_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"payment_gateway_notification_ruler_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"emites_service_values_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"emites_service_value_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"cobrato_billet_charge_config_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"cobrato_billet_charge_config_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"cobrato_billet_charge_template_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"cobrato_billet_charge_template_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"cobrato_payment_gateway_charge_config_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"cobrato_payment_gateway_charge_config_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"finance_category"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"finance_revenue_center"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"myfinance_billet_sale_account_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"myfinance_billet_sale_account_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"myfinance_payment_gateway_sale_account_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"myfinance_payment_gateway_sale_account_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"allow_installments"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"installments_limit"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"06/12/2018 11:37:22 -02:00"</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"products"</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span><span class="w">
-        </span><span class="p">},</span><span class="w">
-        </span><span class="s2">"payment_information"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">28441</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"payment_method"</span><span class="p">:</span><span class="w"> </span><span class="s2">"billet"</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"cobrato_card_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"--"</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"card_expiration_month"</span><span class="p">:</span><span class="w"> </span><span class="s2">"--"</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"card_expiration_year"</span><span class="p">:</span><span class="w"> </span><span class="s2">"--"</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"installments"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"11/12/2018 14:28:43 -02:00"</span><span class="w">
-        </span><span class="p">}</span><span class="w">
-    </span><span class="p">}</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre>
           <h1 id='plano-de-assinaturas'>Plano de assinaturas</h1><h2 id='trocas-de-plano-de-assinaturas'>Trocas de plano de assinaturas</h2>
 <p>Realiza processo de troca de plano de uma assinatura</p>
 
@@ -3619,150 +3455,6 @@ abaixo</p>
     </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
-          <h1 id='forma-de-pagamento-em-assinaturas'>Forma de pagamento em assinaturas</h1><h2 id='trocas-de-forma-de-pagamento-em-assinaturas'>Trocas de forma de pagamento em assinaturas</h2>
-<p>Realiza troca de forma de pagamento em uma assinatura</p>
-
-<div class="api-endpoint">
-  <div class="endpoint-data">
-    <i class="label label-get">PATCH</i>
-    api/v1/subscriptions/4423b5245bf61ebb0a0fb13ba0ce7d05/update_payment_information
-  </div>
-</div>
-
-<p>Onde 4423b5245bf61ebb0a0fb13ba0ce7d05 deverá ser o token da assinatura que deseja realizar a troca da forma de pagamento</p>
-
-<blockquote>
-<p>Exemplo de Corpo</p>
-</blockquote>
-<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="s2">"subscription"</span><span class="p">:</span><span class="w">  </span><span class="p">{</span><span class="w">
-    </span><span class="s2">"payment_information"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-        </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"billet"</span><span class="w">
-    </span><span class="p">}</span><span class="w">
-  </span><span class="p">}</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre>
-<blockquote>
-<p>Exemplo do retorno</p>
-</blockquote>
-<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-    </span><span class="s2">"subscription"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-        </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">12000</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Assinatura Empresa Teste Ltda - Plano Teste Doc Atualizado"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Assinatura Empresa Teste Ltda - Plano Teste Doc Atualizado"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"token"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4423b5245bf61ebb0a0fb13ba0ce7d05"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"customer_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2123</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"supplier_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2115</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"supplier_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Company"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"active"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"comments"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"init_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"12/12/2018"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"end_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"31/12/2020"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"12/12/2018 10:43:54 -02:00"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"kind"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sale"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"overdue"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"valid_until"</span><span class="p">:</span><span class="w"> </span><span class="s2">"12/12/2018"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"established"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"registration_method"</span><span class="p">:</span><span class="w"> </span><span class="s2">"subscription"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"cobrato_payment_gateway_charge_config_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"cobrato_payment_gateway_charge_config_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"cancel_date"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"cancel_reason"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"plan"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">783</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Plano Teste Doc Atualizado"</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Plano de testes para documentação"</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"redirect_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://nexaas.com"</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"price"</span><span class="p">:</span><span class="w"> </span><span class="s2">"7674.0"</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"billing_period"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"translated_billing_period"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Mensalmente"</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"charging_method"</span><span class="p">:</span><span class="w"> </span><span class="s2">"pre_paid"</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"translated_charging_method"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Pré-pago"</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"has_trial"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"trial_period"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"features"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-                </span><span class="p">{</span><span class="w">
-                    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">15854</span><span class="p">,</span><span class="w">
-                    </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"teste"</span><span class="p">,</span><span class="w">
-                    </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"777"</span><span class="p">,</span><span class="w">
-                    </span><span class="s2">"tag"</span><span class="p">:</span><span class="w"> </span><span class="s2">"teste"</span><span class="w">
-                </span><span class="p">}</span><span class="w">
-            </span><span class="p">],</span><span class="w">
-            </span><span class="s2">"readjustment_will_be_created"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"readjustment_month_quantity"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"price_index"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ipca"</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"readjustment_days_until_update"</span><span class="p">:</span><span class="w"> </span><span class="mi">7</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"billet_notification_ruler_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"payment_gateway_notification_ruler_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"emites_service_values_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"emites_service_value_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"cobrato_billet_charge_config_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"cobrato_billet_charge_config_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"cobrato_billet_charge_template_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"cobrato_billet_charge_template_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"cobrato_payment_gateway_charge_config_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"cobrato_payment_gateway_charge_config_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"finance_category"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"finance_revenue_center"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"myfinance_billet_sale_account_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"myfinance_billet_sale_account_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"myfinance_payment_gateway_sale_account_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"myfinance_payment_gateway_sale_account_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"allow_installments"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"installments_limit"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"06/12/2018 11:37:22 -02:00"</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"products"</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span><span class="w">
-        </span><span class="p">},</span><span class="w">
-        </span><span class="s2">"payment_information"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-            </span><span class="s2">"payment_method"</span><span class="p">:</span><span class="w"> </span><span class="s2">"billet"</span><span class="w">
-        </span><span class="p">}</span><span class="w">
-    </span><span class="p">}</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre>
-          <p><br>
-<strong> Campos referentes à forma de pagamento do cliente. </strong></p>
-
-<table><thead>
-<tr>
-<th>Campo</th>
-<th>Finalidade</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>type (string)</td>
-<td>Forma de pagamento (&#39;billet&#39; para boleto bancário, &#39;payment_gateway&#39; para cartão de crédito)</td>
-</tr>
-<tr>
-<td>card_brand (string, optional)</td>
-<td>Bandeira do cartão (&#39;Visa&#39;, &#39;Mastercard&#39;, &#39;Amex&#39;, &#39;Elo&#39;, &#39;Diners&#39;, &#39;Discover&#39;, &#39;Jcb&#39;, &#39;Aura&#39;)</td>
-</tr>
-<tr>
-<td>card_number (string, optional)</td>
-<td>Número do cartão</td>
-</tr>
-<tr>
-<td>card_holder_name (string, optional)</td>
-<td>Nome do titular (como está escrito no cartão),</td>
-</tr>
-<tr>
-<td>card_expiration_month (string, optional)</td>
-<td>Mês de expiração (Formato: MM),</td>
-</tr>
-<tr>
-<td>card_expiration_year (string, optional)</td>
-<td>Ano de expiração (Formato: AAAA),</td>
-</tr>
-<tr>
-<td>card_security_code (string, optional)</td>
-<td>Código de verificação (no verso do cartão),</td>
-</tr>
-<tr>
-<td>card_installments (integer, optional)</td>
-<td>Quantidade de parcelas</td>
-</tr>
-</tbody></table>
-
           <h1 id='faturamentos'>Faturamentos</h1>
           <h2 id='cria-faturamento'>Cria Faturamento</h2>
 <p>Cria um faturamento</p>
