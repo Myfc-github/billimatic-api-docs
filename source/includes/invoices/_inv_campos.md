@@ -12,7 +12,7 @@
 | estimated_issue_date (date, optional)                   | Previsão. Se não informada, será a data de Faturamento                            |
 | accrual_date (string, optional)                         | Mês de Competência. Formato: 'mm/aaaa'                                            |
 | description (string)                                    | Descrição                                                                         |
-| approval_status (string, optional)                      | Status de aprovação do faturamento:                                               |
+| approval_status (string, optional)                      | Status de aprovação do faturamento. (Opções: 'approved' ou 'blocked')             |
 | nfse_service (string, optional)                         | Código do Serviço                                                                 |
 | nfse_verification (string, optional)                    | Código de Verificação                                                             |
 | payment_value (decimal, optional)                       | Valor a Receber                                                                   |

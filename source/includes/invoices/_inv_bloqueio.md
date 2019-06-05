@@ -13,63 +13,7 @@ Bloqueia um faturamento
 > Exemplo de Corpo
 
 ```json
-{
-  "invoice": {
-	  "contract_id": 11986,
-	  "gross_value": 1200.0,
-	  "number": 2,
-	  "issue_date": "02-01-2018",
-	  "estimated_issue_date": "date",
-	  "accrual_date": "",
-	  "description": "Teste Doc para Inadimplen",
-	  "approval_status": "",
-	  "nfse_service": "",
-	  "nfse_verification": "",
-	  "payment_value": "decimal",
-	  "emites_service_values_id": "",
-	  "emites_service_value_name": "",
-	  "finance_category": "",
-	  "finance_revenue_center": "",
-	  "myfinance_sale_account_id": "",
-	  "myfinance_sale_account_name": "",
-	  "nfe_body": "Nfe teste ",
-	  "cobrato_charge_config_id": "",
-	  "cobrato_charge_config_name": "",
-	  "cobrato_charge_template_id": "",
-	  "cobrato_charge_template_name": "",
-	  "management_type": "",
-	  "automatic_email_template_id": "",
-	  "notification_ruler_id": "",
-	  "days_until_automatic_nfe_emission": 0,
-	  "comments": 0,
-	  "receivables":
-	  [
-		  {
-		    "value": 100,
-		    "due_date": "02-12-2019"
-		  }
-	  ],
-	  "services": [
-	  	{
-	    "service_item_id": "383",
-	    "description": "Teste",
-	    "units": 100,
-	    "unit_value": 100,
-	    "value": 100
-		}
-	  ],
-	  "attachments": [
-	  	{
-	    "filename": "teste",
-	    "content": "tst",
-	    "content_type": "application/vnd.ms-excel"
-		}
-	  ],
-	  "payment_information": {
-	    "payment_method": "billet"
-	  }
-	}
-}
+ "Essa requisição não possui corpo"
 ```
 
 > Exemplo do retorno
@@ -80,7 +24,7 @@ Bloqueia um faturamento
         "id": 184544,
         "contract_id": 11986,
         "issue_date": "02/01/2018",
-        "estimated_issue_date": null,
+        "estimated_issue_date": "02/01/2018",
         "gross_value": "10000.0",
         "payment_value": "0.0",
         "description": "Teste Doc para Inadimplen",
@@ -93,7 +37,7 @@ Bloqueia um faturamento
         "nfe_issued": false,
         "number": "2",
         "created_at": "10/12/2018 14:20:47 -02:00",
-        "management_type": null,
+        "management_type": "manual",
         "accrual_date": null,
         "comments": "0",
         "customer_id": 1954,
