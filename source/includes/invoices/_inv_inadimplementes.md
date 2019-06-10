@@ -87,7 +87,7 @@ Lista os faturamentos inadimplentes de um contrato
                 "cobrato_card_id": "--",
                 "card_expiration_month": "--",
                 "card_expiration_year": "--",
-                "installments": 1,
+                "installments": null,
                 "created_at": "30/08/2018 10:27:35 -03:00"
             }
         }

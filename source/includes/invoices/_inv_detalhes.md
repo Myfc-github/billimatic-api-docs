@@ -25,7 +25,7 @@ Mostra detalhes de um faturamento através de seu id
         "id": 184535,
         "contract_id": 11986,
         "issue_date": "02/12/2018",
-        "estimated_issue_date": null,
+        "estimated_issue_date": "02/12/2018",
         "gross_value": "10000.0",
         "payment_value": "0.0",
         "description": "Teste Doc",
@@ -38,7 +38,7 @@ Mostra detalhes de um faturamento através de seu id
         "nfe_issued": false,
         "number": "2",
         "created_at": "10/12/2018 10:55:10 -02:00",
-        "management_type": null,
+        "management_type": "manual",
         "accrual_date": null,
         "comments": "0",
         "customer_id": 1954,
@@ -56,7 +56,7 @@ Mostra detalhes de um faturamento através de seu id
         "days_until_automatic_nfe_emission": 0,
         "automatic_nfe_issue_date": null,
         "automatic_email_template_id": null,
-        "approval_status": null,
+        "approval_status": "approved",
         "notification_ruler_id": null,
         "receivables": [
             {
@@ -102,7 +102,7 @@ Mostra detalhes de um faturamento através de seu id
             "cobrato_card_id": "--",
             "card_expiration_month": "--",
             "card_expiration_year": "--",
-            "installments": 1,
+            "installments": null,
             "created_at": "10/12/2018 10:55:10 -02:00"
         }
     }

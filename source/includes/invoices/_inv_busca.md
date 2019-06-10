@@ -27,7 +27,7 @@ Onde deseja que o faturamento esteja entre as datas 01/04/2018 a 31/12/2018
             "id": 184535,
             "contract_id": 11986,
             "issue_date": "02/12/2018",
-            "estimated_issue_date": null,
+            "estimated_issue_date": "02/01/2018",
             "gross_value": "20000.0",
             "payment_value": "20000.0",
             "description": "Teste de alteração da descrição do faturamento para doc",
@@ -40,7 +40,7 @@ Onde deseja que o faturamento esteja entre as datas 01/04/2018 a 31/12/2018
             "nfe_issued": false,
             "number": "2",
             "created_at": "10/12/2018 10:55:10 -02:00",
-            "management_type": null,
+            "management_type": "manual",
             "accrual_date": null,
             "comments": "0",
             "customer_id": 1954,
@@ -58,7 +58,7 @@ Onde deseja que o faturamento esteja entre as datas 01/04/2018 a 31/12/2018
             "days_until_automatic_nfe_emission": 0,
             "automatic_nfe_issue_date": null,
             "automatic_email_template_id": null,
-            "approval_status": null,
+            "approval_status": "approved",
             "notification_ruler_id": null,
             "receivables": [
                 {
@@ -112,7 +112,7 @@ Onde deseja que o faturamento esteja entre as datas 01/04/2018 a 31/12/2018
                 "cobrato_card_id": "--",
                 "card_expiration_month": "--",
                 "card_expiration_year": "--",
-                "installments": 1,
+                "installments": null,
                 "created_at": "10/12/2018 11:36:23 -02:00"
             }
         },
@@ -191,7 +191,7 @@ Onde deseja que o faturamento esteja entre as datas 01/04/2018 a 31/12/2018
                 "cobrato_card_id": "--",
                 "card_expiration_month": "--",
                 "card_expiration_year": "--",
-                "installments": 1,
+                "installments": null,
                 "created_at": "10/12/2018 10:02:39 -02:00"
             }
         }

@@ -24,7 +24,7 @@ Aprova um faturamento
         "id": 184549,
         "contract_id": 11986,
         "issue_date": "20/12/2018",
-        "estimated_issue_date": null,
+        "estimated_issue_date": "20/12/2018",
         "gross_value": "10000.0",
         "payment_value": "0.0",
         "description": "Teste Doc",
@@ -37,7 +37,7 @@ Aprova um faturamento
         "nfe_issued": false,
         "number": "2",
         "created_at": "10/12/2018 15:15:13 -02:00",
-        "management_type": null,
+        "management_type": "manual",
         "accrual_date": null,
         "comments": "0",
         "customer_id": 1954,
@@ -101,7 +101,7 @@ Aprova um faturamento
             "cobrato_card_id": "--",
             "card_expiration_month": "--",
             "card_expiration_year": "--",
-            "installments": 1,
+            "installments": null,
             "created_at": "10/12/2018 15:15:13 -02:00"
         }
     }

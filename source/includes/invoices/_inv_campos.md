@@ -12,7 +12,7 @@
 | estimated_issue_date (date, optional)                   | Previsão. Se não informada, será a data de Faturamento                            |
 | accrual_date (string, optional)                         | Mês de Competência. Formato: 'mm/aaaa'                                            |
 | description (string)                                    | Descrição                                                                         |
-| approval_status (string, optional)                      | Status de aprovação do faturamento:                                               |
+| approval_status (string, optional)                      | Status de aprovação do faturamento. (Opções: 'approved' ou 'blocked')             |
 | nfse_service (string, optional)                         | Código do Serviço                                                                 |
 | nfse_verification (string, optional)                    | Código de Verificação                                                             |
 | payment_value (decimal, optional)                       | Valor a Receber                                                                   |
@@ -89,3 +89,4 @@ Campo: approval_status poderá conter:  'approved' para aprovado, 'blocked' para
 | ----------------------------------- | --------------------------------------------------- |
 | id (integer, optional)              | ID das informações de pagamento                     |
 | payment_method (string, optional)   | Forma de pagamento ('billet' para boleto bancário, 'payment_gateway' para cartão de crédito, 'transfer' para transferência bancária) |
+| installments                        | Quantidade de parcelas para pagamento em cartão de crédito. Valor apenas aceito para ‘payment_method’ como ‘payment_gateway’ (Pode ser igual ou maior que 1; caso seja null, será considerada apenas 1 parcela). Caso o ‘payment_method’ seja ‘billet’ ou ‘transfer’, o valor é null. |

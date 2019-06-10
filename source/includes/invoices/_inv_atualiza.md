@@ -30,7 +30,7 @@ O corpo da requisição deverá conter somente o(s) campo(s) que deseja(m) ser a
         "id": 184535,
         "contract_id": 11986,
         "issue_date": "02/12/2018",
-        "estimated_issue_date": null,
+        "estimated_issue_date": "02/12/2018",
         "gross_value": "20000.0",
         "payment_value": "20000.0",
         "description": "Teste de alteração da descrição do faturamento para doc",
@@ -43,7 +43,7 @@ O corpo da requisição deverá conter somente o(s) campo(s) que deseja(m) ser a
         "nfe_issued": false,
         "number": "2",
         "created_at": "10/12/2018 10:55:10 -02:00",
-        "management_type": null,
+        "management_type": "manual",
         "accrual_date": null,
         "comments": "0",
         "customer_id": 1954,
@@ -61,7 +61,7 @@ O corpo da requisição deverá conter somente o(s) campo(s) que deseja(m) ser a
         "days_until_automatic_nfe_emission": 0,
         "automatic_nfe_issue_date": null,
         "automatic_email_template_id": null,
-        "approval_status": null,
+        "approval_status": "approved",
         "notification_ruler_id": null,
         "receivables": [
             {
@@ -115,7 +115,7 @@ O corpo da requisição deverá conter somente o(s) campo(s) que deseja(m) ser a
             "cobrato_card_id": "--",
             "card_expiration_month": "--",
             "card_expiration_year": "--",
-            "installments": 1,
+            "installments": null,
             "created_at": "10/12/2018 11:36:23 -02:00"
         }
     }

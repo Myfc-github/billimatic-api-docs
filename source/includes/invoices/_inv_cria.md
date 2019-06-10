@@ -19,10 +19,8 @@ Cria um faturamento
 	  "gross_value": 700.0,
 	  "number": 2,
 	  "issue_date": "02-12-2018",
-	  "estimated_issue_date": "date",
 	  "accrual_date": "",
 	  "description": "Teste Doc",
-	  "approval_status": "",
 	  "nfse_service": "",
 	  "nfse_verification": "",
 	  "payment_value": "decimal",
@@ -37,9 +35,6 @@ Cria um faturamento
 	  "cobrato_charge_config_name": "",
 	  "cobrato_charge_template_id": "",
 	  "cobrato_charge_template_name": "",
-	  "management_type": "",
-	  "automatic_email_template_id": "",
-	  "notification_ruler_id": "",
 	  "days_until_automatic_nfe_emission": 0,
 	  "comments": 0,
 	  "receivables":
@@ -81,7 +76,7 @@ Cria um faturamento
         "id": 184535,
         "contract_id": 11986,
         "issue_date": "02/12/2018",
-        "estimated_issue_date": null,
+        "estimated_issue_date": "02/12/2018",
         "gross_value": "10000.0",
         "payment_value": "0.0",
         "description": "Teste Doc",
@@ -94,7 +89,7 @@ Cria um faturamento
         "nfe_issued": false,
         "number": "2",
         "created_at": "10/12/2018 10:55:10 -02:00",
-        "management_type": null,
+        "management_type": "manual",
         "accrual_date": null,
         "comments": "0",
         "customer_id": 1954,
@@ -112,7 +107,7 @@ Cria um faturamento
         "days_until_automatic_nfe_emission": 0,
         "automatic_nfe_issue_date": null,
         "automatic_email_template_id": null,
-        "approval_status": null,
+        "approval_status": "approved",
         "notification_ruler_id": null,
         "receivables": [
             {
@@ -158,7 +153,7 @@ Cria um faturamento
             "cobrato_card_id": "--",
             "card_expiration_month": "--",
             "card_expiration_year": "--",
-            "installments": 1,
+            "installments": null,
             "created_at": "10/12/2018 10:55:10 -02:00"
         }
     }
