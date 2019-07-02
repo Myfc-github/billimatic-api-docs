@@ -21,6 +21,7 @@ Quando é <strong>desfeito o cancelamento</strong> do faturamento
   "event": "undo_cancellation",
   "object_type": "Invoice",
   "object_id": "id-da-entidade",
-  "contract_token": "token-do-contrato"
+  "contract_token": "token-do-contrato",
+  "contract_id": "id-do-contrato"
 }
 ```

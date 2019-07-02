@@ -21,6 +21,7 @@ Quando o faturamento é <strong>atualizado</strong>
   "event": "update",
   "object_type": "Invoice",
   "object_id": "id-da-entidade",
-  "contract_token": "token-do-contrato"
+  "contract_token": "token-do-contrato",
+  "contract_id": "id-do-contrato"
 }
 ```
