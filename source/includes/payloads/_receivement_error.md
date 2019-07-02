@@ -21,6 +21,7 @@ Quando há <strong>erro no recebimento</strong> do faturamento (pagamento em car
   "event": "receivement_error",
   "object_type": "Invoice",
   "object_id": "id-da-entidade",
-  "contract_token": "token-do-contrato"
+  "contract_token": "token-do-contrato",
+  "contract_id": "id-do-contrato"
 }
 ```
