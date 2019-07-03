@@ -611,7 +611,8 @@ Quando o faturamento é <strong>atualizado</strong></p>
   </span><span class="s2">"event"</span><span class="p">:</span><span class="w"> </span><span class="s2">"update"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"object_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Invoice"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"object_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"id-da-entidade"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"contract_token"</span><span class="p">:</span><span class="w"> </span><span class="s2">"token-do-contrato"</span><span class="w">
+  </span><span class="s2">"contract_token"</span><span class="p">:</span><span class="w"> </span><span class="s2">"token-do-contrato"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"contract_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"id-do-contrato"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
           <h2 id='emit'>Emit</h2>
@@ -635,7 +636,8 @@ Quando o faturamento é marcado como <strong>faturado</strong></p>
   </span><span class="s2">"event"</span><span class="p">:</span><span class="w"> </span><span class="s2">"emit"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"object_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Invoice"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"object_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"id-da-entidade"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"contract_token"</span><span class="p">:</span><span class="w"> </span><span class="s2">"token-do-contrato"</span><span class="w">
+  </span><span class="s2">"contract_token"</span><span class="p">:</span><span class="w"> </span><span class="s2">"token-do-contrato"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"contract_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"id-do-contrato"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
           <h2 id='undo_emission'>Undo_emission</h2>
@@ -659,7 +661,8 @@ Quando o faturamento é marcado como <strong>a faturar</strong></p>
   </span><span class="s2">"event"</span><span class="p">:</span><span class="w"> </span><span class="s2">"undo_emission"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"object_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Invoice"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"object_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"id-da-entidade"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"contract_token"</span><span class="p">:</span><span class="w"> </span><span class="s2">"token-do-contrato"</span><span class="w">
+  </span><span class="s2">"contract_token"</span><span class="p">:</span><span class="w"> </span><span class="s2">"token-do-contrato"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"contract_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"id-do-contrato"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
           <h2 id='cancel'>Cancel</h2>
@@ -683,7 +686,8 @@ Quando o faturamento <strong>é cancelado</strong></p>
   </span><span class="s2">"event"</span><span class="p">:</span><span class="w"> </span><span class="s2">"cancel"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"object_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Invoice"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"object_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"id-da-entidade"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"contract_token"</span><span class="p">:</span><span class="w"> </span><span class="s2">"token-do-contrato"</span><span class="w">
+  </span><span class="s2">"contract_token"</span><span class="p">:</span><span class="w"> </span><span class="s2">"token-do-contrato"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"contract_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"id-do-contrato"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
           <h2 id='undo_cancellation'>Undo_cancellation</h2>
@@ -707,7 +711,8 @@ Quando é <strong>desfeito o cancelamento</strong> do faturamento</p>
   </span><span class="s2">"event"</span><span class="p">:</span><span class="w"> </span><span class="s2">"undo_cancellation"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"object_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Invoice"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"object_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"id-da-entidade"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"contract_token"</span><span class="p">:</span><span class="w"> </span><span class="s2">"token-do-contrato"</span><span class="w">
+  </span><span class="s2">"contract_token"</span><span class="p">:</span><span class="w"> </span><span class="s2">"token-do-contrato"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"contract_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"id-do-contrato"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
           <h2 id='confirm_receival'>Confirm_receival</h2>
@@ -731,7 +736,8 @@ Quando é <strong>confirmado o recebimento</strong> do faturamento</p>
   </span><span class="s2">"event"</span><span class="p">:</span><span class="w"> </span><span class="s2">"confirm_receival"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"object_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Invoice"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"object_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"id-da-entidade"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"contract_token"</span><span class="p">:</span><span class="w"> </span><span class="s2">"token-do-contrato"</span><span class="w">
+  </span><span class="s2">"contract_token"</span><span class="p">:</span><span class="w"> </span><span class="s2">"token-do-contrato"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"contract_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"id-do-contrato"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
           <h2 id='undo_receival'>Undo_receival</h2>
@@ -755,7 +761,8 @@ Quando é <strong>desfeito o recebimento</strong> do faturamento</p>
   </span><span class="s2">"event"</span><span class="p">:</span><span class="w"> </span><span class="s2">"undo_receival"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"object_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Invoice"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"object_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"id-da-entidade"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"contract_token"</span><span class="p">:</span><span class="w"> </span><span class="s2">"token-do-contrato"</span><span class="w">
+  </span><span class="s2">"contract_token"</span><span class="p">:</span><span class="w"> </span><span class="s2">"token-do-contrato"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"contract_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"id-do-contrato"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
           <h2 id='receivement_error'>Receivement_error</h2>
@@ -779,7 +786,8 @@ Quando há <strong>erro no recebimento</strong> do faturamento (pagamento em car
   </span><span class="s2">"event"</span><span class="p">:</span><span class="w"> </span><span class="s2">"receivement_error"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"object_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Invoice"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"object_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"id-da-entidade"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"contract_token"</span><span class="p">:</span><span class="w"> </span><span class="s2">"token-do-contrato"</span><span class="w">
+  </span><span class="s2">"contract_token"</span><span class="p">:</span><span class="w"> </span><span class="s2">"token-do-contrato"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"contract_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"id-do-contrato"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
           <h2 id='change_plan'>Change_plan</h2>
