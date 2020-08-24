@@ -540,8 +540,7 @@ html, body {
 
   blockquote {
     &>p {
-      // background-color: #c0392b;
-      background-color: #b2212f;
+      background-color: $block-quote-bg;
       padding: $code-annotation-padding 2em;
       color: #eee;
     }
@@ -648,8 +647,7 @@ html, body {
   text-transform: uppercase;
   font-style: normal;
   white-space: nowrap;
-  // background: #6ac174;
-  background: #e29393;
+  background: $http-method-bg;
 }
 .api-endpoint .endpoint-data h6 {
   margin: 0;

@@ -49,7 +49,7 @@ Onde c6dd212d12c665938616475c8fd6e528 deve ser o token da assinatura em que dese
             "id": 783,
             "name": "Plano Teste Doc Atualizado",
             "description": "Plano de testes para documentação",
-            "redirect_url": "http://nexaas.com",
+            "redirect_url": "https://www.myfc.com.br",
             "price": "0.0",
             "billing_period": 3,
             "translated_billing_period": "Trimestralmente",
