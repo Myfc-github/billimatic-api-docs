@@ -26,7 +26,7 @@ Exemplo: api/v1/organizations/2115/plans
             "id": 783,
             "name": "Plano Teste Doc",
             "description": "Plano de testes para documentação",
-            "redirect_url": "http://nexaas.com",
+            "redirect_url": "https://www.myfc.com.br",
             "price": "0.0",
             "billing_period": 3,
             "translated_billing_period": "Trimestralmente",
