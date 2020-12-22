@@ -106,6 +106,8 @@ includes:
   - invoice_template/invTem_listagem
   - email_templates/email_templates
   - email_templates/email_templates_list
+  - nfse_templates/nfse_templates
+  - nfse_templates/nfse_templates_list
 
 search: true
 ---
