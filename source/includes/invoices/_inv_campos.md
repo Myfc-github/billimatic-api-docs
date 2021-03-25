@@ -16,8 +16,7 @@
 | nfse_service (string, optional)                         | Código do Serviço                                                                 |
 | nfse_verification (string, optional)                    | Código de Verificação                                                             |
 | payment_value (decimal, optional)                       | Valor a Receber                                                                   |
-| emites_service_values_id (integer, optional)            | ID do Modelo de NFS-e (Emites)                                                    |
-| emites_service_value_name (string, optional)            | Nome do Modelo de NFS-e (Emites)                                                  |
+| nfse_template_id (integer, optional)                    | ID do Modelo de NFS-e                                                             |
 | finance_category (string, optional)                     | Categoria                                                                         |
 | finance_revenue_center (string, optional)               | Centro de Receita                                                                 |
 | myfinance_sale_account_id (integer, optional)           | ID da Conta de Recebível (obrig p/ criação de recebível no Myfinance)             |
