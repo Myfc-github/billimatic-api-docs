@@ -111,6 +111,9 @@ includes:
   - financial/charge_templates/charge_templates
   - financial/charge_templates/charge_template_detalhes
   - financial/charge_templates/charge_templates_list
+  - financial/payout_accounts/payout_accounts
+  - financial/payout_accounts/payout_account_detalhes
+  - financial/payout_accounts/payout_accounts_list
 
 search: true
 ---

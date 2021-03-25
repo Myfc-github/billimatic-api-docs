@@ -1,0 +1,43 @@
+## Lista de Contas de Recebimento
+
+Lista todos as contas de recebimento de uma organização
+
+<div class="api-endpoint">
+  <div class="endpoint-data">
+    <i class="label label-get">GET</i>
+     api/v1/financial/payout_accounts?organization_id={organization_id}
+  </div>
+</div>
+
+Exemplo: api/v1/financial/payout_accounts?organization_id=123
+> Exemplo de Corpo
+
+```json
+  "Essa requisição não possui corpo"
+```
+
+> Exemplo do retorno
+
+```json
+{
+  "payout_accounts":
+  [
+    {
+      "id": 1,
+      "status": "processing",
+      "bank_code": "341",
+      "bank_branch": "4644",
+      "bank_account": "095210",
+      "organization_id": 123,
+      "created_at": "2021-02-17T12:06:36.250-03:00",
+      "updated_at": "2021-02-24T15:11:46.766-03:00",
+      "payout_bank_code": "001",
+      "payout_bank_branch": "4444",
+      "payout_bank_account": "111111",
+      "payment_methods": [],
+      "accept_fixed_fine": false
+    }
+  ]
+}
+```
+
