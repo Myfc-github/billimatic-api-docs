@@ -154,6 +154,7 @@ incremental_deploy() {
 commit+push() {
   set_user_id
   git --work-tree "$deploy_directory" commit -m "$commit_message"
+  git cherry-pick d59cac86a8709ef41585b83f17cdd72ede4abb11
 
   disable_expanded_output
   #--quiet is important here to avoid outputting the repo URL, which may contain a secret token
