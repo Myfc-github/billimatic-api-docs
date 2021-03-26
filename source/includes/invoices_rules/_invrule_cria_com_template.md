@@ -111,6 +111,8 @@ Cria uma regra de faturamento a partir de um modelo de faturamento
       "card_expiration_month": "--",
       "card_expiration_year": "--",
       "installments": null,
+      "financial_charge_template_id": 2,
+      "financial_account_id": 51,
       "created_at": "20/12/2018 13:45:05 -02:00"
     },
     "additional_information": {

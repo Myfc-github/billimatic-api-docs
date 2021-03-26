@@ -14,53 +14,52 @@ Cria uma regra de faturamento
 
 ```json
 {
-  "invoice_rule":
-  {
-	  "contract_id": 11986,
-	  "gross_value": 100,
-	  "description": "Regra de faturamento teste para Doc",
-	  "nfe_body": "Nfe Teste para Regra de Faturamento",
-	  "charge_type": "fixed_day",
-	  "additional_information": {
-	    "title": "Teste Documentacao",
-	    "init_date": "01-12-2018",
-	    "period_unit": "monthly",
-	    "month_quantity": 3,
-	    "accrual_month_quantity": "same_month"
-	  },
-	  "management_type": "manual",
-	  "days_until_automatic_nfe_emission": 0,
-	  "services":[
-	  	{
-	    "service_item_id": 383,
-	    "description": "Teste",
-	    "units": 1,
-	    "unit_value": 100,
-	    "value": 100
-		}
-	  ],
-	  "scheduled_updates":
-	  [
-		  {
-		    "service_item_id": 383,
-		    "init_date": "12-12-2018",
-		    "month_quantity": 3,
-		    "price_index": "ipca",
-		    "days_until_update": 10
-		  }
-	  ],
-	  "receivables_additional_information":
-	   {
-		"parcel_number": 1,
-		"day_number": 1,
-		"day_quantity": 1,
-		"only_business_days": false,
-		"month_quantity": 10
-	   },
-	  "payment_information": {
-		 "payment_method": "billet"
-	  }
-  }
+    "invoice_rule": {
+        "contract_id": 11986,
+        "gross_value": 100,
+        "description": "Regra de faturamento teste para Doc",
+        "nfe_body": "Nfe Teste para Regra de Faturamento",
+        "charge_type": "fixed_day",
+        "additional_information": {
+            "title": "Teste Documentacao",
+            "init_date": "01-12-2018",
+            "period_unit": "monthly",
+            "month_quantity": 3,
+            "accrual_month_quantity": "same_month"
+        },
+        "management_type": "manual",
+        "days_until_automatic_nfe_emission": 0,
+        "services": [
+            {
+                "service_item_id": 383,
+                "description": "Teste",
+                "units": 1,
+                "unit_value": 100,
+                "value": 100
+            }
+        ],
+        "scheduled_updates": [
+            {
+                "service_item_id": 383,
+                "init_date": "12-12-2018",
+                "month_quantity": 3,
+                "price_index": "ipca",
+                "days_until_update": 10
+            }
+        ],
+        "receivables_additional_information": {
+            "parcel_number": 1,
+            "day_number": 1,
+            "day_quantity": 1,
+            "only_business_days": false,
+            "month_quantity": 10
+        },
+        "payment_information": {
+            "payment_method": "billet",
+            "financial_charge_template_id": 2,
+            "financial_account_id": 51
+        }
+    }
 }
 ```
 
@@ -126,6 +125,8 @@ Cria uma regra de faturamento
             "card_expiration_month": "--",
             "card_expiration_year": "--",
             "installments": null,
+            "financial_charge_template_id": 2,
+            "financial_account_id": 51
             "created_at": "10/12/2018 17:03:19 -02:00"
         },
         "additional_information": {

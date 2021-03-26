@@ -102,6 +102,8 @@ Bloqueia um faturamento
             "card_expiration_month": "--",
             "card_expiration_year": "--",
             "installments": null,
+            "financial_charge_template_id": 2,
+            "financial_account_id": 51,
             "created_at": "10/12/2018 14:20:47 -02:00"
         }
     }
