@@ -487,6 +487,28 @@
                   </li>
               </ul>
           </li>
+          <li>
+            <a href="#modelos-de-cobranca" class="toc-h1 toc-link" data-title="Modelos de Cobrança">Modelos de Cobrança</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#detalhes-de-modelo-de-cobranca" class="toc-h2 toc-link" data-title="Detalhes de Modelo de Cobrança">Detalhes de Modelo de Cobrança</a>
+                  </li>
+                  <li>
+                    <a href="#lista-modelos-de-cobranca" class="toc-h2 toc-link" data-title="Lista Modelos de Cobrança">Lista Modelos de Cobrança</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#contas-de-recebimento" class="toc-h1 toc-link" data-title="Contas de Recebimento">Contas de Recebimento</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#detalhes-de-conta-de-recebimento" class="toc-h2 toc-link" data-title="Detalhes de Conta de Recebimento">Detalhes de Conta de Recebimento</a>
+                  </li>
+                  <li>
+                    <a href="#lista-de-contas-de-recebimento" class="toc-h2 toc-link" data-title="Lista de Contas de Recebimento">Lista de Contas de Recebimento</a>
+                  </li>
+              </ul>
+          </li>
       </ul>
         <ul class="toc-footer">
             <li><a href='https://www.myfc.com.br' target="_blank" >Este projeto é mantido por Myfreecomm</a></li>
@@ -6673,6 +6695,175 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
       </span><span class="s2">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-11-30T16:27:15.929-03:00"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"external_service_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
       </span><span class="s2">"external_service_description"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+          <h1 id='modelos-de-cobranca'>Modelos de Cobrança</h1>
+          <h2 id='detalhes-de-modelo-de-cobranca'>Detalhes de Modelo de Cobrança</h2>
+<p>Mostra detalhes de um Modelo de Cobrança</p>
+
+<div class="api-endpoint">
+  <div class="endpoint-data">
+    <i class="label label-get">GET</i>
+     api/v1/financial/charge_templates/{charge_template_id}
+  </div>
+</div>
+
+<p>Exemplo: api/v1/financial/charge_templates/16</p>
+
+<blockquote>
+<p>Exemplo de Corpo</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="w">  </span><span class="s2">"Essa requisição não possui corpo"</span><span class="w">
+</span></code></pre>
+<blockquote>
+<p>Exemplo do retorno</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">16</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Teste 3"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"interest_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.0"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"fine_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.0"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"instructions"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-03-01T20:48:07.614-03:00"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-03-01T20:48:07.614-03:00"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"organization_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"financial_account_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"payment_method"</span><span class="p">:</span><span class="w"> </span><span class="s2">"boleto"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"fine_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"without"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"interest_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"without"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+          <h2 id='lista-modelos-de-cobranca'>Lista Modelos de Cobrança</h2>
+<p>Lista todos os modelos de cobrança de uma organização</p>
+
+<div class="api-endpoint">
+  <div class="endpoint-data">
+    <i class="label label-get">GET</i>
+     api/v1/financial/charge_templates?organization_id={organization_id}
+  </div>
+</div>
+
+<p>Exemplo: api/v1/financial/charge_templates?organization_id=123</p>
+
+<blockquote>
+<p>Exemplo de Corpo</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="w">  </span><span class="s2">"Essa requisição não possui corpo"</span><span class="w">
+</span></code></pre>
+<blockquote>
+<p>Exemplo do retorno</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="w">
+</span><span class="p">{</span><span class="w">
+  </span><span class="s2">"charge_templates"</span><span class="p">:</span><span class="w"> 
+    </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">16</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Teste 3"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"interest_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.0"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"fine_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.0"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"instructions"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-03-01T20:48:07.614-03:00"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-03-01T20:48:07.614-03:00"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"organization_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">123</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"financial_account_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"payment_method"</span><span class="p">:</span><span class="w"> </span><span class="s2">"boleto"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"fine_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"without"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"interest_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"without"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">18</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Teste 5"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"interest_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.0"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"fine_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.0"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"instructions"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-03-01T20:48:22.921-03:00"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-03-01T20:48:22.921-03:00"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"organization_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">123</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"financial_account_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"payment_method"</span><span class="p">:</span><span class="w"> </span><span class="s2">"boleto"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"fine_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"without"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"interest_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"without"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+          <h1 id='contas-de-recebimento'>Contas de Recebimento</h1>
+          <h2 id='detalhes-de-conta-de-recebimento'>Detalhes de Conta de Recebimento</h2>
+<p>Mostra detalhes de uma Conta de Recebimento</p>
+
+<div class="api-endpoint">
+  <div class="endpoint-data">
+    <i class="label label-get">GET</i>
+     api/v1/financial/payout_accounts/{payout_account_id}
+  </div>
+</div>
+
+<p>Exemplo: api/v1/financial/payout_accounts/1</p>
+
+<blockquote>
+<p>Exemplo de Corpo</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="w">  </span><span class="s2">"Essa requisição não possui corpo"</span><span class="w">
+</span></code></pre>
+<blockquote>
+<p>Exemplo do retorno</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"processing"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"bank_code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"341"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"bank_branch"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4644"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"bank_account"</span><span class="p">:</span><span class="w"> </span><span class="s2">"095210"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"organization_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">123</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-02-17T12:06:36.250-03:00"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-02-24T15:11:46.766-03:00"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"payout_bank_code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"001"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"payout_bank_branch"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4444"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"payout_bank_account"</span><span class="p">:</span><span class="w"> </span><span class="s2">"111111"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"payment_methods"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"boleto"</span><span class="p">],</span><span class="w">
+  </span><span class="s2">"accept_fixed_fine"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+          <h2 id='lista-de-contas-de-recebimento'>Lista de Contas de Recebimento</h2>
+<p>Lista todos as contas de recebimento de uma organização</p>
+
+<div class="api-endpoint">
+  <div class="endpoint-data">
+    <i class="label label-get">GET</i>
+     api/v1/financial/payout_accounts?organization_id={organization_id}
+  </div>
+</div>
+
+<p>Exemplo: api/v1/financial/payout_accounts?organization_id=123</p>
+
+<blockquote>
+<p>Exemplo de Corpo</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="w">  </span><span class="s2">"Essa requisição não possui corpo"</span><span class="w">
+</span></code></pre>
+<blockquote>
+<p>Exemplo do retorno</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"payout_accounts"</span><span class="p">:</span><span class="w">
+  </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"processing"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"bank_code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"341"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"bank_branch"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4644"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"bank_account"</span><span class="p">:</span><span class="w"> </span><span class="s2">"095210"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"organization_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">123</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-02-17T12:06:36.250-03:00"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-02-24T15:11:46.766-03:00"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"payout_bank_code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"001"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"payout_bank_branch"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4444"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"payout_bank_account"</span><span class="p">:</span><span class="w"> </span><span class="s2">"111111"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"payment_methods"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+      </span><span class="s2">"accept_fixed_fine"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
     </span><span class="p">}</span><span class="w">
   </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
