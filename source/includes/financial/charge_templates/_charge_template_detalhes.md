@@ -22,17 +22,19 @@ Exemplo: api/v1/financial/charge_templates/16
 
 ```json
 {
-  "id": 16,
-  "name": "Teste 3",
-  "interest_value": "0.0",
-  "fine_value": "0.0",
-  "instructions": "",
-  "created_at": "2021-03-01T20:48:07.614-03:00",
-  "updated_at": "2021-03-01T20:48:07.614-03:00",
-  "organization_id": 1,
-  "financial_account_id": 1,
-  "payment_method": "boleto",
-  "fine_type": "without",
-  "interest_type": "without"
+  "charge_template": {
+    "id": 16,
+    "name": "Teste 3",
+    "interest_value": "0.0",
+    "fine_value": "0.0",
+    "instructions": "",
+    "organization_id": 1,
+    "financial_account_id": 1,
+    "payment_method": "boleto",
+    "fine_type": "without",
+    "interest_type": "without",
+    "created_at": "2021-03-01T20:48:07.614-03:00",
+    "updated_at": "2021-03-01T20:48:07.614-03:00"
+  }
 }
 ```
