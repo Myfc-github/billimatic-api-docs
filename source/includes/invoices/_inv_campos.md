@@ -84,8 +84,10 @@ Campo: approval_status poderá conter:  'approved' para aprovado, 'blocked' para
 <br>
 <strong> Campos do node PaymentInformation  </strong>
 
-|              Campo                  |      Finalidade
-| ----------------------------------- | --------------------------------------------------- |
-| id (integer, optional)              | ID das informações de pagamento                     |
-| payment_method (string, optional)   | Forma de pagamento ('billet' para boleto bancário, 'payment_gateway' para cartão de crédito, 'transfer' para transferência bancária) |
-| installments                        | Quantidade de parcelas para pagamento em cartão de crédito. Valor apenas aceito para ‘payment_method’ como ‘payment_gateway’ (Pode ser igual ou maior que 1; caso seja null, será considerada apenas 1 parcela). Caso o ‘payment_method’ seja ‘billet’ ou ‘transfer’, o valor é null. |
+|              Campo                               |      Finalidade
+| ------------------------------------------------ | --------------------------------------------------- |
+| id (integer, optional)                           | ID das informações de pagamento                     |
+| payment_method (string, optional)                | Forma de pagamento ('billet' para boleto bancário, 'payment_gateway' para cartão de crédito, 'transfer' para transferência bancária) |
+| installments                                     | Quantidade de parcelas para pagamento em cartão de crédito. Valor apenas aceito para ‘payment_method’ como ‘payment_gateway’ (Pode ser igual ou maior que 1; caso seja null, será considerada apenas 1 parcela). Caso o ‘payment_method’ seja ‘billet’ ou ‘transfer’, o valor é null. |
+| financial_charge_template_id (integer, optional) | ID do modelo de cobrança                            |
+| financial_account_id (integer, optional)         | ID da conta de recebimento                          |

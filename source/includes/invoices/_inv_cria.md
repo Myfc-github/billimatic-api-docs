@@ -15,54 +15,56 @@ Cria um faturamento
 ```json
 {
   "invoice": {
-	  "contract_id": 11986,
-	  "gross_value": 700.0,
-	  "number": 2,
-	  "issue_date": "02-12-2018",
-	  "accrual_date": "",
-	  "description": "Teste Doc",
-	  "nfse_service": "",
-	  "nfse_verification": "",
-	  "payment_value": "decimal",
-	  "nfse_template_id": 1,
-	  "finance_category": "",
-	  "finance_revenue_center": "",
-	  "myfinance_sale_account_id": "",
-	  "myfinance_sale_account_name": "",
-	  "nfe_body": "Nfe teste ",
-	  "cobrato_charge_config_id": "",
-	  "cobrato_charge_config_name": "",
-	  "cobrato_charge_template_id": "",
-	  "cobrato_charge_template_name": "",
-	  "days_until_automatic_nfe_emission": 0,
-	  "comments": 0,
-	  "receivables":
-	  [
-		  {
-		    "value": 100,
-		    "due_date": "02-12-2019"
-		  }
-	  ],
-	  "services": [
-	  	{
-	    "service_item_id": "383",
-	    "description": "Teste",
-	    "units": 100,
-	    "unit_value": 100,
-	    "value": 100
-		}
-	  ],
-	  "attachments": [
-	  	{
-	    "filename": "teste",
-	    "content": "tst",
-	    "content_type": "application/vnd.ms-excel"
-		}
-	  ],
-	  "payment_information": {
-	    "payment_method": "billet"
-	  }
-	}
+    "contract_id": 11986,
+    "gross_value": 700.0,
+    "number": 2,
+    "issue_date": "02-12-2018",
+    "accrual_date": "",
+    "description": "Teste Doc",
+    "nfse_service": "",
+    "nfse_verification": "",
+    "payment_value": "decimal",
+    "nfse_template_id": 1,
+    "finance_category": "",
+    "finance_revenue_center": "",
+    "myfinance_sale_account_id": "",
+    "myfinance_sale_account_name": "",
+    "nfe_body": "Nfe teste ",
+    "cobrato_charge_config_id": "",
+    "cobrato_charge_config_name": "",
+    "cobrato_charge_template_id": "",
+    "cobrato_charge_template_name": "",
+    "days_until_automatic_nfe_emission": 0,
+    "comments": 0,
+    "receivables":
+    [
+      {
+        "value": 100,
+        "due_date": "02-12-2019"
+      }
+    ],
+    "services": [
+      {
+      "service_item_id": "383",
+      "description": "Teste",
+      "units": 100,
+      "unit_value": 100,
+      "value": 100
+    }
+    ],
+    "attachments": [
+      {
+      "filename": "teste",
+      "content": "tst",
+      "content_type": "application/vnd.ms-excel"
+    }
+    ],
+    "payment_information": {
+      "payment_method": "billet",
+      "financial_charge_template_id": 2,
+      "financial_account_id": 51
+    }
+  }
 }
 
 ```
@@ -152,6 +154,8 @@ Cria um faturamento
             "card_expiration_month": "--",
             "card_expiration_year": "--",
             "installments": null,
+            "financial_charge_template_id": 2,
+            "financial_account_id": 51,
             "created_at": "10/12/2018 10:55:10 -02:00"
         }
     }
