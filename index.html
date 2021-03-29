@@ -6721,18 +6721,20 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
 <p>Exemplo do retorno</p>
 </blockquote>
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">16</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Teste 3"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"interest_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.0"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"fine_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.0"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"instructions"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-03-01T20:48:07.614-03:00"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-03-01T20:48:07.614-03:00"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"organization_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"financial_account_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"payment_method"</span><span class="p">:</span><span class="w"> </span><span class="s2">"boleto"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"fine_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"without"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"interest_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"without"</span><span class="w">
+  </span><span class="s2">"charge_template"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">16</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Teste 3"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"interest_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.0"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"fine_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.0"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"instructions"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"organization_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"financial_account_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"payment_method"</span><span class="p">:</span><span class="w"> </span><span class="s2">"boleto"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"fine_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"without"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"interest_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"without"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-03-01T20:48:07.614-03:00"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-03-01T20:48:07.614-03:00"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
           <h2 id='lista-modelos-de-cobranca'>Lista Modelos de Cobrança</h2>
@@ -6765,13 +6767,13 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
       </span><span class="s2">"interest_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.0"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"fine_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.0"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"instructions"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-03-01T20:48:07.614-03:00"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-03-01T20:48:07.614-03:00"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"organization_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">123</span><span class="p">,</span><span class="w">
       </span><span class="s2">"financial_account_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
       </span><span class="s2">"payment_method"</span><span class="p">:</span><span class="w"> </span><span class="s2">"boleto"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"fine_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"without"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"interest_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"without"</span><span class="w">
+      </span><span class="s2">"interest_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"without"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-03-01T20:48:07.614-03:00"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-03-01T20:48:07.614-03:00"</span><span class="w">
     </span><span class="p">},</span><span class="w">
     </span><span class="p">{</span><span class="w">
       </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">18</span><span class="p">,</span><span class="w">
@@ -6779,13 +6781,13 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
       </span><span class="s2">"interest_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.0"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"fine_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.0"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"instructions"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-03-01T20:48:22.921-03:00"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-03-01T20:48:22.921-03:00"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"organization_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">123</span><span class="p">,</span><span class="w">
       </span><span class="s2">"financial_account_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
       </span><span class="s2">"payment_method"</span><span class="p">:</span><span class="w"> </span><span class="s2">"boleto"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"fine_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"without"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"interest_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"without"</span><span class="w">
+      </span><span class="s2">"interest_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"without"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-03-01T20:48:22.921-03:00"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-03-01T20:48:22.921-03:00"</span><span class="w">
     </span><span class="p">}</span><span class="w">
   </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
@@ -6812,19 +6814,21 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
 <p>Exemplo do retorno</p>
 </blockquote>
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"processing"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"bank_code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"341"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"bank_branch"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4644"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"bank_account"</span><span class="p">:</span><span class="w"> </span><span class="s2">"095210"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"organization_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">123</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-02-17T12:06:36.250-03:00"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-02-24T15:11:46.766-03:00"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"payout_bank_code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"001"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"payout_bank_branch"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4444"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"payout_bank_account"</span><span class="p">:</span><span class="w"> </span><span class="s2">"111111"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"payment_methods"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"boleto"</span><span class="p">],</span><span class="w">
-  </span><span class="s2">"accept_fixed_fine"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+  </span><span class="s2">"payout_account"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"processing"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"bank_code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"341"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"bank_branch"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4644"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"bank_account"</span><span class="p">:</span><span class="w"> </span><span class="s2">"095210"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"organization_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">123</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"payout_bank_code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"001"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"payout_bank_branch"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4444"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"payout_bank_account"</span><span class="p">:</span><span class="w"> </span><span class="s2">"111111"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"payment_methods"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"boleto"</span><span class="p">],</span><span class="w">
+    </span><span class="s2">"accept_fixed_fine"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-02-17T12:06:36.250-03:00"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-02-24T15:11:46.766-03:00"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
           <h2 id='lista-de-contas-de-recebimento'>Lista de Contas de Recebimento</h2>
@@ -6857,13 +6861,13 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
       </span><span class="s2">"bank_branch"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4644"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"bank_account"</span><span class="p">:</span><span class="w"> </span><span class="s2">"095210"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"organization_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">123</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-02-17T12:06:36.250-03:00"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-02-24T15:11:46.766-03:00"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"payout_bank_code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"001"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"payout_bank_branch"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4444"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"payout_bank_account"</span><span class="p">:</span><span class="w"> </span><span class="s2">"111111"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"payment_methods"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
-      </span><span class="s2">"accept_fixed_fine"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+      </span><span class="s2">"accept_fixed_fine"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-02-17T12:06:36.250-03:00"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-02-24T15:11:46.766-03:00"</span><span class="p">,</span><span class="w">
     </span><span class="p">}</span><span class="w">
   </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
