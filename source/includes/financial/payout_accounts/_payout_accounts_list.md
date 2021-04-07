@@ -5,11 +5,11 @@ Lista todos as contas de recebimento de uma organização
 <div class="api-endpoint">
   <div class="endpoint-data">
     <i class="label label-get">GET</i>
-     api/v1/financial/payout_accounts?organization_id={organization_id}
+     api/v1/organizations/{organization_id}/payout_accounts
   </div>
 </div>
 
-Exemplo: api/v1/financial/payout_accounts?organization_id=123
+Exemplo: api/v1/organizations/123/payout_accounts
 > Exemplo de Corpo
 
 ```json
