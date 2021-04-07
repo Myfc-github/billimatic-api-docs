@@ -5,11 +5,11 @@ Lista todos os modelos de cobrança de uma organização
 <div class="api-endpoint">
   <div class="endpoint-data">
     <i class="label label-get">GET</i>
-     api/v1/financial/charge_templates?organization_id={organization_id}
+     api/v1/organizations/{organization_id}/charge_templates
   </div>
 </div>
 
-Exemplo: api/v1/financial/charge_templates?organization_id=123
+Exemplo: api/v1/organizations/123/charge_templates
 > Exemplo de Corpo
 
 ```json
