@@ -6,11 +6,11 @@ Mostra detalhes de um Modelo de Cobrança
 <div class="api-endpoint">
   <div class="endpoint-data">
     <i class="label label-get">GET</i>
-     api/v1/financial/charge_templates/{charge_template_id}
+     api/v1/organizations/{organization_id}/charge_templates/{id}
   </div>
 </div>
 
-Exemplo: api/v1/financial/charge_templates/16
+Exemplo: api/v1/organizations/123/charge_templates/16
 
 > Exemplo de Corpo
 
@@ -28,7 +28,7 @@ Exemplo: api/v1/financial/charge_templates/16
     "interest_value": "0.0",
     "fine_value": "0.0",
     "instructions": "",
-    "organization_id": 1,
+    "organization_id": 123,
     "financial_account_id": 1,
     "payment_method": "boleto",
     "fine_type": "without",

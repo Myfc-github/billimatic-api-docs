@@ -6,11 +6,11 @@ Mostra detalhes de uma Conta de Recebimento
 <div class="api-endpoint">
   <div class="endpoint-data">
     <i class="label label-get">GET</i>
-     api/v1/financial/payout_accounts/{payout_account_id}
+     api/v1/organizations/{organization_id}/payout_accounts/{id}
   </div>
 </div>
 
-Exemplo: api/v1/financial/payout_accounts/1
+Exemplo: api/v1/organizations/123/payout_accounts/1
 
 > Exemplo de Corpo
 
