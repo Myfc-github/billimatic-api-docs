@@ -1,16 +1,16 @@
-## Detalhes de Conta de Recebimento
+## Detalhes de Conta Digital
 
-Mostra detalhes de uma Conta de Recebimento
+Mostra detalhes de uma Conta Digital
 
 
 <div class="api-endpoint">
   <div class="endpoint-data">
     <i class="label label-get">GET</i>
-     api/v1/organizations/{organization_id}/payout_accounts/{id}
+     api/v1/organizations/{organization_id}/financial_accounts/{id}
   </div>
 </div>
 
-Exemplo: api/v1/organizations/123/payout_accounts/1
+Exemplo: api/v1/organizations/123/financial_accounts/1
 
 > Exemplo de Corpo
 
@@ -22,7 +22,7 @@ Exemplo: api/v1/organizations/123/payout_accounts/1
 
 ```json
 {
-  "payout_account": {
+  "financial_account": {
     "id": 1,
     "status": "processing",
     "bank_code": "341",
