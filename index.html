@@ -499,13 +499,13 @@
               </ul>
           </li>
           <li>
-            <a href="#contas-de-recebimento" class="toc-h1 toc-link" data-title="Contas de Recebimento">Contas de Recebimento</a>
+            <a href="#contas-digitais" class="toc-h1 toc-link" data-title="Contas Digitais">Contas Digitais</a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#detalhes-de-conta-de-recebimento" class="toc-h2 toc-link" data-title="Detalhes de Conta de Recebimento">Detalhes de Conta de Recebimento</a>
+                    <a href="#detalhes-de-conta-digital" class="toc-h2 toc-link" data-title="Detalhes de Conta Digital">Detalhes de Conta Digital</a>
                   </li>
                   <li>
-                    <a href="#lista-de-contas-de-recebimento" class="toc-h2 toc-link" data-title="Lista de Contas de Recebimento">Lista de Contas de Recebimento</a>
+                    <a href="#lista-de-contas-digitais" class="toc-h2 toc-link" data-title="Lista de Contas Digitais">Lista de Contas Digitais</a>
                   </li>
               </ul>
           </li>
@@ -6839,18 +6839,18 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
   </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
-          <h1 id='contas-de-recebimento'>Contas de Recebimento</h1>
-          <h2 id='detalhes-de-conta-de-recebimento'>Detalhes de Conta de Recebimento</h2>
-<p>Mostra detalhes de uma Conta de Recebimento</p>
+          <h1 id='contas-digitais'>Contas Digitais</h1>
+          <h2 id='detalhes-de-conta-digital'>Detalhes de Conta Digital</h2>
+<p>Mostra detalhes de uma Conta Digital</p>
 
 <div class="api-endpoint">
   <div class="endpoint-data">
     <i class="label label-get">GET</i>
-     api/v1/organizations/{organization_id}/payout_accounts/{id}
+     api/v1/organizations/{organization_id}/financial_accounts/{id}
   </div>
 </div>
 
-<p>Exemplo: api/v1/organizations/123/payout_accounts/1</p>
+<p>Exemplo: api/v1/organizations/123/financial_accounts/1</p>
 
 <blockquote>
 <p>Exemplo de Corpo</p>
@@ -6861,7 +6861,7 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
 <p>Exemplo do retorno</p>
 </blockquote>
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="s2">"payout_account"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+  </span><span class="s2">"financial_account"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
     </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"processing"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"bank_code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"341"</span><span class="p">,</span><span class="w">
@@ -6878,17 +6878,17 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
-          <h2 id='lista-de-contas-de-recebimento'>Lista de Contas de Recebimento</h2>
-<p>Lista todos as contas de recebimento de uma organização</p>
+          <h2 id='lista-de-contas-digitais'>Lista de Contas Digitais</h2>
+<p>Lista todos as contas de digitais de uma organização</p>
 
 <div class="api-endpoint">
   <div class="endpoint-data">
     <i class="label label-get">GET</i>
-     api/v1/organizations/{organization_id}/payout_accounts
+     api/v1/organizations/{organization_id}/financial_accounts
   </div>
 </div>
 
-<p>Exemplo: api/v1/organizations/123/payout_accounts</p>
+<p>Exemplo: api/v1/organizations/123/financial_accounts</p>
 
 <blockquote>
 <p>Exemplo de Corpo</p>
@@ -6899,7 +6899,7 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
 <p>Exemplo do retorno</p>
 </blockquote>
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="s2">"payout_accounts"</span><span class="p">:</span><span class="w">
+  </span><span class="s2">"financial_accounts"</span><span class="p">:</span><span class="w">
   </span><span class="p">[</span><span class="w">
     </span><span class="p">{</span><span class="w">
       </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
