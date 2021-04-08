@@ -1,15 +1,15 @@
-## Lista de Contas de Recebimento
+## Lista de Contas Digitais
 
-Lista todos as contas de recebimento de uma organização
+Lista todos as contas de digitais de uma organização
 
 <div class="api-endpoint">
   <div class="endpoint-data">
     <i class="label label-get">GET</i>
-     api/v1/organizations/{organization_id}/payout_accounts
+     api/v1/organizations/{organization_id}/financial_accounts
   </div>
 </div>
 
-Exemplo: api/v1/organizations/123/payout_accounts
+Exemplo: api/v1/organizations/123/financial_accounts
 > Exemplo de Corpo
 
 ```json
@@ -20,7 +20,7 @@ Exemplo: api/v1/organizations/123/payout_accounts
 
 ```json
 {
-  "payout_accounts":
+  "financial_accounts":
   [
     {
       "id": 1,
