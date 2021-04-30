@@ -15,19 +15,19 @@ Cria uma nova pessoa.
 
 ```json
 {
-  "name": "Fulano de Tal",
-  "cpf": "82868688977",
-  "email": "fulano@email.com",
-  "zipcode": "02360100",
-  "address": "Rua Americanas",
-  "number": "12",
-  "complement": "",
-  "district": "Santana",
-  "city": "São Paulo",
-  "state": "SP",
-  "comments": "",
-  "client_since": "date"
-
+    "name": "Fulano de Tal",
+    "cpf": "82868688977",
+    "email": "fulano@email.com",
+    "zipcode": "02360100",
+    "address": "Rua Americanas",
+    "number": "12",
+    "complement": "",
+    "district": "Santana",
+    "city": "São Paulo",
+    "state": "SP",
+    "comments": "",
+    "client_since": "date",
+    "allow_email_on_nfse": true
 }
 ```
 
@@ -50,6 +50,7 @@ Cria uma nova pessoa.
         "state": "SP",
         "comments": "",
         "client_since": null,
+        "allow_email_on_nfse": true,
         "myfinance_customer_id": null,
         "myfinance_errors": null,
         "created_at": "05/12/2018 14:03:36 -02:00"

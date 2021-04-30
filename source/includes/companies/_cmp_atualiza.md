@@ -15,7 +15,7 @@ Atualiza uma empresa
 
 ```json
 {
-  "address": "Nossa Senhora das Vitórias",
+    "address": "Nossa Senhora das Vitórias"
 }
 ```
 

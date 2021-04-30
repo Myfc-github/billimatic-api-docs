@@ -14,10 +14,10 @@ Cria uma nova empresa
 
 ```json
 {
-  "company": {
-	  "name": "JSkank Company Bills",
-	  "cnpj": "38.624.936/0001-66"
-  }
+    "company": {
+        "name": "JSkank Company Bills",
+        "cnpj": "38.624.936/0001-66"
+    }
 }
 ```
 

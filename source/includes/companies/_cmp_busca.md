@@ -20,7 +20,7 @@ Onde o cnpj=55391268000193 deverá conter o número do cnpj desejado
 > Exemplo do retorno
 
 ```json
-  {
+{
     "companies": [
         {
             "id": 2122,

@@ -15,9 +15,9 @@ O corpo da requisição deverá conter somente o(s) campo(s) que deseja(m) ser a
 
 ```json
 {
-  "person": {
-      "name": "Beltrano",
-  }
+    "person": {
+        "name": "Beltrano"
+    }
 }
 ```
 
@@ -40,6 +40,7 @@ O corpo da requisição deverá conter somente o(s) campo(s) que deseja(m) ser a
         "state": "SP",
         "comments": "",
         "client_since": null,
+        "allow_email_on_nfse": false,
         "myfinance_customer_id": 2416551,
         "myfinance_errors": null,
         "created_at": "05/12/2018 14:03:36 -02:00"
