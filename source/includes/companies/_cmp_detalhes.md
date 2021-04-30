@@ -40,6 +40,7 @@ Mostra os detalhes de uma empresa
     "kind": "company",
     "comments": "#PINGOID20093",
     "client_since": null,
+    "nfse_email": "teste@teste.com.br",
     "myfinance_customer_id": 2240155,
     "myfinance_errors": null,
     "created_at": "28/04/2018 11:41:53 -03:00"
