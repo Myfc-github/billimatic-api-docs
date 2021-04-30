@@ -13,9 +13,7 @@ Lista a(s) empresa(s) em uma conta
 > Exemplo de Corpo
 
 ```json
-{
   "Essa requisição não possui corpo"
-}
 ```
 
 > Exemplo do retorno
