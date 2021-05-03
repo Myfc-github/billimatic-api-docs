@@ -19,3 +19,4 @@
 | billing_contacts (string, optional)  | E-mails para faturamento             |
 | comments (string, optional)          | Observações                          |
 | client_since (date, optional)        | Cliente Desde                        |
+| nfse_email (string, optional)        | E-mail para nota fiscal              |

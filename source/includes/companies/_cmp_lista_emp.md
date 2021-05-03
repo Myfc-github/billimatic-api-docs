@@ -13,9 +13,7 @@ Lista a(s) empresa(s) em uma conta
 > Exemplo de Corpo
 
 ```json
-{
   "Essa requisição não possui corpo"
-}
 ```
 
 > Exemplo do retorno
@@ -43,6 +41,7 @@ Lista a(s) empresa(s) em uma conta
             "kind": "company",
             "comments": "#Empresa Contrato vip nº 20093",
             "client_since": null,
+            "nfse_email": null,
             "myfinance_customer_id": 2240155,
             "myfinance_errors": null,
             "created_at": "28/04/2018 11:41:53 -03:00"
@@ -67,6 +66,7 @@ Lista a(s) empresa(s) em uma conta
             "kind": "company",
             "comments": "#Empresa Contrato vip nº 20322",
             "client_since": null,
+            "nfse_email": "teste@teste.com.br",
             "myfinance_customer_id": 2306837,
             "myfinance_errors": null,
             "created_at": "28/04/2018 11:41:53 -03:00"
@@ -91,6 +91,7 @@ Lista a(s) empresa(s) em uma conta
             "kind": "company",
             "comments": "",
             "client_since": null,
+            "nfse_email": null,
             "myfinance_customer_id": 2245885,
             "myfinance_errors": null,
             "created_at": "28/04/2018 11:41:53 -03:00"
