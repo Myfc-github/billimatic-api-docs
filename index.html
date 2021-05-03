@@ -1093,10 +1093,10 @@ de uma assinatura (e-commerce)</p>
 <p>Exemplo de Corpo</p>
 </blockquote>
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="s2">"company"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"JSkank Company Bills"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"cnpj"</span><span class="p">:</span><span class="w"> </span><span class="s2">"38.624.936/0001-66"</span><span class="w">
-  </span><span class="p">}</span><span class="w">
+    </span><span class="s2">"company"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"JSkank Company Bills"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"cnpj"</span><span class="p">:</span><span class="w"> </span><span class="s2">"38.624.936/0001-66"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
 <blockquote>
@@ -1123,6 +1123,7 @@ de uma assinatura (e-commerce)</p>
         </span><span class="s2">"kind"</span><span class="p">:</span><span class="w"> </span><span class="s2">"company"</span><span class="p">,</span><span class="w">
         </span><span class="s2">"comments"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
         </span><span class="s2">"client_since"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"nfse_email"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
         </span><span class="s2">"myfinance_customer_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
         </span><span class="s2">"myfinance_errors"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
         </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"03/12/2018 12:35:54 -02:00"</span><span class="w">
@@ -1202,6 +1203,10 @@ de uma assinatura (e-commerce)</p>
 <td>client_since (date, optional)</td>
 <td>Cliente Desde</td>
 </tr>
+<tr>
+<td>nfse_email (string, optional)</td>
+<td>E-mail para nota fiscal</td>
+</tr>
 </tbody></table>
 
           <h2 id='busca-empresa'>Busca Empresa</h2>
@@ -1224,7 +1229,7 @@ de uma assinatura (e-commerce)</p>
 <blockquote>
 <p>Exemplo do retorno</p>
 </blockquote>
-<pre class="highlight json tab-json"><code><span class="w">  </span><span class="p">{</span><span class="w">
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
     </span><span class="s2">"companies"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
         </span><span class="p">{</span><span class="w">
             </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2122</span><span class="p">,</span><span class="w">
@@ -1246,6 +1251,7 @@ de uma assinatura (e-commerce)</p>
             </span><span class="s2">"kind"</span><span class="p">:</span><span class="w"> </span><span class="s2">"company"</span><span class="p">,</span><span class="w">
             </span><span class="s2">"comments"</span><span class="p">:</span><span class="w"> </span><span class="s2">"teste"</span><span class="p">,</span><span class="w">
             </span><span class="s2">"client_since"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"nfse_email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"teste@teste.com.br"</span><span class="p">,</span><span class="w">
             </span><span class="s2">"myfinance_customer_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">213341</span><span class="p">,</span><span class="w">
             </span><span class="s2">"myfinance_errors"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
             </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10/12/2018 15:26:12 -02:00"</span><span class="w">
@@ -1297,9 +1303,7 @@ de uma assinatura (e-commerce)</p>
 <blockquote>
 <p>Exemplo de Corpo</p>
 </blockquote>
-<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="s2">"Essa requisição não possui corpo"</span><span class="w">
-</span><span class="p">}</span><span class="w">
+<pre class="highlight json tab-json"><code><span class="w">  </span><span class="s2">"Essa requisição não possui corpo"</span><span class="w">
 </span></code></pre>
 <blockquote>
 <p>Exemplo do retorno</p>
@@ -1326,6 +1330,7 @@ de uma assinatura (e-commerce)</p>
             </span><span class="s2">"kind"</span><span class="p">:</span><span class="w"> </span><span class="s2">"company"</span><span class="p">,</span><span class="w">
             </span><span class="s2">"comments"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#Empresa Contrato vip nº 20093"</span><span class="p">,</span><span class="w">
             </span><span class="s2">"client_since"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"nfse_email"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
             </span><span class="s2">"myfinance_customer_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2240155</span><span class="p">,</span><span class="w">
             </span><span class="s2">"myfinance_errors"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
             </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"28/04/2018 11:41:53 -03:00"</span><span class="w">
@@ -1350,6 +1355,7 @@ de uma assinatura (e-commerce)</p>
             </span><span class="s2">"kind"</span><span class="p">:</span><span class="w"> </span><span class="s2">"company"</span><span class="p">,</span><span class="w">
             </span><span class="s2">"comments"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#Empresa Contrato vip nº 20322"</span><span class="p">,</span><span class="w">
             </span><span class="s2">"client_since"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"nfse_email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"teste@teste.com.br"</span><span class="p">,</span><span class="w">
             </span><span class="s2">"myfinance_customer_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2306837</span><span class="p">,</span><span class="w">
             </span><span class="s2">"myfinance_errors"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
             </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"28/04/2018 11:41:53 -03:00"</span><span class="w">
@@ -1374,6 +1380,7 @@ de uma assinatura (e-commerce)</p>
             </span><span class="s2">"kind"</span><span class="p">:</span><span class="w"> </span><span class="s2">"company"</span><span class="p">,</span><span class="w">
             </span><span class="s2">"comments"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
             </span><span class="s2">"client_since"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"nfse_email"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
             </span><span class="s2">"myfinance_customer_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2245885</span><span class="p">,</span><span class="w">
             </span><span class="s2">"myfinance_errors"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
             </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"28/04/2018 11:41:53 -03:00"</span><span class="w">
@@ -1400,30 +1407,31 @@ de uma assinatura (e-commerce)</p>
 <p>Exemplo do retorno</p>
 </blockquote>
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="s2">"company"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">7828</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"account_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">29</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Gol de Placa"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"company_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Gol de Placa"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"cnpj"</span><span class="p">:</span><span class="w"> </span><span class="s2">"31.710.541/0002-59"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"state_inscription"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"city_inscription"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Rua Alfredo Gusmoes"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1982"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"zipcode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"80220050"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"district"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Rebouças"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"complement"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Curitiba"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PR"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"contacts"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ROCHINHA"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"billing_contacts"</span><span class="p">:</span><span class="w"> </span><span class="s2">"goldeplaca@email.com.br"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"kind"</span><span class="p">:</span><span class="w"> </span><span class="s2">"company"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"comments"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#PINGOID20093"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"client_since"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"myfinance_customer_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2240155</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"myfinance_errors"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"28/04/2018 11:41:53 -03:00"</span><span class="w">
-  </span><span class="p">}</span><span class="w">
+    </span><span class="s2">"company"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">7828</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"account_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">29</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Gol de Placa"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"company_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Gol de Placa"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"cnpj"</span><span class="p">:</span><span class="w"> </span><span class="s2">"31.710.541/0002-59"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"state_inscription"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"city_inscription"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Rua Alfredo Gusmoes"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1982"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"zipcode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"80220050"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"district"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Rebouças"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"complement"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Curitiba"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PR"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"contacts"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ROCHINHA"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"billing_contacts"</span><span class="p">:</span><span class="w"> </span><span class="s2">"goldeplaca@email.com.br"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"kind"</span><span class="p">:</span><span class="w"> </span><span class="s2">"company"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"comments"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#PINGOID20093"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"client_since"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"nfse_email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"teste@teste.com.br"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"myfinance_customer_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2240155</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"myfinance_errors"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"28/04/2018 11:41:53 -03:00"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
           <h2 id='atualiza-empresa'>Atualiza Empresa</h2>
@@ -1442,7 +1450,7 @@ de uma assinatura (e-commerce)</p>
 <p>Exemplo de Corpo</p>
 </blockquote>
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Nossa Senhora das Vitórias"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Nossa Senhora das Vitórias"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
 <blockquote>
@@ -1469,6 +1477,7 @@ de uma assinatura (e-commerce)</p>
         </span><span class="s2">"kind"</span><span class="p">:</span><span class="w"> </span><span class="s2">"company"</span><span class="p">,</span><span class="w">
         </span><span class="s2">"comments"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
         </span><span class="s2">"client_since"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"nfse_email"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
         </span><span class="s2">"myfinance_customer_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2411787</span><span class="p">,</span><span class="w">
         </span><span class="s2">"myfinance_errors"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
         </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"03/12/2018 12:35:54 -02:00"</span><span class="w">
@@ -1510,19 +1519,19 @@ de uma assinatura (e-commerce)</p>
 <p>Exemplo de Corpo</p>
 </blockquote>
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Fulano de Tal"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"cpf"</span><span class="p">:</span><span class="w"> </span><span class="s2">"82868688977"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"fulano@email.com"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"zipcode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"02360100"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Rua Americanas"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"12"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"complement"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"district"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Santana"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"São Paulo"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SP"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"comments"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"client_since"</span><span class="p">:</span><span class="w"> </span><span class="s2">"date"</span><span class="w">
-
+    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Fulano de Tal"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"cpf"</span><span class="p">:</span><span class="w"> </span><span class="s2">"82868688977"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"fulano@email.com"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"zipcode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"02360100"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Rua Americanas"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"12"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"complement"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"district"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Santana"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"São Paulo"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SP"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"comments"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"client_since"</span><span class="p">:</span><span class="w"> </span><span class="s2">"date"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"allow_email_on_nfse"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
 <blockquote>
@@ -1544,6 +1553,7 @@ de uma assinatura (e-commerce)</p>
         </span><span class="s2">"state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SP"</span><span class="p">,</span><span class="w">
         </span><span class="s2">"comments"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
         </span><span class="s2">"client_since"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"allow_email_on_nfse"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
         </span><span class="s2">"myfinance_customer_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
         </span><span class="s2">"myfinance_errors"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
         </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"05/12/2018 14:03:36 -02:00"</span><span class="w">
@@ -1607,6 +1617,10 @@ de uma assinatura (e-commerce)</p>
 <td>client_since (date, optional)</td>
 <td>Cliente Desde</td>
 </tr>
+<tr>
+<td>allow_email_on_nfse (boolean, optional)</td>
+<td>Informa e-mail para a nota fiscal</td>
+</tr>
 </tbody></table>
 
           <h2 id='busca-pessoa'>Busca Pessoa</h2>
@@ -1630,27 +1644,28 @@ de uma assinatura (e-commerce)</p>
 <p>Exemplo do retorno</p>
 </blockquote>
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="s2">"people"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1543</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"account_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">29</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Fulano de Tal"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"cpf"</span><span class="p">:</span><span class="w"> </span><span class="s2">"82868688977"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"fulano@email.com"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"zipcode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"02360100"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Rua Americanas"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"12"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"complement"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"district"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Santana"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"São Paulo"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SP"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"comments"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"client_since"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"myfinance_customer_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2416551</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"myfinance_errors"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"05/12/2018 14:03:36 -02:00"</span><span class="w">
-    </span><span class="p">}</span><span class="w">
-  </span><span class="p">]</span><span class="w">
+    </span><span class="s2">"people"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1543</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"account_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">29</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Fulano de Tal"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"cpf"</span><span class="p">:</span><span class="w"> </span><span class="s2">"82868688977"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"fulano@email.com"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"zipcode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"02360100"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Rua Americanas"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"12"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"complement"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"district"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Santana"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"São Paulo"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SP"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"comments"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"client_since"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"allow_email_on_nfse"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"myfinance_customer_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2416551</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"myfinance_errors"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"05/12/2018 14:03:36 -02:00"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
           <p><br>
@@ -1703,67 +1718,69 @@ de uma assinatura (e-commerce)</p>
 <p>Exemplo do retorno</p>
 </blockquote>
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="s2">"people"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">145</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"account_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">29</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Carlos Ferreira"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"cpf"</span><span class="p">:</span><span class="w"> </span><span class="s2">"65641413941"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"cfrira@gmail.com"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"zipcode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"77470000"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Av. Vitorino Leite"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Qd. D03 Lt. 03"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"complement"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"district"</span><span class="p">:</span><span class="w"> </span><span class="s2">"São José I"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Formoso do Araguaia"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"TO"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"comments"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"client_since"</span><span class="p">:</span><span class="w"> </span><span class="s2">"16/07/2015"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"myfinance_customer_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1856713</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"myfinance_errors"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"21/09/2016 22:05:47 -03:00"</span><span class="w">
-    </span><span class="p">},</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1054</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"account_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">29</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Maria Aparecida"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"cpf"</span><span class="p">:</span><span class="w"> </span><span class="s2">"82324547333"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"maparec@email.com.br"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"zipcode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"01317000"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Avenida Brigadeiro Luís Antônio"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"613"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"complement"</span><span class="p">:</span><span class="w"> </span><span class="s2">"7º andar"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"district"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Bela Vista"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"São Paulo"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SP"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"comments"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"client_since"</span><span class="p">:</span><span class="w"> </span><span class="s2">"28/12/2017"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"myfinance_customer_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2176117</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"myfinance_errors"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"11/01/2018 22:39:20 -02:00"</span><span class="w">
-    </span><span class="p">},</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">410</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"account_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">29</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Fatima Dias Borges"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"cpf"</span><span class="p">:</span><span class="w"> </span><span class="s2">"87932230640"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"fulano@uol.com.br"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"zipcode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"45608834"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Ru dois"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"14"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"complement"</span><span class="p">:</span><span class="w"> </span><span class="s2">"terreo"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"district"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Jd Primavera"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Camassari"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BA"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"comments"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"client_since"</span><span class="p">:</span><span class="w"> </span><span class="s2">"20/12/2015"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"myfinance_customer_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1693842</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"myfinance_errors"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"21/09/2016 22:33:32 -03:00"</span><span class="w">
-    </span><span class="p">}</span><span class="w">
-  </span><span class="p">]</span><span class="w">
+    </span><span class="s2">"people"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">145</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"account_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">29</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Carlos Ferreira"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"cpf"</span><span class="p">:</span><span class="w"> </span><span class="s2">"65641413941"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"cfrira@gmail.com"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"zipcode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"77470000"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Av. Vitorino Leite"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Qd. D03 Lt. 03"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"complement"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"district"</span><span class="p">:</span><span class="w"> </span><span class="s2">"São José I"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Formoso do Araguaia"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"TO"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"comments"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"client_since"</span><span class="p">:</span><span class="w"> </span><span class="s2">"16/07/2015"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"allow_email_on_nfse"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"myfinance_customer_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1856713</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"myfinance_errors"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"21/09/2016 22:05:47 -03:00"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1054</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"account_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">29</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Maria Aparecida"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"cpf"</span><span class="p">:</span><span class="w"> </span><span class="s2">"82324547333"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"maparec@email.com.br"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"zipcode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"01317000"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Avenida Brigadeiro Luís Antônio"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"613"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"complement"</span><span class="p">:</span><span class="w"> </span><span class="s2">"7º andar"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"district"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Bela Vista"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"São Paulo"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SP"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"comments"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"client_since"</span><span class="p">:</span><span class="w"> </span><span class="s2">"28/12/2017"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"allow_email_on_nfse"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"myfinance_customer_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2176117</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"myfinance_errors"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"11/01/2018 22:39:20 -02:00"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">410</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"account_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">29</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Fatima Dias Borges"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"cpf"</span><span class="p">:</span><span class="w"> </span><span class="s2">"87932230640"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"fulano@uol.com.br"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"zipcode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"45608834"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Ru dois"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"14"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"complement"</span><span class="p">:</span><span class="w"> </span><span class="s2">"terreo"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"district"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Jd Primavera"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Camassari"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BA"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"comments"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"client_since"</span><span class="p">:</span><span class="w"> </span><span class="s2">"20/12/2015"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"allow_email_on_nfse"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"myfinance_customer_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1693842</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"myfinance_errors"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"21/09/2016 22:33:32 -03:00"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span><span class="err">```s</span><span class="w">
 </span></code></pre>
           <h2 id='detalhes-pessoa'>Detalhes Pessoa</h2>
 <p>Mostra os detalhes de uma pessoa.</p>
@@ -1784,25 +1801,26 @@ de uma assinatura (e-commerce)</p>
 <p>Exemplo do retorno</p>
 </blockquote>
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="s2">"person"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1543</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"account_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">29</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Fulano de Tal"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"cpf"</span><span class="p">:</span><span class="w"> </span><span class="s2">"82868688977"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"fulano@email.com"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"zipcode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"02360100"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Rua Americanas"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"12"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"complement"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"district"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Santana"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"São Paulo"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SP"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"comments"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"client_since"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"myfinance_customer_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2416551</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"myfinance_errors"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"05/12/2018 14:03:36 -02:00"</span><span class="w">
-  </span><span class="p">}</span><span class="w">
+    </span><span class="s2">"person"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1543</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"account_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">29</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Fulano de Tal"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"cpf"</span><span class="p">:</span><span class="w"> </span><span class="s2">"82868688977"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"fulano@email.com"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"zipcode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"02360100"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Rua Americanas"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"12"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"complement"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"district"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Santana"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"São Paulo"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SP"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"comments"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"client_since"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"allow_email_on_nfse"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"myfinance_customer_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2416551</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"myfinance_errors"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"05/12/2018 14:03:36 -02:00"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
           <h2 id='atualiza-pessoa'>Atualiza Pessoa</h2>
@@ -1821,9 +1839,9 @@ de uma assinatura (e-commerce)</p>
 <p>Exemplo de Corpo</p>
 </blockquote>
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="s2">"person"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Beltrano"</span><span class="p">,</span><span class="w">
-  </span><span class="p">}</span><span class="w">
+    </span><span class="s2">"person"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Beltrano"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
 <blockquote>
@@ -1845,6 +1863,7 @@ de uma assinatura (e-commerce)</p>
         </span><span class="s2">"state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SP"</span><span class="p">,</span><span class="w">
         </span><span class="s2">"comments"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
         </span><span class="s2">"client_since"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"allow_email_on_nfse"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
         </span><span class="s2">"myfinance_customer_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2416551</span><span class="p">,</span><span class="w">
         </span><span class="s2">"myfinance_errors"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
         </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"05/12/2018 14:03:36 -02:00"</span><span class="w">
