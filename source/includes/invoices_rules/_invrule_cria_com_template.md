@@ -17,6 +17,7 @@ Cria uma regra de faturamento a partir de um modelo de faturamento
     "invoice_rule": {
         "invoice_template_id": 26,
         "description": "teste",
+        "issue_nfse": true,
         "additional_information": {
             "title": "Regra nova",
             "init_date": "20/12/2018",
@@ -85,6 +86,7 @@ Cria uma regra de faturamento a partir de um modelo de faturamento
     "notify_customer": false,
     "apply_negative_updates": true,
     "receivables": [],
+    "issue_nfse": true,
     "services": [
       {
         "id": 11563,

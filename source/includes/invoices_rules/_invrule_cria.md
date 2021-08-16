@@ -20,6 +20,7 @@ Cria uma regra de faturamento
         "description": "Regra de faturamento teste para Doc",
         "nfe_body": "Nfe Teste para Regra de Faturamento",
         "charge_type": "fixed_day",
+        "issue_nfse": true,
         "additional_information": {
             "title": "Teste Documentacao",
             "init_date": "01-12-2018",
@@ -106,6 +107,7 @@ Cria uma regra de faturamento
         "notification_ruler_id": null,
         "notify_customer": false,
         "apply_negative_updates": false,
+        "issue_nfse": true,
         "receivables": [],
         "services": [
             {

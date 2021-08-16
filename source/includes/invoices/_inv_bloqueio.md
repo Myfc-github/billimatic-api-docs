@@ -57,6 +57,7 @@ Bloqueia um faturamento
         "automatic_email_template_id": null,
         "approval_status": "blocked",
         "notification_ruler_id": null,
+        "issue_nfse": true,
         "receivables": [
             {
                 "id": 182357,

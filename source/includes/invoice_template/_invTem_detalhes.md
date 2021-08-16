@@ -59,6 +59,7 @@ Exemplo de chamada:  api/v1/organizations/1/invoice_templates/14
     "notify_customer": true,
     "apply_negative_updates": true,
     "created_at": "14/12/2018 16:54:47 -02:00",
+    "issue_nfse": true,
     "services": [
       {
         "id": 11210,

@@ -57,6 +57,7 @@ Mostra detalhes de um faturamento através de seu id
         "automatic_email_template_id": null,
         "approval_status": "approved",
         "notification_ruler_id": null,
+        "issue_nfse": false,
         "receivables": [
             {
                 "id": 182348,

@@ -65,6 +65,7 @@ O corpo da requisição deverá conter somente o(s) campo(s) que deseja(m) ser a
         "notification_ruler_id": null,
         "notify_customer": false,
         "apply_negative_updates": false,
+        "issue_nfse": false,
         "receivables": [],
         "services": [
             {

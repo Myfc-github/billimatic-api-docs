@@ -31,6 +31,7 @@
 | scheduled_updates (ScheduledUpdate, optional)           | Configurações de reajuste automático (Array),                                     |
 | receivables_additional_information                      | Informações de vencimento                                                         |
 | payment_information (PaymentInformation, optional)      | Informações de pagamento                                                          |
+| issue_nfse (boolean, optional)                          | Se faturamento deve ou não emitir nota fiscal                                     |
 
 
 <br>

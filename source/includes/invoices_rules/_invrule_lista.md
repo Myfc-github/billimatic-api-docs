@@ -60,6 +60,7 @@ Lista as regras de faturamento em um contrato
             "notification_ruler_id": null,
             "notify_customer": false,
             "apply_negative_updates": false,
+            "issue_nfse": true,
             "receivables": [],
             "services": [
                 {
@@ -160,6 +161,7 @@ Lista as regras de faturamento em um contrato
             "notification_ruler_id": null,
             "notify_customer": false,
             "apply_negative_updates": false,
+            "issue_nfse": true,
             "receivables": [],
             "services": [],
             "attachments": [],
@@ -227,6 +229,7 @@ Lista as regras de faturamento em um contrato
             "notification_ruler_id": null,
             "notify_customer": false,
             "apply_negative_updates": false,
+            "issue_nfse": false,
             "receivables": [],
             "services": [],
             "attachments": [],
@@ -294,6 +297,7 @@ Lista as regras de faturamento em um contrato
             "notification_ruler_id": null,
             "notify_customer": false,
             "apply_negative_updates": false,
+            "issue_nfse": true,
             "receivables": [],
             "services": [
                 {
