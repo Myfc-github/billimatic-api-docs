@@ -57,7 +57,7 @@ Aprova um faturamento
         "automatic_email_template_id": null,
         "approval_status": "approved",
         "notification_ruler_id": null,
-        "issue_nfse": false,
+        "issue_nfse": true,
         "receivables": [
             {
                 "id": 182362,

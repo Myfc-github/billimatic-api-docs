@@ -58,7 +58,7 @@ Lista os faturamentos inadimplentes de um contrato
             "automatic_email_template_id": null,
             "approval_status": "approved",
             "notification_ruler_id": null,
-            "issue_nfse": false,
+            "issue_nfse": true,
             "receivables": [
                 {
                     "id": 178146,

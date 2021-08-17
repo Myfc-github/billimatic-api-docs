@@ -63,7 +63,7 @@ O corpo da requisição deverá conter somente o(s) campo(s) que deseja(m) ser a
         "automatic_email_template_id": null,
         "approval_status": "approved",
         "notification_ruler_id": null,
-        "issue_nfse": false,
+        "issue_nfse": true,
         "receivables": [
             {
                 "id": 182348,

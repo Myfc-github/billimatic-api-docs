@@ -43,7 +43,7 @@ Mostra detalhes de um faturamento através de seu id
         "comments": "0",
         "customer_id": 1954,
         "customer_type": "Company",
-        "nfse_template_id": 1,
+        "nfse_template_id": null,
         "finance_category": "",
         "finance_revenue_center": "",
         "myfinance_sale_account_id": null,

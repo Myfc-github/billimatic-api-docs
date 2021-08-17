@@ -37,7 +37,7 @@
 | services (Service, optional)                            | Serviços (Array)                                                                  |
 | attachments (Attachment, optional)                      | Anexos (Array)                                                                    |
 | payment_information (PaymentInformation, optional)      | Informações de pagamento                                                          |
-| issue_nfse (boolean, optional)                          | Se faturamento deve ou não emitir nota fiscal                                     |
+| issue_nfse (boolean, optional)                          | Emitir nota fiscal                                                                |
 
 
 * Possibilidades

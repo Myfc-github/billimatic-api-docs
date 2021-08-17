@@ -128,7 +128,7 @@ Cria uma regra de faturamento
             "card_expiration_year": "--",
             "installments": null,
             "financial_charge_template_id": 2,
-            "financial_account_id": 51
+            "financial_account_id": 51,
             "created_at": "10/12/2018 17:03:19 -02:00"
         },
         "additional_information": {
