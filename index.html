@@ -3548,6 +3548,7 @@ abaixo</p>
     </span><span class="s2">"cobrato_charge_template_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
     </span><span class="s2">"cobrato_charge_template_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
     </span><span class="s2">"days_until_automatic_nfe_emission"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"issue_nfse"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
     </span><span class="s2">"comments"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
     </span><span class="s2">"receivables"</span><span class="p">:</span><span class="w">
     </span><span class="p">[</span><span class="w">
@@ -3607,7 +3608,7 @@ abaixo</p>
         </span><span class="s2">"comments"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0"</span><span class="p">,</span><span class="w">
         </span><span class="s2">"customer_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1954</span><span class="p">,</span><span class="w">
         </span><span class="s2">"customer_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Company"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"nfse_template_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"nfse_template_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
         </span><span class="s2">"finance_category"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
         </span><span class="s2">"finance_revenue_center"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
         </span><span class="s2">"myfinance_sale_account_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
@@ -3621,6 +3622,7 @@ abaixo</p>
         </span><span class="s2">"automatic_email_template_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
         </span><span class="s2">"approval_status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"approved"</span><span class="p">,</span><span class="w">
         </span><span class="s2">"notification_ruler_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"issue_nfse"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
         </span><span class="s2">"receivables"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
             </span><span class="p">{</span><span class="w">
                 </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">182348</span><span class="p">,</span><span class="w">
@@ -3814,6 +3816,10 @@ abaixo</p>
 <td>payment_information (PaymentInformation, optional)</td>
 <td>Informações de pagamento</td>
 </tr>
+<tr>
+<td>issue_nfse (boolean, optional)</td>
+<td>Emitir nota fiscal</td>
+</tr>
 </tbody></table>
 
 <ul>
@@ -3990,7 +3996,7 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
         </span><span class="s2">"comments"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0"</span><span class="p">,</span><span class="w">
         </span><span class="s2">"customer_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1954</span><span class="p">,</span><span class="w">
         </span><span class="s2">"customer_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Company"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"nfse_template_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"nfse_template_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
         </span><span class="s2">"finance_category"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
         </span><span class="s2">"finance_revenue_center"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
         </span><span class="s2">"myfinance_sale_account_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
@@ -4004,6 +4010,7 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
         </span><span class="s2">"automatic_email_template_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
         </span><span class="s2">"approval_status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"approved"</span><span class="p">,</span><span class="w">
         </span><span class="s2">"notification_ruler_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"issue_nfse"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
         </span><span class="s2">"receivables"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
             </span><span class="p">{</span><span class="w">
                 </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">182348</span><span class="p">,</span><span class="w">
@@ -4119,6 +4126,7 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
         </span><span class="s2">"automatic_email_template_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
         </span><span class="s2">"approval_status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"approved"</span><span class="p">,</span><span class="w">
         </span><span class="s2">"notification_ruler_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"issue_nfse"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
         </span><span class="s2">"receivables"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
             </span><span class="p">{</span><span class="w">
                 </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">182348</span><span class="p">,</span><span class="w">
@@ -4238,6 +4246,7 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
             </span><span class="s2">"automatic_email_template_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
             </span><span class="s2">"approval_status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"approved"</span><span class="p">,</span><span class="w">
             </span><span class="s2">"notification_ruler_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"issue_nfse"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
             </span><span class="s2">"receivables"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                 </span><span class="p">{</span><span class="w">
                     </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">182348</span><span class="p">,</span><span class="w">
@@ -4437,6 +4446,7 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
             </span><span class="s2">"automatic_email_template_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
             </span><span class="s2">"approval_status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"approved"</span><span class="p">,</span><span class="w">
             </span><span class="s2">"notification_ruler_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"issue_nfse"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
             </span><span class="s2">"receivables"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                 </span><span class="p">{</span><span class="w">
                     </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">178146</span><span class="p">,</span><span class="w">
@@ -4531,6 +4541,7 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
         </span><span class="s2">"automatic_email_template_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
         </span><span class="s2">"approval_status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"blocked"</span><span class="p">,</span><span class="w">
         </span><span class="s2">"notification_ruler_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"issue_nfse"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
         </span><span class="s2">"receivables"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
             </span><span class="p">{</span><span class="w">
                 </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">182357</span><span class="p">,</span><span class="w">
@@ -4639,6 +4650,7 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
         </span><span class="s2">"automatic_email_template_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
         </span><span class="s2">"approval_status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"approved"</span><span class="p">,</span><span class="w">
         </span><span class="s2">"notification_ruler_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"issue_nfse"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
         </span><span class="s2">"receivables"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
             </span><span class="p">{</span><span class="w">
                 </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">182362</span><span class="p">,</span><span class="w">
@@ -4763,6 +4775,7 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
         </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Regra de faturamento teste para Doc"</span><span class="p">,</span><span class="w">
         </span><span class="s2">"nfe_body"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Nfe Teste para Regra de Faturamento"</span><span class="p">,</span><span class="w">
         </span><span class="s2">"charge_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"fixed_day"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"issue_nfse"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
         </span><span class="s2">"additional_information"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
             </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Teste Documentacao"</span><span class="p">,</span><span class="w">
             </span><span class="s2">"init_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"01-12-2018"</span><span class="p">,</span><span class="w">
@@ -4848,6 +4861,7 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
         </span><span class="s2">"notification_ruler_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
         </span><span class="s2">"notify_customer"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
         </span><span class="s2">"apply_negative_updates"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"issue_nfse"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
         </span><span class="s2">"receivables"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
         </span><span class="s2">"services"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
             </span><span class="p">{</span><span class="w">
@@ -4868,7 +4882,7 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
             </span><span class="s2">"card_expiration_year"</span><span class="p">:</span><span class="w"> </span><span class="s2">"--"</span><span class="p">,</span><span class="w">
             </span><span class="s2">"installments"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
             </span><span class="s2">"financial_charge_template_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"financial_account_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">51</span><span class="w">
+            </span><span class="s2">"financial_account_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">51</span><span class="p">,</span><span class="w">
             </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10/12/2018 17:03:19 -02:00"</span><span class="w">
         </span><span class="p">},</span><span class="w">
         </span><span class="s2">"additional_information"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
@@ -5027,6 +5041,10 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
 <tr>
 <td>payment_information (PaymentInformation, optional)</td>
 <td>Informações de pagamento</td>
+</tr>
+<tr>
+<td>issue_nfse (boolean, optional)</td>
+<td>Emitir nota fiscal</td>
 </tr>
 </tbody></table>
 
@@ -5230,6 +5248,7 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
     </span><span class="s2">"invoice_rule"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
         </span><span class="s2">"invoice_template_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">26</span><span class="p">,</span><span class="w">
         </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"teste"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"issue_nfse"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
         </span><span class="s2">"additional_information"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
             </span><span class="s2">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Regra nova"</span><span class="p">,</span><span class="w">
             </span><span class="s2">"init_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"20/12/2018"</span><span class="p">,</span><span class="w">
@@ -5297,6 +5316,7 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
     </span><span class="s2">"notify_customer"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
     </span><span class="s2">"apply_negative_updates"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
     </span><span class="s2">"receivables"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+    </span><span class="s2">"issue_nfse"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
     </span><span class="s2">"services"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
       </span><span class="p">{</span><span class="w">
         </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">11563</span><span class="p">,</span><span class="w">
@@ -5628,6 +5648,7 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
             </span><span class="s2">"notification_ruler_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
             </span><span class="s2">"notify_customer"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
             </span><span class="s2">"apply_negative_updates"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"issue_nfse"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
             </span><span class="s2">"receivables"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
             </span><span class="s2">"services"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                 </span><span class="p">{</span><span class="w">
@@ -5728,6 +5749,7 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
             </span><span class="s2">"notification_ruler_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
             </span><span class="s2">"notify_customer"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
             </span><span class="s2">"apply_negative_updates"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"issue_nfse"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
             </span><span class="s2">"receivables"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
             </span><span class="s2">"services"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
             </span><span class="s2">"attachments"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
@@ -5795,6 +5817,7 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
             </span><span class="s2">"notification_ruler_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
             </span><span class="s2">"notify_customer"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
             </span><span class="s2">"apply_negative_updates"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"issue_nfse"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
             </span><span class="s2">"receivables"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
             </span><span class="s2">"services"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
             </span><span class="s2">"attachments"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
@@ -5862,6 +5885,7 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
             </span><span class="s2">"notification_ruler_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
             </span><span class="s2">"notify_customer"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
             </span><span class="s2">"apply_negative_updates"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"issue_nfse"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
             </span><span class="s2">"receivables"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
             </span><span class="s2">"services"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
                 </span><span class="p">{</span><span class="w">
@@ -5976,6 +6000,7 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
         </span><span class="s2">"notification_ruler_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
         </span><span class="s2">"notify_customer"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
         </span><span class="s2">"apply_negative_updates"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"issue_nfse"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
         </span><span class="s2">"receivables"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
         </span><span class="s2">"services"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
             </span><span class="p">{</span><span class="w">
@@ -6149,6 +6174,7 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
     </span><span class="s2">"notify_customer"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
     </span><span class="s2">"apply_negative_updates"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
     </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"14/12/2018 16:54:47 -02:00"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"issue_nfse"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
     </span><span class="s2">"services"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
       </span><span class="p">{</span><span class="w">
         </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">11210</span><span class="p">,</span><span class="w">
@@ -6310,6 +6336,10 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
 <tr>
 <td>apply_negative_updates (boolean, optional)</td>
 <td>Permitir reajuste(s) negativo(s)</td>
+</tr>
+<tr>
+<td>issue_nfse (boolean, optional)</td>
+<td>Emitir nota fiscal</td>
 </tr>
 </tbody></table>
 
@@ -6510,6 +6540,7 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
       </span><span class="s2">"notify_customer"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
       </span><span class="s2">"apply_negative_updates"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
       </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"11/12/2018 08:50:37 -02:00"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"issue_nfse"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
       </span><span class="s2">"services"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
         </span><span class="p">{</span><span class="w">
           </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">11198</span><span class="p">,</span><span class="w">
@@ -6559,6 +6590,7 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
       </span><span class="s2">"notify_customer"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
       </span><span class="s2">"apply_negative_updates"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
       </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"14/12/2018 16:54:47 -02:00"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"issue_nfse"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
       </span><span class="s2">"services"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
         </span><span class="p">{</span><span class="w">
           </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">11210</span><span class="p">,</span><span class="w">
