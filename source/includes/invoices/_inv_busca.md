@@ -60,6 +60,7 @@ Onde deseja que o faturamento esteja entre as datas 01/04/2018 a 31/12/2018
             "automatic_email_template_id": null,
             "approval_status": "approved",
             "notification_ruler_id": null,
+            "issue_nfse": true,
             "receivables": [
                 {
                     "id": 182348,

@@ -28,6 +28,7 @@
 | myfinance_sale_account_name (string, optional)          | Nome da Conta de Recebível (obrigatório para criação de recebível no Myfinance) |
 | notify_customer (boolean, optional)                     | Notificar o cliente via e-mail sobre o(s) reajuste(s)                           |
 | apply_negative_updates (boolean, optional)              | Permitir reajuste(s) negativo(s)                                                |
+| issue_nfse (boolean, optional)                          | Emitir nota fiscal                                                              |
 
 
 <br>

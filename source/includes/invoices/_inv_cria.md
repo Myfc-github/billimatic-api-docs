@@ -35,6 +35,7 @@ Cria um faturamento
     "cobrato_charge_template_id": "",
     "cobrato_charge_template_name": "",
     "days_until_automatic_nfe_emission": 0,
+    "issue_nfse": false,
     "comments": 0,
     "receivables":
     [
@@ -95,7 +96,7 @@ Cria um faturamento
         "comments": "0",
         "customer_id": 1954,
         "customer_type": "Company",
-        "nfse_template_id": 1,
+        "nfse_template_id": null,
         "finance_category": "",
         "finance_revenue_center": "",
         "myfinance_sale_account_id": null,
@@ -109,6 +110,7 @@ Cria um faturamento
         "automatic_email_template_id": null,
         "approval_status": "approved",
         "notification_ruler_id": null,
+        "issue_nfse": false,
         "receivables": [
             {
                 "id": 182348,

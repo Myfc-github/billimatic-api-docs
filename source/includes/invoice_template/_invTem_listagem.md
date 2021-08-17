@@ -57,6 +57,7 @@ Lista os modelos de faturamento(s)
       "notify_customer": false,
       "apply_negative_updates": false,
       "created_at": "11/12/2018 08:50:37 -02:00",
+      "issue_nfse": false,
       "services": [
         {
           "id": 11198,
@@ -106,6 +107,7 @@ Lista os modelos de faturamento(s)
       "notify_customer": true,
       "apply_negative_updates": true,
       "created_at": "14/12/2018 16:54:47 -02:00",
+      "issue_nfse": true,
       "services": [
         {
           "id": 11210,
