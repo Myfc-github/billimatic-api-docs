@@ -30,6 +30,7 @@ Exemplo: api/v1/organizations/123/charge_templates/16
     "instructions": "",
     "organization_id": 123,
     "financial_account_id": 1,
+    "charging_account_id": null,
     "payment_method": "boleto",
     "fine_type": "without",
     "interest_type": "without",
