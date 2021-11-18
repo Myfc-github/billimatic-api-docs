@@ -91,6 +91,7 @@ Lista os faturamentos inadimplentes de um contrato
                 "installments": null,
                 "financial_charge_template_id": null,
                 "financial_account_id": null,
+                "charging_account_id": null,
                 "created_at": "30/08/2018 10:27:35 -03:00"
             }
         }
