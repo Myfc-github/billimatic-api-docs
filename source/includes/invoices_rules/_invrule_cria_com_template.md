@@ -115,6 +115,7 @@ Cria uma regra de faturamento a partir de um modelo de faturamento
       "installments": null,
       "financial_charge_template_id": 2,
       "financial_account_id": 51,
+      "charging_account_id": null,
       "created_at": "20/12/2018 13:45:05 -02:00"
     },
     "additional_information": {
