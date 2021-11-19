@@ -18,7 +18,10 @@
 | nfe_body (string)                                       | Corpo da NFS-e                                                                  |
 | payment_method (string, optional)   | Forma de pagamento ('billet' para boleto bancário, 'payment_gateway' para cartão de crédito, 'transfer' para transferência bancária)|
 | card_installments                        |  Quantidade de parcelas para pagamento em cartão de crédito. Caso o ‘payment_method’ seja ‘billet’ ou ‘transfer’, o valor é null.
-| cobrato_charge_config_id (integer, optional)            | ID da Configuração de Cobrança (Cobrato)                                        |
+| financial_account_id (integer, optional)                | ID da conta de recebimento                                                  |
+| financial_charge_template_id (integer, optional)        | ID do modelo de cobrança                                                    |
+| charging_account_id (string, optional)                  | UUID da carteira de cobrança                                                |
+| cobrato_charge_config_id (integer, optional)            | ID da Configuração de Cobran(Cobrato)                                       |
 | cobrato_charge_config_name (string, optional)           | Nome da Configuração de Cobrança (Cobrato)                                      |
 | cobrato_charge_template_id (integer, optional)          | ID do Modelo de Cobrança (Cobrato)                                              |
 | cobrato_charge_template_name (string, optional)         | Nome do Modelo de Cobrança (Cobrato)                                            |
