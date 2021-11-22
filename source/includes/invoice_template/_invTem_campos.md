@@ -21,7 +21,7 @@
 | financial_account_id (integer, optional)                | ID da conta de recebimento                                                  |
 | financial_charge_template_id (integer, optional)        | ID do modelo de cobrança                                                    |
 | charging_account_id (string, optional)                  | UUID da carteira de cobrança                                                |
-| cobrato_charge_config_id (integer, optional)            | ID da Configuração de Cobran(Cobrato)                                       |
+| cobrato_charge_config_id (integer, optional)            | ID da Configuração de Cobrança (Cobrato)                                       |
 | cobrato_charge_config_name (string, optional)           | Nome da Configuração de Cobrança (Cobrato)                                      |
 | cobrato_charge_template_id (integer, optional)          | ID do Modelo de Cobrança (Cobrato)                                              |
 | cobrato_charge_template_name (string, optional)         | Nome do Modelo de Cobrança (Cobrato)                                            |
