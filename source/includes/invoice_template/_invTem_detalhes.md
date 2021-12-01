@@ -48,8 +48,8 @@ Exemplo de chamada:  api/v1/organizations/1/invoice_templates/14
     "nfe_body": "$DESCRICAO",
     "payment_method": "payment_gateway",
     "card_installments": 12,
-    "cobrato_charge_config_id": null,
-    "cobrato_charge_config_name": "",
+    "cobrato_charge_config_id": 137,
+    "cobrato_charge_config_name": "Teste Cartão",
     "cobrato_charge_template_id": null,
     "cobrato_charge_template_name": "",
     "finance_category": "",
@@ -60,6 +60,9 @@ Exemplo de chamada:  api/v1/organizations/1/invoice_templates/14
     "apply_negative_updates": true,
     "created_at": "14/12/2018 16:54:47 -02:00",
     "issue_nfse": true,
+    "financial_account_id": null,
+    "charging_account_id": null,
+    "financial_charge_template_id": null,
     "services": [
       {
         "id": 11210,

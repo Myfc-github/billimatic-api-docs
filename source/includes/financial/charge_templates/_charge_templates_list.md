@@ -41,13 +41,14 @@ Exemplo: api/v1/organizations/123/charge_templates
       "id": 18,
       "name": "Teste 5",
       "interest_value": "0.0",
-      "fine_value": "0.0",
+      "fine_value": "10.0",
       "instructions": "",
       "organization_id": 123,
-      "financial_account_id": 1,
+      "financial_account_id": null,
+      "charging_account_id": "52aaaaaa-51ee-41dd-af55-cd0000000000"
       "payment_method": "boleto",
-      "fine_type": "without",
-      "interest_type": "without",
+      "fine_type": "fixed",
+      "interest_type": "percentage",
       "created_at": "2021-03-01T20:48:22.921-03:00",
       "updated_at": "2021-03-01T20:48:22.921-03:00"
     }

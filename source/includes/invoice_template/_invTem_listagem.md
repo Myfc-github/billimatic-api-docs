@@ -58,6 +58,9 @@ Lista os modelos de faturamento(s)
       "apply_negative_updates": false,
       "created_at": "11/12/2018 08:50:37 -02:00",
       "issue_nfse": false,
+      "financial_account_id": null,
+      "charging_account_id": null,
+      "financial_charge_template_id": null,
       "services": [
         {
           "id": 11198,
@@ -94,7 +97,7 @@ Lista os modelos de faturamento(s)
       "emites_service_value_name": "Aluguel de software com retenção de ISS",
       "days_until_automatic_nfe_emission": 7,
       "nfe_body": "$DESCRICAO",
-      "payment_method": "payment_gateway",
+      "payment_method": "pjbank",
       "card_installments": 12,
       "cobrato_charge_config_id": null,
       "cobrato_charge_config_name": "",
@@ -108,6 +111,9 @@ Lista os modelos de faturamento(s)
       "apply_negative_updates": true,
       "created_at": "14/12/2018 16:54:47 -02:00",
       "issue_nfse": true,
+      "financial_account_id": 123,
+      "charging_account_id": null,
+      "financial_charge_template_id": 321,
       "services": [
         {
           "id": 11210,
