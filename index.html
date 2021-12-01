@@ -3576,7 +3576,8 @@ abaixo</p>
     </span><span class="s2">"payment_information"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
       </span><span class="s2">"payment_method"</span><span class="p">:</span><span class="w"> </span><span class="s2">"billet"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"financial_charge_template_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"financial_account_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">51</span><span class="w">
+      </span><span class="s2">"financial_account_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">51</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"charging_account_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
     </span><span class="p">}</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
@@ -3670,6 +3671,7 @@ abaixo</p>
             </span><span class="s2">"installments"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
             </span><span class="s2">"financial_charge_template_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
             </span><span class="s2">"financial_account_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">51</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"charging_account_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
             </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10/12/2018 10:55:10 -02:00"</span><span class="w">
         </span><span class="p">}</span><span class="w">
     </span><span class="p">}</span><span class="w">
@@ -3953,6 +3955,10 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
 <td>financial_account_id (integer, optional)</td>
 <td>ID da conta de recebimento</td>
 </tr>
+<tr>
+<td>charging_account_id (string, optional)</td>
+<td>UUID da carteira de cobrança</td>
+</tr>
 </tbody></table>
 
           <h2 id='detalhes-faturamento'>Detalhes Faturamento</h2>
@@ -4058,6 +4064,7 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
             </span><span class="s2">"installments"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
             </span><span class="s2">"financial_charge_template_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
             </span><span class="s2">"financial_account_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">51</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"charging_account_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
             </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10/12/2018 10:55:10 -02:00"</span><span class="w">
         </span><span class="p">}</span><span class="w">
     </span><span class="p">}</span><span class="w">
@@ -4182,6 +4189,7 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
             </span><span class="s2">"installments"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
             </span><span class="s2">"financial_charge_template_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
             </span><span class="s2">"financial_account_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">51</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"charging_account_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
             </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10/12/2018 11:36:23 -02:00"</span><span class="w">
         </span><span class="p">}</span><span class="w">
     </span><span class="p">}</span><span class="w">
@@ -4302,6 +4310,7 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
                 </span><span class="s2">"installments"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
                 </span><span class="s2">"financial_charge_template_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
                 </span><span class="s2">"financial_account_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">51</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"charging_account_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
                 </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10/12/2018 11:36:23 -02:00"</span><span class="w">
             </span><span class="p">}</span><span class="w">
         </span><span class="p">},</span><span class="w">
@@ -4383,6 +4392,7 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
                 </span><span class="s2">"installments"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
                 </span><span class="s2">"financial_charge_template_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
                 </span><span class="s2">"financial_account_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"charging_account_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"52aaaaaa-51ee-41dd-af55-cd0000000000"</span><span class="p">,</span><span class="w">
                 </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10/12/2018 10:02:39 -02:00"</span><span class="w">
             </span><span class="p">}</span><span class="w">
         </span><span class="p">}</span><span class="w">
@@ -4479,6 +4489,7 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
                 </span><span class="s2">"installments"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
                 </span><span class="s2">"financial_charge_template_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
                 </span><span class="s2">"financial_account_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"charging_account_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
                 </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"30/08/2018 10:27:35 -03:00"</span><span class="w">
             </span><span class="p">}</span><span class="w">
         </span><span class="p">}</span><span class="w">
@@ -4589,6 +4600,7 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
             </span><span class="s2">"installments"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
             </span><span class="s2">"financial_charge_template_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
             </span><span class="s2">"financial_account_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">51</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"charging_account_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
             </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10/12/2018 14:20:47 -02:00"</span><span class="w">
         </span><span class="p">}</span><span class="w">
     </span><span class="p">}</span><span class="w">
@@ -4698,6 +4710,7 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
             </span><span class="s2">"installments"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
             </span><span class="s2">"financial_charge_template_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
             </span><span class="s2">"financial_account_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">51</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"charging_account_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
             </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10/12/2018 15:15:13 -02:00"</span><span class="w">
         </span><span class="p">}</span><span class="w">
     </span><span class="p">}</span><span class="w">
@@ -4813,7 +4826,8 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
         </span><span class="s2">"payment_information"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
             </span><span class="s2">"payment_method"</span><span class="p">:</span><span class="w"> </span><span class="s2">"billet"</span><span class="p">,</span><span class="w">
             </span><span class="s2">"financial_charge_template_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"financial_account_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">51</span><span class="w">
+            </span><span class="s2">"financial_account_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">51</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"charging_account_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
         </span><span class="p">}</span><span class="w">
     </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
@@ -4883,6 +4897,7 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
             </span><span class="s2">"installments"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
             </span><span class="s2">"financial_charge_template_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
             </span><span class="s2">"financial_account_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">51</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"charging_account_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
             </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10/12/2018 17:03:19 -02:00"</span><span class="w">
         </span><span class="p">},</span><span class="w">
         </span><span class="s2">"additional_information"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
@@ -5229,6 +5244,10 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
 <td>financial_account_id (integer, optional)</td>
 <td>ID da conta de recebimento</td>
 </tr>
+<tr>
+<td>charging_account_id (string, optional)</td>
+<td>UUID da carteira de cobrança</td>
+</tr>
 </tbody></table>
 
           <h2 id='cria-regra-a-partir-do-modelo-de-faturamento'>Cria Regra a partir do Modelo de faturamento</h2>
@@ -5345,6 +5364,7 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
       </span><span class="s2">"installments"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
       </span><span class="s2">"financial_charge_template_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
       </span><span class="s2">"financial_account_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">51</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"charging_account_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
       </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"20/12/2018 13:45:05 -02:00"</span><span class="w">
     </span><span class="p">},</span><span class="w">
     </span><span class="s2">"additional_information"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
@@ -5670,6 +5690,7 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
                 </span><span class="s2">"installments"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
                 </span><span class="s2">"financial_charge_template_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
                 </span><span class="s2">"financial_account_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">51</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"charging_account_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
                 </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10/12/2018 17:03:19 -02:00"</span><span class="w">
             </span><span class="p">},</span><span class="w">
             </span><span class="s2">"additional_information"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
@@ -5762,6 +5783,7 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
                 </span><span class="s2">"installments"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
                 </span><span class="s2">"financial_charge_template_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
                 </span><span class="s2">"financial_account_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"charging_account_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"52aaaaaa-51ee-41dd-af55-cd0000000000"</span><span class="p">,</span><span class="w">
                 </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10/12/2018 16:32:26 -02:00"</span><span class="w">
             </span><span class="p">},</span><span class="w">
             </span><span class="s2">"additional_information"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
@@ -5830,6 +5852,7 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
                 </span><span class="s2">"installments"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
                 </span><span class="s2">"financial_charge_template_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
                 </span><span class="s2">"financial_account_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">51</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"charging_account_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
                 </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10/12/2018 16:31:47 -02:00"</span><span class="w">
             </span><span class="p">},</span><span class="w">
             </span><span class="s2">"additional_information"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
@@ -5907,6 +5930,7 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
                 </span><span class="s2">"installments"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
                 </span><span class="s2">"financial_charge_template_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
                 </span><span class="s2">"financial_account_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">51</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"charging_account_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
                 </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10/12/2018 10:02:38 -02:00"</span><span class="w">
             </span><span class="p">},</span><span class="w">
             </span><span class="s2">"additional_information"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
@@ -6022,6 +6046,7 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
             </span><span class="s2">"installments"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
             </span><span class="s2">"financial_charge_template_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
             </span><span class="s2">"financial_account_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">51</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"charging_account_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
             </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10/12/2018 17:03:19 -02:00"</span><span class="w">
         </span><span class="p">},</span><span class="w">
         </span><span class="s2">"additional_information"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
@@ -6163,8 +6188,8 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
     </span><span class="s2">"nfe_body"</span><span class="p">:</span><span class="w"> </span><span class="s2">"$DESCRICAO"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"payment_method"</span><span class="p">:</span><span class="w"> </span><span class="s2">"payment_gateway"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"card_installments"</span><span class="p">:</span><span class="w"> </span><span class="mi">12</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"cobrato_charge_config_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"cobrato_charge_config_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"cobrato_charge_config_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">137</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"cobrato_charge_config_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Teste Cartão"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"cobrato_charge_template_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
     </span><span class="s2">"cobrato_charge_template_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
     </span><span class="s2">"finance_category"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
@@ -6175,6 +6200,9 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
     </span><span class="s2">"apply_negative_updates"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
     </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"14/12/2018 16:54:47 -02:00"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"issue_nfse"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"financial_account_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"charging_account_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"financial_charge_template_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
     </span><span class="s2">"services"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
       </span><span class="p">{</span><span class="w">
         </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">11210</span><span class="p">,</span><span class="w">
@@ -6296,6 +6324,18 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
 <tr>
 <td>card_installments</td>
 <td>Quantidade de parcelas para pagamento em cartão de crédito. Caso o ‘payment_method’ seja ‘billet’ ou ‘transfer’, o valor é null.</td>
+</tr>
+<tr>
+<td>financial_account_id (integer, optional)</td>
+<td>ID da conta de recebimento</td>
+</tr>
+<tr>
+<td>financial_charge_template_id (integer, optional)</td>
+<td>ID do modelo de cobrança</td>
+</tr>
+<tr>
+<td>charging_account_id (string, optional)</td>
+<td>UUID da carteira de cobrança</td>
 </tr>
 <tr>
 <td>cobrato_charge_config_id (integer, optional)</td>
@@ -6541,6 +6581,9 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
       </span><span class="s2">"apply_negative_updates"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
       </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"11/12/2018 08:50:37 -02:00"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"issue_nfse"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"financial_account_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"charging_account_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"financial_charge_template_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
       </span><span class="s2">"services"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
         </span><span class="p">{</span><span class="w">
           </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">11198</span><span class="p">,</span><span class="w">
@@ -6577,7 +6620,7 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
       </span><span class="s2">"emites_service_value_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Aluguel de software com retenção de ISS"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"days_until_automatic_nfe_emission"</span><span class="p">:</span><span class="w"> </span><span class="mi">7</span><span class="p">,</span><span class="w">
       </span><span class="s2">"nfe_body"</span><span class="p">:</span><span class="w"> </span><span class="s2">"$DESCRICAO"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"payment_method"</span><span class="p">:</span><span class="w"> </span><span class="s2">"payment_gateway"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"payment_method"</span><span class="p">:</span><span class="w"> </span><span class="s2">"pjbank"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"card_installments"</span><span class="p">:</span><span class="w"> </span><span class="mi">12</span><span class="p">,</span><span class="w">
       </span><span class="s2">"cobrato_charge_config_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
       </span><span class="s2">"cobrato_charge_config_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
@@ -6591,6 +6634,9 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
       </span><span class="s2">"apply_negative_updates"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
       </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"14/12/2018 16:54:47 -02:00"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"issue_nfse"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"financial_account_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">123</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"charging_account_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"financial_charge_template_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">321</span><span class="p">,</span><span class="w">
       </span><span class="s2">"services"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
         </span><span class="p">{</span><span class="w">
           </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">11210</span><span class="p">,</span><span class="w">
@@ -6827,6 +6873,7 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
     </span><span class="s2">"instructions"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
     </span><span class="s2">"organization_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">123</span><span class="p">,</span><span class="w">
     </span><span class="s2">"financial_account_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"charging_account_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
     </span><span class="s2">"payment_method"</span><span class="p">:</span><span class="w"> </span><span class="s2">"boleto"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"fine_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"without"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"interest_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"without"</span><span class="p">,</span><span class="w">
@@ -6877,13 +6924,14 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
       </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">18</span><span class="p">,</span><span class="w">
       </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Teste 5"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"interest_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.0"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"fine_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.0"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"fine_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10.0"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"instructions"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
       </span><span class="s2">"organization_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">123</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"financial_account_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"financial_account_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"charging_account_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"52aaaaaa-51ee-41dd-af55-cd0000000000"</span><span class="w">
       </span><span class="s2">"payment_method"</span><span class="p">:</span><span class="w"> </span><span class="s2">"boleto"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"fine_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"without"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"interest_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"without"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"fine_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"fixed"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"interest_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"percentage"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-03-01T20:48:22.921-03:00"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-03-01T20:48:22.921-03:00"</span><span class="w">
     </span><span class="p">}</span><span class="w">
