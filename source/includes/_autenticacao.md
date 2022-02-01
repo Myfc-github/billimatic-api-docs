@@ -1,7 +1,7 @@
 
 ## Autenticação
 
-Todo acesso à API é feito do ponto de vista de uma conta existente no Billimatic. Assim sendo, toda requisição à API deverá ser autenticada.
+Todo acesso à API é feito do ponto de vista de uma conta existente no Fintera Faturamento. Assim sendo, toda requisição à API deverá ser autenticada.
 
 A autenticação é feita via token, que deve ser informado no header de cada requisição efetuada.
 
@@ -23,7 +23,7 @@ Veja o exemplo abaixo em como fazer sua autenticação ;)
 > Exemplo de requisição para autenticação
 
 ```shell
-  GET http://app.billimatic.com.br/api/v1/organizations \
+  GET http://faturamento.fintera.com.br/api/v1/organizations \
   -H 'authorization: Token token=3d12813150rd61l126216n17605zs1q4' \
   -H 'content-type: application/json'
 ```
