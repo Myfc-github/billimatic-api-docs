@@ -1,3 +1,7 @@
+<div class="module-name">
+  Fintera Faturamento API
+</div>
+
 # Introdução
 
 Seja bem vindo a nossa documentação!

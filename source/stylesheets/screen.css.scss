@@ -518,7 +518,7 @@ html, body {
 
 .content {
   pre, blockquote {
-    background-color: #244048;
+    background-color: #E9EBEF;
     color: #fff;
     margin: 0 28px;
     clear:right;
@@ -545,7 +545,7 @@ html, body {
     &>p {
       background-color: $block-quote-bg;
       padding: $code-annotation-padding 2em;
-      color: #EEEEEE;
+      color: #393939;
     }
   }
 }
@@ -662,4 +662,12 @@ html, body {
 
 .authentication{
   padding: 10px;
+}
+
+.module-name {
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 39px;
+  margin: 40px 30px;
+  color: #181C32;
 }
