@@ -27,8 +27,8 @@
 | cobrato_charge_template_name (string, optional)         | Nome do Modelo de Cobrança (Cobrato)                                            |
 | finance_category (string, optional)                     | Categoria                                                                       |
 | finance_revenue_center (string, optional)               | Centro de Receita                                                               |
-| myfinance_sale_account_id (integer, optional)           | ID da Conta de Recebível (obrigatório para criação de recebível no Myfinance)   |
-| myfinance_sale_account_name (string, optional)          | Nome da Conta de Recebível (obrigatório para criação de recebível no Myfinance) |
+| myfinance_sale_account_id (integer, optional)           | ID da Conta de Recebível (obrigatório para criação de recebível no Fintera Financeiro)   |
+| myfinance_sale_account_name (string, optional)          | Nome da Conta de Recebível (obrigatório para criação de recebível no Fintera Financeiro) |
 | notify_customer (boolean, optional)                     | Notificar o cliente via e-mail sobre o(s) reajuste(s)                           |
 | apply_negative_updates (boolean, optional)              | Permitir reajuste(s) negativo(s)                                                |
 | issue_nfse (boolean, optional)                          | Emitir nota fiscal                                                              |

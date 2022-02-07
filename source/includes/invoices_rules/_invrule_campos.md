@@ -15,8 +15,8 @@
 | emites_service_value_name (string, optional)            | Nome do Modelo de NFS-e (Emites)                                                  |
 | finance_category (string, optional)                     | Categoria                                                                         |
 | finance_revenue_center (string, optional)               | Centro de Receita                                                                 |
-| myfinance_sale_account_id (integer, optional)           | ID da Conta de Recebível (obrigatório para criação de recebível no Myfinance)     |
-| myfinance_sale_account_name (string, optional)          | Nome da Conta de Recebível (obrigatório para criação de recebível no Myfinance)   |
+| myfinance_sale_account_id (integer, optional)           | ID da Conta de Recebível (obrigatório para criação de recebível no Fintera Financeiro)     |
+| myfinance_sale_account_name (string, optional)          | Nome da Conta de Recebível (obrigatório para criação de recebível no Fintera Financeiro)   |
 | cobrato_charge_config_id (integer, optional)            | ID da Configuração de Cobrança (Cobrato)                                          |
 | cobrato_charge_config_name (string, optional)           | Nome da Configuração de Cobrança (Cobrato)                                        |
 | cobrato_charge_template_id (integer, optional)          | ID do Modelo de Cobrança (Cobrato)                                                |
