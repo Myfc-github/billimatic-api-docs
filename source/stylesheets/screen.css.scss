@@ -2,6 +2,7 @@
 @import 'normalize';
 @import 'variables';
 @import 'icon-font';
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap";
 
 ////////////////////////////////////////////////////////////////////////////////
 // GENERAL STUFF
@@ -43,7 +44,7 @@ html, body {
   width: $nav-width;
   background-color: $nav-bg;
   font-size: 13px;
-  font-weight: bold;
+  font-weight: 400;
 
   // language selector for mobile devices
   .lang-selector {
@@ -67,16 +68,14 @@ html, body {
     max-width: 100%;
     margin-bottom: $logo-margin;
     font-size: x-large;
-    padding: 27px 15px 7px 33px;
+    padding: 40px 30px 20px 30px;
     font-family: 'Open Sans', 'Raleway', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     letter-spacing: 2px;
   }
 
   .image-logo-custom {
-    max-width:157px;
-    max-height:150px;
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 100%;
   }
 
   &>.search {
@@ -156,12 +155,14 @@ html, body {
   .toc-link.active {
     background-color: $nav-active-bg;
     color: $nav-active-text;
+    font-weight: 700
   }
 
   // this is parent links of the currently selected ToC entry
   .toc-link.active-parent {
     background-color: $nav-active-parent-bg;
     color: $nav-active-parent-text;
+    font-weight: 700
   }
 
   .toc-list-h2 {
@@ -176,21 +177,23 @@ html, body {
   }
 
   .toc-footer {
-    padding: 1em 0;
+    padding: 40px 0;
     margin-top: 1em;
-    border-top: 1px dashed $nav-footer-border-color;
 
     li,a {
-      color: $nav-text;
+      color: #3F4254;
       text-decoration: none;
     }
+      a {
+        color: $fintera-main-color-text;
+      }
 
     a:hover {
       text-decoration: underline;
     }
 
     li {
-      font-size: 0.8em;
+      font-size: 14px;
       line-height: 1.7;
       text-decoration: none;
     }
@@ -346,14 +349,15 @@ html, body {
 
   h1 {
     @extend %header-font;
-    font-size: 25px;
+    font-size: 20px;
+    font-weight: 400;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     margin-bottom: $h1-margin-bottom;
     margin-top: 2em;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-    background-color: #fdfdfd;
+    // border-top: 1px solid #ccc;
+    // border-bottom: 1px solid #ccc;
+    // background-color: #fdfdfd;
   }
 
   h1:first-child, div:first-child + h1 {
@@ -363,13 +367,12 @@ html, body {
 
   h2 {
     @extend %header-font;
-    font-size: 19px;
+    font-size: 18px;
+    font-weight: 400;
     margin-top: 4em;
     margin-bottom: 0;
-    border-top: 1px solid #ccc;
     padding-top: 1.2em;
     padding-bottom: 1.2em;
-    background-image: linear-gradient(to bottom, rgba(#fff, 0.2), rgba(#fff, 0));
   }
 
   // h2s right after h1s should bump right up
@@ -469,7 +472,7 @@ html, body {
     margin-top: 1.5em;
     margin-bottom: 1.5em;
     background: $aside-notice-bg;
-    color: #f1f1f1;
+    color: #666666;
     line-height: 1.6;
 
     &.warning {
@@ -542,7 +545,7 @@ html, body {
     &>p {
       background-color: $block-quote-bg;
       padding: $code-annotation-padding 2em;
-      color: #eee;
+      color: #EEEEEE;
     }
   }
 }
