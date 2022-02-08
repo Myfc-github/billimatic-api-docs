@@ -1,11 +1,11 @@
 ---
-title: Nexaas-Estoka - Informações básicas
+title: Fintera Faturamento - Informações básicas
 
 # language_tabs: # must be one of https://git.io/vQNgJ
   # - json
 
 toc_footers:
-  - <a href='https://www.myfc.com.br' target="_blank" >Este projeto é mantido por Myfreecomm</a>
+  - API mantida por <a href='https://www.fintera.com.br/' target="_blank" >Fintera</a>.
 
 includes:
   - welcome
