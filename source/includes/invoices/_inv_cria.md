@@ -65,7 +65,8 @@ Cria um faturamento
       "financial_charge_template_id": 2,
       "financial_account_id": 51,
       "charging_account_id": null
-    }
+    },
+    "invoice_template_id" : 1
   }
 }
 

@@ -38,7 +38,7 @@
 | attachments (Attachment, optional)                      | Anexos (Array)                                                                    |
 | payment_information (PaymentInformation, optional)      | Informações de pagamento                                                          |
 | issue_nfse (boolean, optional)                          | Emitir nota fiscal                                                                |
-
+| invoice_template_id (integer, optional)                 | ID do modelo de faturamento (É obrigatório ter periodicidade "uma única vez")     |
 
 * Possibilidades
 Campo: approval_status poderá conter:  'approved' para aprovado, 'blocked' para bloqueado (apenas para criação de faturamentos)
