@@ -37,6 +37,7 @@ Cria um faturamento
     "days_until_automatic_nfe_emission": 0,
     "issue_nfse": false,
     "comments": 0,
+    "invoice_template_id" : 1,
     "receivables":
     [
       {

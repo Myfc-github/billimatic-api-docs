@@ -4,7 +4,7 @@
 
 |         Campo                 |          Finalidade                                    |              Obrigatório                         |
 | ------------------------------| ------------------------------------------------------ | ------------------------------------------------ |
-| invoice_template_id           | ID do Modelo de faturamento a ser utilizado            | Apenas se for criar uma regra usando um modelo   |
+| invoice_template_id           | ID do Modelo de faturamento (Não pode ter periodicidade "uma única vez")          | Apenas se for criar uma regra usando um modelo   |
 | additional_information        | Informações adicionais da regra                        | Sim                                              |
 | charge_type                   | Tipo de cobrança nos vencimentos                       | Apenas se há necessidade de sobrescrever ou completar dados de vencimento no node receivables_additional_information|
 
