@@ -3364,6 +3364,7 @@ abaixo</p>
     </span><span class="s2">"days_until_automatic_nfe_emission"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
     </span><span class="s2">"issue_nfse"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
     </span><span class="s2">"comments"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"invoice_template_id"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
     </span><span class="s2">"receivables"</span><span class="p">:</span><span class="w">
     </span><span class="p">[</span><span class="w">
       </span><span class="p">{</span><span class="w">
@@ -3636,6 +3637,10 @@ abaixo</p>
 <td>issue_nfse (boolean, optional)</td>
 <td>Emitir nota fiscal</td>
 </tr>
+<tr>
+<td>invoice_template_id (integer, optional)</td>
+<td>ID do modelo de faturamento (É obrigatório ter periodicidade &quot;uma única vez&quot;)</td>
+</tr>
 </tbody></table>
 
 <ul>
@@ -3889,7 +3894,7 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
 
 <div class="api-endpoint">
   <div class="endpoint-data">
-    <i class="label label-get">PATH</i>
+    <i class="label label-get">PATCH</i>
       api/v1/contracts/{contract_id}/invoices/{id}
   </div>
 </div>
@@ -5249,7 +5254,7 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
 </thead><tbody>
 <tr>
 <td>invoice_template_id</td>
-<td>ID do Modelo de faturamento a ser utilizado</td>
+<td>ID do Modelo de faturamento (Não pode ter periodicidade &quot;uma única vez&quot;)</td>
 <td>Apenas se for criar uma regra usando um modelo</td>
 </tr>
 <tr>
