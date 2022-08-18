@@ -10,7 +10,7 @@
 | management_type (string, optional)   | Tipo de Faturamento. (Opções: 'manual' ou 'automatic')                           |
 | automatic_email_template_id (integer, optional)         | ID do Modelo de Notificação Automática (obrigatório para faturamentos automáticos)|
 | notification_ruler_id (integer, optional)               | ID da Régua de Cobrança para os faturamentos da regra                           |
-| accrual_month_quantity (string)     | Competência do faturamento (same_month => No mesmo mês da data do faturamento / previous_month => No mês anterior à data do faturamento)|
+| accrual_month_quantity (string)     | Competência do faturamento (same_month => No mesmo mês da data do faturamento / previous_month => No mês anterior à data do faturamento / next_month => No mês seguinte à data do faturamento)|
 | description (string, optional)      | Descrição                                |
 | emites_service_values_id (integer, optional)            | ID do Modelo de NFS-e (Emites)                                                  |
 | emites_service_value_name (string, optional)            | Nome do Modelo de NFS-e (Emites)                                                |
