@@ -23,7 +23,7 @@ Veja o exemplo abaixo em como fazer sua autenticação ;)
 > Exemplo de requisição para autenticação
 
 ```shell
-  GET https://faturamento.fintera.com.br/api/v1/organizations \
+  GET https://faturamento.fintera.com.br/api/v1/companies \
   -H 'authorization: Token token=3d12813150rd61l126216n17605zs1q4' \
   -H 'content-type: application/json'
 ```
