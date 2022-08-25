@@ -74,6 +74,8 @@ GEM
       toml
       uglifier (~> 3.0)
       webrick
+    middleman-gh-pages (0.4.1)
+      rake (> 0.9.3)
     middleman-sprockets (4.0.0.rc.3)
       middleman-core (~> 4.0)
       sprockets (>= 3.0)
@@ -93,6 +95,7 @@ GEM
     public_suffix (5.0.0)
     racc (1.6.0)
     rack (2.2.4)
+    rake (13.0.6)
     rb-fsevent (0.11.1)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
@@ -124,6 +127,7 @@ DEPENDENCIES
   kramdown (~> 2.3.0)
   middleman (~> 4.4.2)
   middleman-autoprefixer
+  middleman-gh-pages
   middleman-sprockets (= 4.0.0.rc.3)
   middleman-syntax
   nokogiri (~> 1.13.6)
