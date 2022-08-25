@@ -130,7 +130,7 @@ DEPENDENCIES
   middleman-gh-pages
   middleman-sprockets (= 4.0.0.rc.3)
   middleman-syntax
-  nokogiri (~> 1.13.6)
+  nokogiri (~> 1.13.8)
   redcarpet (>= 3.5.1)
   rouge (~> 2.0.5)
   tzinfo (~> 2.0.5)
