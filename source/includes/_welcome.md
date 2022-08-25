@@ -1,5 +1,5 @@
 <div class="module-name">
-  Fintera Faturamento API
+  Fintera Faturamento API <font size="2">v1.0.0</font>
 </div>
 
 # Introdução
