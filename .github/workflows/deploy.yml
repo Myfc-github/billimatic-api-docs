@@ -29,5 +29,12 @@ jobs:
       - name: Install project dependencies
         run: bundle install
 
-      - name: Deploy on Github Pages
-        run: "${GITHUB_WORKSPACE}/deploy.sh"
+      - name: Build Middleman
+        run: bundle exec middleman build
+
+      - name: Deploy to Github Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
+
