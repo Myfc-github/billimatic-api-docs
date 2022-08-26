@@ -45,7 +45,7 @@
 | period_unit (string, optional)      | Base de periodicidade para criação de faturamentos: 'weekly' para base semanal ou 'monthly' para base mensal|
 | month_quantity (integer)            | Periodicidade de criação de faturamentos, requerido apenas para base mensal. Valores permitidos: 1 (mensal), 2 (bimestral), 3 (trimestral), 6 (semestral), 12 (anual)|
 | end_date (date, optional)           | Data de fim da recorrência. (Se não informada, repete indefinidamente)|
-| accrual_month_quantity (string)     | Competência do faturamento (same_month => No mesmo mês da data do faturamento / previous_month => No mês anterior à data do faturamento)|
+| accrual_month_quantity (string)     | Competência do faturamento (same_month => No mesmo mês da data do faturamento / previous_month => No mês anterior à data do faturamento / next_month => No mês seguinte à data do faturamento)|
 
 <br>
 <strong> Campos do node Service  </strong>
