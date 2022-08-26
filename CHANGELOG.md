@@ -1,21 +1,5 @@
 # Changelog
 
-## Version 2.6.0
-
-*August 25, 2022*
-
-- Update gems to fix security warnings.
-  - activesupport
-  - addressable
-  - ffi
-  - haml
-  - i18n
-  - kramdown
-  - Nokogiri
-  - rack
-  - redcarpet
-  - tzinfo
-
 ## Version 2.3.1
 
 *July 5, 2018*
