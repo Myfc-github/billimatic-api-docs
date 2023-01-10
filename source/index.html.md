@@ -105,6 +105,8 @@ includes:
   - invoice_template/invTem_campos
   - invoice_template/invTem_listagem
   - invoice_template/invTem_busca
+  - receivables/receivables
+  - receivables/rec_busca
   - email_templates/email_templates
   - email_templates/email_templates_list
   - nfse_templates/nfse_templates
