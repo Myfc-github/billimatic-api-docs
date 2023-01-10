@@ -286,6 +286,14 @@
               </ul>
           </li>
           <li>
+            <a href="#recebimentos" class="toc-h1 toc-link" data-title="Recebimentos">Recebimentos</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#buscar-recebimentos" class="toc-h2 toc-link" data-title="Buscar Recebimentos">Buscar Recebimentos</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
             <a href="#notificacoes" class="toc-h1 toc-link" data-title="Notificações">Notificações</a>
               <ul class="toc-list-h2">
                   <li>
@@ -6684,6 +6692,138 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
           </span><span class="s2">"invoice_template_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">14</span><span class="w">
         </span><span class="p">}</span><span class="w">
       </span><span class="p">]</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+          <h1 id='recebimentos'>Recebimentos</h1>
+          <h2 id='buscar-recebimentos'>Buscar Recebimentos</h2>
+<p>Realiza busca de recebimentos por contrato, para o período e status especificado.</p>
+
+<div class="api-endpoint">
+  <div class="endpoint-data">
+    <i class="label label-get">GET</i>
+     api/v1/contracts/{contract_id}/receivables/search?due_date_from=01-01-2022&due_date_to=31-12-2022&state=to_emit
+  </div>
+</div>
+
+<p>Onde deseja que o recebimento esteja entre as datas 01/01/2022 a 31/12/2022 e <code>state</code> pode ter os seguintes valores:</p>
+
+<ul>
+<li><strong>to_emit</strong>: recebimentos a faturar</li>
+<li><strong>to_receive</strong>: recebimentos a receber</li>
+<li><strong>received</strong>: recebimentos recebidos</li>
+<li><strong>cancelled</strong>: recebimentos cancelados</li>
+</ul>
+
+<blockquote>
+<p>Exemplo de Corpo</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="w">  </span><span class="s2">"Essa requisição não possui corpo"</span><span class="w">
+</span></code></pre>
+<blockquote>
+<p>Exemplo do retorno</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"receivables"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">376</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"invoice_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">381</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"due_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"01/01/2023"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"100.0"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"gross_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1.0"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"payment_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1.0"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"received_value"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"received_at"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"28/12/2022 09:23:56 -03:00"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"to_emit"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"payment_gateway_status"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"cobrato_charge_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"cobrato_errors"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"finance_receivable_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"myfinance_sale_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"finance_entity_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"myfinance_errors"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"boleto_url"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"invoice_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://faturamento.fintera.com.br/files/c2d18b65-9ad7-4340-a01c-07a5c93f27db.pdf"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"nfse_url"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"invoice"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"invoice"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">381</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"contract_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">19</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"issue_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"28/12/2022"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"estimated_issue_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"28/12/2022"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"gross_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1.0"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"payment_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1.0"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"received"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"cancelled_automatically"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"nfe_service"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"nfe_verification"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"nfe_issue_date"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"nfe_body"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Teste de busca de recebiveis"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"nfe_issued"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"number"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"28/12/2022 09:23:56 -03:00"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"management_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"automatic"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"accrual_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2022-12-01"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"comments"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"customer_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">17</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"customer_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Company"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"emites_service_values_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"emites_service_value_name"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"nfse_template_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"finance_category"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"finance_revenue_center"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"myfinance_sale_account_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"myfinance_sale_account_name"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"cobrato_charge_config_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"cobrato_charge_config_name"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"cobrato_charge_template_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"cobrato_charge_template_name"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"days_until_automatic_nfe_emission"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"automatic_nfe_issue_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"28/12/2022"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"automatic_email_template_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">43</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"approval_status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"approved"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"notification_ruler_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"issue_nfse"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"receivables"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+              </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">376</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"invoice_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">381</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"due_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"01/01/2023"</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"100.0"</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"gross_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1.0"</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"payment_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1.0"</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"received_value"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"received_at"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"28/12/2022 09:23:56 -03:00"</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"to_emit"</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"payment_gateway_status"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"cobrato_charge_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"cobrato_errors"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"finance_receivable_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"myfinance_sale_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"finance_entity_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"myfinance_errors"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+          </span><span class="p">],</span><span class="w">
+          </span><span class="s2">"services"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+          </span><span class="s2">"attachments"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+          </span><span class="s2">"payment_information"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">464</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"payment_method"</span><span class="p">:</span><span class="w"> </span><span class="s2">"transfer"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"cobrato_card_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"--"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"card_expiration_month"</span><span class="p">:</span><span class="w"> </span><span class="s2">"--"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"card_expiration_year"</span><span class="p">:</span><span class="w"> </span><span class="s2">"--"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"installments"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"financial_charge_template_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"financial_account_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"charging_account_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"28/12/2022 09:23:56 -03:00"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">}</span><span class="w">
     </span><span class="p">}</span><span class="w">
   </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
