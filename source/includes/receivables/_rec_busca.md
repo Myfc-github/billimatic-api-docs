@@ -89,27 +89,6 @@ Onde deseja que o recebimento esteja entre as datas 01/01/2022 a 31/12/2022 e `s
           "approval_status": "approved",
           "notification_ruler_id": null,
           "issue_nfse": true,
-          "receivables": [
-            {
-              "id": 376,
-              "invoice_id": 381,
-              "due_date": "01/01/2023",
-              "value": "100.0",
-              "gross_value": "1.0",
-              "payment_value": "1.0",
-              "received_value": null,
-              "received_at": null,
-              "created_at": "28/12/2022 09:23:56 -03:00",
-              "state": "to_emit",
-              "payment_gateway_status": null,
-              "cobrato_charge_id": null,
-              "cobrato_errors": null,
-              "finance_receivable_id": null,
-              "myfinance_sale_id": null,
-              "finance_entity_id": null,
-              "myfinance_errors": null
-            }
-          ],
           "services": [],
           "attachments": [],
           "payment_information": {
