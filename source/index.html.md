@@ -117,6 +117,7 @@ includes:
   - financial/financial_accounts/financial_accounts
   - financial/financial_accounts/financial_account_detalhes
   - financial/financial_accounts/financial_accounts_list
+  - health_check
 
 search: true
 ---
