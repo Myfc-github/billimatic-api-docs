@@ -1,11 +1,11 @@
-## Update
+## Cancel
 
-<strong>Payload:</strong> update
+<strong>Webhook:</strong> cancel
 
 <strong>Entidade:</strong> Invoice
 
 <strong>Evento:</strong>
-Quando o faturamento é <strong>atualizado</strong>
+Quando o faturamento <strong>é cancelado</strong>
 
 <div class="api-endpoint">
   <div class="endpoint-data">
@@ -18,7 +18,7 @@ Quando o faturamento é <strong>atualizado</strong>
 
 ```json
 {
-  "event": "update",
+  "event": "cancel",
   "object_type": "Invoice",
   "object_id": "id-da-entidade",
   "contract_token": "token-do-contrato",

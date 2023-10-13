@@ -1,11 +1,11 @@
-## Receivement_error
+## Update
 
-<strong>Payload:</strong> receivement_error
+<strong>Webhook:</strong> update
 
 <strong>Entidade:</strong> Invoice
 
 <strong>Evento:</strong>
-Quando há <strong>erro no recebimento</strong> do faturamento (pagamento em cartão de crédito)
+Quando o faturamento é <strong>atualizado</strong>
 
 <div class="api-endpoint">
   <div class="endpoint-data">
@@ -18,7 +18,7 @@ Quando há <strong>erro no recebimento</strong> do faturamento (pagamento em car
 
 ```json
 {
-  "event": "receivement_error",
+  "event": "update",
   "object_type": "Invoice",
   "object_id": "id-da-entidade",
   "contract_token": "token-do-contrato",

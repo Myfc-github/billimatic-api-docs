@@ -1,11 +1,11 @@
-## Emit
+## Undo_emission
 
-<strong>Payload:</strong> emit
+<strong>Webhook:</strong> undo_emission
 
 <strong>Entidade:</strong> Invoice
 
 <strong>Evento:</strong>
-Quando o faturamento é marcado como <strong>faturado</strong>
+Quando o faturamento é marcado como <strong>a faturar</strong>
 
 <div class="api-endpoint">
   <div class="endpoint-data">
@@ -18,7 +18,7 @@ Quando o faturamento é marcado como <strong>faturado</strong>
 
 ```json
 {
-  "event": "emit",
+  "event": "undo_emission",
   "object_type": "Invoice",
   "object_id": "id-da-entidade",
   "contract_token": "token-do-contrato",

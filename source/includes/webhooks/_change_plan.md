@@ -1,6 +1,6 @@
 ## Change_plan
 
-<strong>Payload:</strong> change_plan
+<strong>Webhook:</strong> change_plan
 
 <strong>Entidade:</strong> Contract
 

@@ -1,11 +1,11 @@
-## Undo_cancellation
+## Confirm_receival
 
-<strong>Payload:</strong> undo_cancellation
+<strong>Webhook:</strong> confirm_receival
 
 <strong>Entidade:</strong> Invoice
 
 <strong>Evento:</strong>
-Quando é <strong>desfeito o cancelamento</strong> do faturamento
+Quando é <strong>confirmado o recebimento</strong> do faturamento
 
 <div class="api-endpoint">
   <div class="endpoint-data">
@@ -18,7 +18,7 @@ Quando é <strong>desfeito o cancelamento</strong> do faturamento
 
 ```json
 {
-  "event": "undo_cancellation",
+  "event": "confirm_receival",
   "object_type": "Invoice",
   "object_id": "id-da-entidade",
   "contract_token": "token-do-contrato",

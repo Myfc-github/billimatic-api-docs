@@ -13,17 +13,17 @@ includes:
   - autenticacao
   - http_status/http_info
   - http_status/http_status
-  - payloads/payloads
-  - payloads/teste
-  - payloads/update
-  - payloads/emit
-  - payloads/undo_emission
-  - payloads/cancel
-  - payloads/undo_cancellation
-  - payloads/confirm_receival
-  - payloads/undo_receival
-  - payloads/receivement_error
-  - payloads/change_plan
+  - webhooks/webhooks
+  - webhooks/teste
+  - webhooks/update
+  - webhooks/emit
+  - webhooks/undo_emission
+  - webhooks/cancel
+  - webhooks/undo_cancellation
+  - webhooks/confirm_receival
+  - webhooks/undo_receival
+  - webhooks/receivement_error
+  - webhooks/change_plan
   - organizacoes/organizacoes
   - organizacoes/org_cria
   - organizacoes/org_campos
