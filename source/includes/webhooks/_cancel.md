@@ -1,11 +1,11 @@
-## Undo_emission
+## Cancel
 
-<strong>Payload:</strong> undo_emission
+<strong>Evento:</strong> cancel
 
-<strong>Entidade:</strong> Invoice
+<strong>Objeto:</strong> Invoice
 
-<strong>Evento:</strong>
-Quando o faturamento é marcado como <strong>a faturar</strong>
+<strong>Descrição:</strong>
+Quando o faturamento <strong>é cancelado</strong>
 
 <div class="api-endpoint">
   <div class="endpoint-data">
@@ -18,9 +18,9 @@ Quando o faturamento é marcado como <strong>a faturar</strong>
 
 ```json
 {
-  "event": "undo_emission",
+  "event": "cancel",
   "object_type": "Invoice",
-  "object_id": "id-da-entidade",
+  "object_id": "id-do-objeto",
   "contract_token": "token-do-contrato",
   "contract_id": "id-do-contrato"
 }

@@ -1,11 +1,11 @@
-## Emit
+## Confirm_receival
 
-<strong>Payload:</strong> emit
+<strong>Evento:</strong> confirm_receival
 
-<strong>Entidade:</strong> Invoice
+<strong>Objeto:</strong> Invoice
 
-<strong>Evento:</strong>
-Quando o faturamento é marcado como <strong>faturado</strong>
+<strong>Descrição:</strong>
+Quando é <strong>confirmado o recebimento</strong> do faturamento
 
 <div class="api-endpoint">
   <div class="endpoint-data">
@@ -18,9 +18,9 @@ Quando o faturamento é marcado como <strong>faturado</strong>
 
 ```json
 {
-  "event": "emit",
+  "event": "confirm_receival",
   "object_type": "Invoice",
-  "object_id": "id-da-entidade",
+  "object_id": "id-do-objeto",
   "contract_token": "token-do-contrato",
   "contract_id": "id-do-contrato"
 }

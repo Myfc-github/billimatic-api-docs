@@ -1,11 +1,11 @@
-## Cancel
+## Undo_cancellation
 
-<strong>Payload:</strong> cancel
+<strong>Evento:</strong> undo_cancellation
 
-<strong>Entidade:</strong> Invoice
+<strong>Objeto:</strong> Invoice
 
-<strong>Evento:</strong>
-Quando o faturamento <strong>é cancelado</strong>
+<strong>Descrição:</strong>
+Quando é <strong>desfeito o cancelamento</strong> do faturamento
 
 <div class="api-endpoint">
   <div class="endpoint-data">
@@ -18,9 +18,9 @@ Quando o faturamento <strong>é cancelado</strong>
 
 ```json
 {
-  "event": "cancel",
+  "event": "undo_cancellation",
   "object_type": "Invoice",
-  "object_id": "id-da-entidade",
+  "object_id": "id-do-objeto",
   "contract_token": "token-do-contrato",
   "contract_id": "id-do-contrato"
 }
