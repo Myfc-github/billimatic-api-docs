@@ -43,7 +43,7 @@
               </ul>
           </li>
           <li>
-            <a href="#payloads" class="toc-h1 toc-link" data-title="Payloads">Payloads</a>
+            <a href="#webhooks" class="toc-h1 toc-link" data-title="Webhooks">Webhooks</a>
               <ul class="toc-list-h2">
                   <li>
                     <a href="#teste" class="toc-h2 toc-link" data-title="Teste">Teste</a>
@@ -425,15 +425,15 @@
 </tr>
 </tbody></table>
 
-          <h1 id='payloads'>Payloads</h1>
+          <h1 id='webhooks'>Webhooks</h1>
 <p>Fintera Faturamento envia webhooks para notificar diversos eventos ocorridos na aplicação.</p>
 
           <h2 id='teste'>Teste</h2>
-<p><strong>Payload:</strong> --</p>
+<p><strong>Evento:</strong> --</p>
 
-<p><strong>Entidade:</strong> --</p>
+<p><strong>Objeto:</strong> --</p>
 
-<p><strong>Evento:</strong> Quando uma URL é cadastrada e antes de todo envio de payload para teste de disponibilidade da URL cadastrada</p>
+<p><strong>Descrição:</strong> Quando uma URL é cadastrada e antes de todo envio de webhook para teste de disponibilidade da URL cadastrada</p>
 
 <div class="api-endpoint">
   <div class="endpoint-data">
@@ -449,11 +449,11 @@
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
           <h2 id='update'>Update</h2>
-<p><strong>Payload:</strong> update</p>
+<p><strong>Evento:</strong> update</p>
 
-<p><strong>Entidade:</strong> Invoice</p>
+<p><strong>Objeto:</strong> Invoice</p>
 
-<p><strong>Evento:</strong>
+<p><strong>Descrição:</strong>
 Quando o faturamento é <strong>atualizado</strong></p>
 
 <div class="api-endpoint">
@@ -468,17 +468,17 @@ Quando o faturamento é <strong>atualizado</strong></p>
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="s2">"event"</span><span class="p">:</span><span class="w"> </span><span class="s2">"update"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"object_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Invoice"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"object_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"id-da-entidade"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"object_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"id-do-objeto"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"contract_token"</span><span class="p">:</span><span class="w"> </span><span class="s2">"token-do-contrato"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"contract_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"id-do-contrato"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
           <h2 id='emit'>Emit</h2>
-<p><strong>Payload:</strong> emit</p>
+<p><strong>Evento:</strong> emit</p>
 
-<p><strong>Entidade:</strong> Invoice</p>
+<p><strong>Objeto:</strong> Invoice</p>
 
-<p><strong>Evento:</strong>
+<p><strong>Descrição:</strong>
 Quando o faturamento é marcado como <strong>faturado</strong></p>
 
 <div class="api-endpoint">
@@ -493,17 +493,17 @@ Quando o faturamento é marcado como <strong>faturado</strong></p>
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="s2">"event"</span><span class="p">:</span><span class="w"> </span><span class="s2">"emit"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"object_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Invoice"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"object_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"id-da-entidade"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"object_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"id-do-objeto"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"contract_token"</span><span class="p">:</span><span class="w"> </span><span class="s2">"token-do-contrato"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"contract_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"id-do-contrato"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
           <h2 id='undo_emission'>Undo_emission</h2>
-<p><strong>Payload:</strong> undo_emission</p>
+<p><strong>Evento:</strong> undo_emission</p>
 
-<p><strong>Entidade:</strong> Invoice</p>
+<p><strong>Objeto:</strong> Invoice</p>
 
-<p><strong>Evento:</strong>
+<p><strong>Descrição:</strong>
 Quando o faturamento é marcado como <strong>a faturar</strong></p>
 
 <div class="api-endpoint">
@@ -518,17 +518,17 @@ Quando o faturamento é marcado como <strong>a faturar</strong></p>
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="s2">"event"</span><span class="p">:</span><span class="w"> </span><span class="s2">"undo_emission"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"object_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Invoice"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"object_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"id-da-entidade"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"object_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"id-do-objeto"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"contract_token"</span><span class="p">:</span><span class="w"> </span><span class="s2">"token-do-contrato"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"contract_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"id-do-contrato"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
           <h2 id='cancel'>Cancel</h2>
-<p><strong>Payload:</strong> cancel</p>
+<p><strong>Evento:</strong> cancel</p>
 
-<p><strong>Entidade:</strong> Invoice</p>
+<p><strong>Objeto:</strong> Invoice</p>
 
-<p><strong>Evento:</strong>
+<p><strong>Descrição:</strong>
 Quando o faturamento <strong>é cancelado</strong></p>
 
 <div class="api-endpoint">
@@ -543,17 +543,17 @@ Quando o faturamento <strong>é cancelado</strong></p>
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="s2">"event"</span><span class="p">:</span><span class="w"> </span><span class="s2">"cancel"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"object_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Invoice"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"object_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"id-da-entidade"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"object_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"id-do-objeto"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"contract_token"</span><span class="p">:</span><span class="w"> </span><span class="s2">"token-do-contrato"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"contract_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"id-do-contrato"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
           <h2 id='undo_cancellation'>Undo_cancellation</h2>
-<p><strong>Payload:</strong> undo_cancellation</p>
+<p><strong>Evento:</strong> undo_cancellation</p>
 
-<p><strong>Entidade:</strong> Invoice</p>
+<p><strong>Objeto:</strong> Invoice</p>
 
-<p><strong>Evento:</strong>
+<p><strong>Descrição:</strong>
 Quando é <strong>desfeito o cancelamento</strong> do faturamento</p>
 
 <div class="api-endpoint">
@@ -568,17 +568,17 @@ Quando é <strong>desfeito o cancelamento</strong> do faturamento</p>
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="s2">"event"</span><span class="p">:</span><span class="w"> </span><span class="s2">"undo_cancellation"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"object_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Invoice"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"object_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"id-da-entidade"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"object_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"id-do-objeto"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"contract_token"</span><span class="p">:</span><span class="w"> </span><span class="s2">"token-do-contrato"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"contract_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"id-do-contrato"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
           <h2 id='confirm_receival'>Confirm_receival</h2>
-<p><strong>Payload:</strong> confirm_receival</p>
+<p><strong>Evento:</strong> confirm_receival</p>
 
-<p><strong>Entidade:</strong> Invoice</p>
+<p><strong>Objeto:</strong> Invoice</p>
 
-<p><strong>Evento:</strong>
+<p><strong>Descrição:</strong>
 Quando é <strong>confirmado o recebimento</strong> do faturamento</p>
 
 <div class="api-endpoint">
@@ -593,17 +593,17 @@ Quando é <strong>confirmado o recebimento</strong> do faturamento</p>
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="s2">"event"</span><span class="p">:</span><span class="w"> </span><span class="s2">"confirm_receival"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"object_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Invoice"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"object_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"id-da-entidade"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"object_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"id-do-objeto"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"contract_token"</span><span class="p">:</span><span class="w"> </span><span class="s2">"token-do-contrato"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"contract_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"id-do-contrato"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
           <h2 id='undo_receival'>Undo_receival</h2>
-<p><strong>Payload:</strong> undo_receival</p>
+<p><strong>Evento:</strong> undo_receival</p>
 
-<p><strong>Entidade:</strong> Invoice</p>
+<p><strong>Objeto:</strong> Invoice</p>
 
-<p><strong>Evento:</strong>
+<p><strong>Descrição:</strong>
 Quando é <strong>desfeito o recebimento</strong> do faturamento</p>
 
 <div class="api-endpoint">
@@ -618,17 +618,17 @@ Quando é <strong>desfeito o recebimento</strong> do faturamento</p>
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="s2">"event"</span><span class="p">:</span><span class="w"> </span><span class="s2">"undo_receival"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"object_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Invoice"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"object_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"id-da-entidade"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"object_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"id-do-objeto"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"contract_token"</span><span class="p">:</span><span class="w"> </span><span class="s2">"token-do-contrato"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"contract_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"id-do-contrato"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
           <h2 id='receivement_error'>Receivement_error</h2>
-<p><strong>Payload:</strong> receivement_error</p>
+<p><strong>Evento:</strong> receivement_error</p>
 
-<p><strong>Entidade:</strong> Invoice</p>
+<p><strong>Objeto:</strong> Invoice</p>
 
-<p><strong>Evento:</strong>
+<p><strong>Descrição:</strong>
 Quando há <strong>erro no recebimento</strong> do faturamento (pagamento em cartão de crédito)</p>
 
 <div class="api-endpoint">
@@ -643,17 +643,17 @@ Quando há <strong>erro no recebimento</strong> do faturamento (pagamento em car
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="s2">"event"</span><span class="p">:</span><span class="w"> </span><span class="s2">"receivement_error"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"object_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Invoice"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"object_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"id-da-entidade"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"object_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"id-do-objeto"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"contract_token"</span><span class="p">:</span><span class="w"> </span><span class="s2">"token-do-contrato"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"contract_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"id-do-contrato"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
           <h2 id='change_plan'>Change_plan</h2>
-<p><strong>Payload:</strong> change_plan</p>
+<p><strong>Evento:</strong> change_plan</p>
 
-<p><strong>Entidade:</strong> Contract</p>
+<p><strong>Objeto:</strong> Contract</p>
 
-<p><strong>Evento:</strong>
+<p><strong>Descrição:</strong>
 Quando é solicitada a <strong>troca de plano</strong>
 de uma assinatura (e-commerce)</p>
 
