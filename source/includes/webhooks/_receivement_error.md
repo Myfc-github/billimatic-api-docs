@@ -1,10 +1,10 @@
 ## Receivement_error
 
-<strong>Webhook:</strong> receivement_error
+<strong>Evento:</strong> receivement_error
 
-<strong>Entidade:</strong> Invoice
+<strong>Objeto:</strong> Invoice
 
-<strong>Evento:</strong>
+<strong>Descrição:</strong>
 Quando há <strong>erro no recebimento</strong> do faturamento (pagamento em cartão de crédito)
 
 <div class="api-endpoint">
@@ -20,7 +20,7 @@ Quando há <strong>erro no recebimento</strong> do faturamento (pagamento em car
 {
   "event": "receivement_error",
   "object_type": "Invoice",
-  "object_id": "id-da-entidade",
+  "object_id": "id-do-objeto",
   "contract_token": "token-do-contrato",
   "contract_id": "id-do-contrato"
 }

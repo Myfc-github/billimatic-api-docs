@@ -1,10 +1,10 @@
 ## Undo_receival
 
-<strong>Webhook:</strong> undo_receival
+<strong>Evento:</strong> undo_receival
 
-<strong>Entidade:</strong> Invoice
+<strong>Objeto:</strong> Invoice
 
-<strong>Evento:</strong>
+<strong>Descrição:</strong>
 Quando é <strong>desfeito o recebimento</strong> do faturamento
 
 <div class="api-endpoint">
@@ -20,7 +20,7 @@ Quando é <strong>desfeito o recebimento</strong> do faturamento
 {
   "event": "undo_receival",
   "object_type": "Invoice",
-  "object_id": "id-da-entidade",
+  "object_id": "id-do-objeto",
   "contract_token": "token-do-contrato",
   "contract_id": "id-do-contrato"
 }

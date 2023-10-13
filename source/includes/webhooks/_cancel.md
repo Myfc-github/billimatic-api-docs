@@ -1,10 +1,10 @@
 ## Cancel
 
-<strong>Webhook:</strong> cancel
+<strong>Evento:</strong> cancel
 
-<strong>Entidade:</strong> Invoice
+<strong>Objeto:</strong> Invoice
 
-<strong>Evento:</strong>
+<strong>Descrição:</strong>
 Quando o faturamento <strong>é cancelado</strong>
 
 <div class="api-endpoint">
@@ -20,7 +20,7 @@ Quando o faturamento <strong>é cancelado</strong>
 {
   "event": "cancel",
   "object_type": "Invoice",
-  "object_id": "id-da-entidade",
+  "object_id": "id-do-objeto",
   "contract_token": "token-do-contrato",
   "contract_id": "id-do-contrato"
 }

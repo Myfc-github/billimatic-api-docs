@@ -1,10 +1,10 @@
 ## Update
 
-<strong>Webhook:</strong> update
+<strong>Evento:</strong> update
 
-<strong>Entidade:</strong> Invoice
+<strong>Objeto:</strong> Invoice
 
-<strong>Evento:</strong>
+<strong>Descrição:</strong>
 Quando o faturamento é <strong>atualizado</strong>
 
 <div class="api-endpoint">
@@ -20,7 +20,7 @@ Quando o faturamento é <strong>atualizado</strong>
 {
   "event": "update",
   "object_type": "Invoice",
-  "object_id": "id-da-entidade",
+  "object_id": "id-do-objeto",
   "contract_token": "token-do-contrato",
   "contract_id": "id-do-contrato"
 }

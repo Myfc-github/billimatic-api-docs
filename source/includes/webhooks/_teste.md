@@ -1,9 +1,9 @@
 ## Teste
-<strong>Webhook:</strong> --
+<strong>Evento:</strong> --
 
-<strong>Entidade:</strong> --
+<strong>Objeto:</strong> --
 
-<strong>Evento:</strong> Quando uma URL é cadastrada e antes de todo envio de webhook para teste de disponibilidade da URL cadastrada
+<strong>Descrição:</strong> Quando uma URL é cadastrada e antes de todo envio de webhook para teste de disponibilidade da URL cadastrada
 
 <div class="api-endpoint">
   <div class="endpoint-data">

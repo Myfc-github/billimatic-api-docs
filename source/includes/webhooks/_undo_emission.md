@@ -1,10 +1,10 @@
 ## Undo_emission
 
-<strong>Webhook:</strong> undo_emission
+<strong>Evento:</strong> undo_emission
 
-<strong>Entidade:</strong> Invoice
+<strong>Objeto:</strong> Invoice
 
-<strong>Evento:</strong>
+<strong>Descrição:</strong>
 Quando o faturamento é marcado como <strong>a faturar</strong>
 
 <div class="api-endpoint">
@@ -20,7 +20,7 @@ Quando o faturamento é marcado como <strong>a faturar</strong>
 {
   "event": "undo_emission",
   "object_type": "Invoice",
-  "object_id": "id-da-entidade",
+  "object_id": "id-do-objeto",
   "contract_token": "token-do-contrato",
   "contract_id": "id-do-contrato"
 }

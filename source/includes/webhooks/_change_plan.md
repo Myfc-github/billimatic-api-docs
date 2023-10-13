@@ -1,10 +1,10 @@
 ## Change_plan
 
-<strong>Webhook:</strong> change_plan
+<strong>Evento:</strong> change_plan
 
-<strong>Entidade:</strong> Contract
+<strong>Objeto:</strong> Contract
 
-<strong>Evento:</strong>
+<strong>Descrição:</strong>
 Quando é solicitada a <strong>troca de plano</strong>
 de uma assinatura (e-commerce)
 
