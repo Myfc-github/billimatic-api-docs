@@ -18,7 +18,9 @@
 | payment_value (decimal, optional)                       | Valor a Receber                                                                   |
 | nfse_template_id (integer, optional)                    | ID do Modelo de NFS-e                                                             |
 | finance_category (string, optional)                     | Categoria                                                                         |
+| finance_category_id (integer, optional)                 | ID de Categoria                                                                   |
 | finance_revenue_center (string, optional)               | Centro de Receita                                                                 |
+| finance_revenue_center_id (integer, optional)           | ID de Centro de Receita                                                           |
 | myfinance_sale_account_id (integer, optional)           | ID da Conta de Recebível (obrig p/ criação de recebível no Fintera Financeiro)          |
 | myfinance_sale_account_name (string, optional)          | Nome da Conta de Recebível (obrig p/ criação criação de recebível no Fintera Financeiro)|
 | nfe_issued (boolean, optional)                          | Se a NFS-e foi emitida                                                            |
