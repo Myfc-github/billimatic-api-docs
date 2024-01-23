@@ -5,11 +5,11 @@ Realiza busca de contratos
 <div class="api-endpoint">
   <div class="endpoint-data">
     <i class="label label-get">GET</i>
-     api/v1/contracts/search?name=teste
+     api/v1/contracts/search?name=teste&customer_id=11984
   </div>
 </div>
 
-Onde "teste" deverá ser o nome do seu contrato
+Onde "teste" deverá ser o nome do seu contrato, e `customer_id` se refere ao ID do cliente
 
 > Exemplo de Corpo
 

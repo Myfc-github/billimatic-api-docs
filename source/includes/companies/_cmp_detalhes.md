@@ -43,7 +43,8 @@ Mostra os detalhes de uma empresa
 		"nfse_email": "teste@teste.com.br",
 		"myfinance_customer_id": 2240155,
 		"myfinance_errors": null,
-		"created_at": "28/04/2018 11:41:53 -03:00"
+		"created_at": "28/04/2018 11:41:53 -03:00",
+    "updated_at": "28/04/2018 11:41:53 -03:00"
   	}
 }
 ```

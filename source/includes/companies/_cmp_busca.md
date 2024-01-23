@@ -45,7 +45,8 @@ Onde o cnpj=55391268000193 deverá conter o número do cnpj desejado
             "nfse_email": "teste@teste.com.br",
             "myfinance_customer_id": 213341,
             "myfinance_errors": null,
-            "created_at": "10/12/2018 15:26:12 -02:00"
+            "created_at": "10/12/2018 15:26:12 -02:00",
+            "updated_at": "10/12/2018 15:26:12 -02:00"
         }
     ]
 }

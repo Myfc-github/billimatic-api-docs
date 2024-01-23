@@ -44,7 +44,8 @@ Lista a(s) empresa(s) em uma conta
             "nfse_email": null,
             "myfinance_customer_id": 2240155,
             "myfinance_errors": null,
-            "created_at": "28/04/2018 11:41:53 -03:00"
+            "created_at": "28/04/2018 11:41:53 -03:00",
+            "updated_at": "28/04/2018 11:41:53 -03:00"
         },
         {
             "id": 7854,
@@ -69,7 +70,8 @@ Lista a(s) empresa(s) em uma conta
             "nfse_email": "teste@teste.com.br",
             "myfinance_customer_id": 2306837,
             "myfinance_errors": null,
-            "created_at": "28/04/2018 11:41:53 -03:00"
+            "created_at": "28/04/2018 11:41:53 -03:00",
+            "updated_at": "28/04/2018 11:41:53 -03:00"
         },
         {
             "id": 7853,
@@ -94,7 +96,8 @@ Lista a(s) empresa(s) em uma conta
             "nfse_email": null,
             "myfinance_customer_id": 2245885,
             "myfinance_errors": null,
-            "created_at": "28/04/2018 11:41:53 -03:00"
+            "created_at": "28/04/2018 11:41:53 -03:00",
+            "updated_at": "28/04/2018 11:41:53 -03:00"
         }
     ]
 }
