@@ -84,7 +84,8 @@ O corpo da requisição deverá conter somente o(s) campo(s) que deseja(m) ser a
                 "finance_receivable_id": null,
                 "myfinance_sale_id": null,
                 "finance_entity_id": null,
-                "myfinance_errors": "Ocorreu um erro ao criar recebível no Myfinance. Verifique os erros: A entidade 57.757.975/0001-86 não foi encontrada no Myfinance. Corrija o faturamento e sincronize."
+                "myfinance_errors": "Ocorreu um erro ao criar recebível no Myfinance. Verifique os erros: A entidade 57.757.975/0001-86 não foi encontrada no Myfinance. Corrija o faturamento e sincronize.",
+                "myfinance_receivable_account_id": null
             }
         ],
         "services": [

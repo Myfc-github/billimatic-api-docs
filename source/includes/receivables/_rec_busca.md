@@ -46,6 +46,7 @@ Onde deseja que o recebimento esteja entre as datas 01/01/2022 a 31/12/2022 e `s
       "myfinance_sale_id": null,
       "finance_entity_id": null,
       "myfinance_errors": null,
+      "myfinance_receivable_account_id": null,
       "boleto_url": null,
       "invoice": {
         "id": 381,

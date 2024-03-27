@@ -81,7 +81,8 @@ Onde deseja que o faturamento esteja entre as datas 01/04/2018 a 31/12/2018
                     "finance_receivable_id": null,
                     "myfinance_sale_id": null,
                     "finance_entity_id": null,
-                    "myfinance_errors": "Ocorreu um erro ao criar recebível no Myfinance. Verifique os erros: A entidade 57.757.975/0001-86 não foi encontrada no Myfinance. Corrija o faturamento e sincronize."
+                    "myfinance_errors": "Ocorreu um erro ao criar recebível no Myfinance. Verifique os erros: A entidade 57.757.975/0001-86 não foi encontrada no Myfinance. Corrija o faturamento e sincronize.",
+                    "myfinance_receivable_account_id": null
                 }
             ],
             "services": [
@@ -179,7 +180,8 @@ Onde deseja que o faturamento esteja entre as datas 01/04/2018 a 31/12/2018
                     "finance_receivable_id": null,
                     "myfinance_sale_id": null,
                     "finance_entity_id": null,
-                    "myfinance_errors": "Ocorreu um erro ao criar recebível no Myfinance. Verifique os erros: A entidade 57.757.975/0001-86 não foi encontrada no Myfinance. Corrija o faturamento e sincronize."
+                    "myfinance_errors": "Ocorreu um erro ao criar recebível no Myfinance. Verifique os erros: A entidade 57.757.975/0001-86 não foi encontrada no Myfinance. Corrija o faturamento e sincronize.",
+                    "myfinance_receivable_account_id": null
                 }
             ],
             "services": [
