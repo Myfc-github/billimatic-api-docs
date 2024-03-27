@@ -131,7 +131,8 @@ Cria um faturamento
                 "finance_receivable_id": null,
                 "myfinance_sale_id": null,
                 "finance_entity_id": null,
-                "myfinance_errors": null
+                "myfinance_errors": null,
+                "myfinance_receivable_account_id": null
             }
         ],
         "services": [
