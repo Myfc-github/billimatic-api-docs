@@ -1,34 +1,16 @@
-## Buscar Faturamento Por Organização
+## Buscar Faturamento Por Contrato
 
-Realiza busca de faturamentos por organização com base nos filtros especificados.
+Realiza busca de faturamentos por contrato, para o período especificado.
+
 
 <div class="api-endpoint">
   <div class="endpoint-data">
     <i class="label label-get">GET</i>
-     api/v1/organizations/{organization_id}/invoices/search?q[state_eq]=received&q[issue_date_gteq]=01-04-2018&q[issue_date_lteq]=31-12-2018&page=1&per_page=50
+     api/v1/contracts/{contract_id}/invoices/search?issue_date_from=01-04-2018&issue_date_to=31-12-2018
   </div>
 </div>
 
-No exemplo acima é retornada a primeira página(`page=1`), contendo 50 faturamentos por página(`per_page=50`), que já foram recebidos(`state=received`) e a data de faturamento esteja entre 01/04/2018 e 31/12/2018
-
-`state` pode ter os seguintes valores:
-
-* **to_emit**: faturamentos a faturar
-* **to_receive**: faturamentos a receber
-* **received**: faturamentos recebidos
-* **cancelled**: faturamentos cancelados
-* **late**: faturamentos inadimplentes
-
-<br>
-<strong> Filtros disponíveis para busca </strong>
-
-|                               |        |                                             |
-| ----------------------------- | ------ | ------------------------------------------- |
-| q[issue_date_gteq]            | date   |  Data de faturamento maior que              |
-| q[issue_date_lteq]            | date   |  Data de faturamento menor que              |
-| q[receivables_due_date_gteq]  | date   |  Data de vencimento maior que               |
-| q[receivables_due_date_lteq]  | date   |  Data de vencimento menor que               |
-| q[state_eq]                   | string |  Status igual a                             |
+Onde deseja que o faturamento esteja entre as datas 01/04/2018 a 31/12/2018
 
 > Exemplo de Corpo
 
@@ -40,9 +22,6 @@ No exemplo acima é retornada a primeira página(`page=1`), contendo 50 faturame
 
 ```json
 {
-    "page": 1,
-    "per_page": 50,
-    "total_pages": 1,
     "invoices": [
         {
             "id": 184535,
@@ -52,7 +31,7 @@ No exemplo acima é retornada a primeira página(`page=1`), contendo 50 faturame
             "gross_value": "20000.0",
             "payment_value": "20000.0",
             "description": "Teste de alteração da descrição do faturamento para doc",
-            "state": "received",
+            "state": "to_emit",
             "cancelled_automatically": false,
             "nfe_service": null,
             "nfe_verification": null,
@@ -152,7 +131,7 @@ No exemplo acima é retornada a primeira página(`page=1`), contendo 50 faturame
             "gross_value": "700.0",
             "payment_value": "700.0",
             "description": "teste",
-            "state": "rceived",
+            "state": "to_emit",
             "cancelled_automatically": false,
             "nfe_service": null,
             "nfe_verification": null,
