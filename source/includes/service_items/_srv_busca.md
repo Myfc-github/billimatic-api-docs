@@ -1,6 +1,6 @@
 ## Busca Serviço
 
-Realiza busca de serviços
+Realiza busca de serviço
 
 <div class="api-endpoint">
   <div class="endpoint-data">
@@ -9,7 +9,7 @@ Realiza busca de serviços
   </div>
 </div>
 
-Onde name=Teste%20Doc é a descrição do serviço que deseja efetuar a busca
+Onde name=Teste%20Doc deverá conter o nome do serviço desejado
 
 > Exemplo de Corpo
 

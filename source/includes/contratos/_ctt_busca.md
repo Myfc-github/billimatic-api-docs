@@ -1,6 +1,6 @@
 ## Busca Contrato
 
-Realiza busca de contratos
+Realiza busca de contrato
 
 <div class="api-endpoint">
   <div class="endpoint-data">

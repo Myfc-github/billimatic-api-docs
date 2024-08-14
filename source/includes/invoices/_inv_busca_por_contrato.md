@@ -1,4 +1,4 @@
-## Buscar Faturamento Por Contrato
+## Busca Faturamentos Por Contrato
 
 Realiza busca de faturamentos por contrato, para o período especificado.
 

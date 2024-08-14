@@ -1,4 +1,4 @@
-## Buscar Faturamento
+## Busca Faturamentos
 
 Realiza busca de faturamentos por organização com base nos filtros especificados.
 
