@@ -204,10 +204,10 @@
                     <a href="#atualiza-faturamento" class="toc-h2 toc-link" data-title="Atualiza Faturamento">Atualiza Faturamento</a>
                   </li>
                   <li>
-                    <a href="#buscar-faturamento" class="toc-h2 toc-link" data-title="Buscar Faturamento">Buscar Faturamento</a>
+                    <a href="#busca-faturamentos" class="toc-h2 toc-link" data-title="Busca Faturamentos">Busca Faturamentos</a>
                   </li>
                   <li>
-                    <a href="#buscar-faturamento-por-contrato" class="toc-h2 toc-link" data-title="Buscar Faturamento Por Contrato">Buscar Faturamento Por Contrato</a>
+                    <a href="#busca-faturamentos-por-contrato" class="toc-h2 toc-link" data-title="Busca Faturamentos Por Contrato">Busca Faturamentos Por Contrato</a>
                   </li>
                   <li>
                     <a href="#faturamentos-inadimplentes" class="toc-h2 toc-link" data-title="Faturamentos inadimplentes">Faturamentos inadimplentes</a>
@@ -270,6 +270,14 @@
               <ul class="toc-list-h2">
                   <li>
                     <a href="#lista-notificacoes" class="toc-h2 toc-link" data-title="Lista Notificações">Lista Notificações</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#notas-fiscais" class="toc-h1 toc-link" data-title="Notas Fiscais">Notas Fiscais</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#busca-notas-fiscais" class="toc-h2 toc-link" data-title="Busca Notas Fiscais">Busca Notas Fiscais</a>
                   </li>
               </ul>
           </li>
@@ -1796,7 +1804,7 @@ de uma assinatura (e-commerce)</p>
 </tbody></table>
 
           <h2 id='busca-servico'>Busca Serviço</h2>
-<p>Realiza busca de serviços</p>
+<p>Realiza busca de serviço</p>
 
 <div class="api-endpoint">
   <div class="endpoint-data">
@@ -1805,7 +1813,7 @@ de uma assinatura (e-commerce)</p>
   </div>
 </div>
 
-<p>Onde name=Teste%20Doc é a descrição do serviço que deseja efetuar a busca</p>
+<p>Onde name=Teste%20Doc deverá conter o nome do serviço desejado</p>
 
 <blockquote>
 <p>Exemplo de Corpo</p>
@@ -2118,7 +2126,7 @@ de uma assinatura (e-commerce)</p>
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
           <h2 id='busca-contrato'>Busca Contrato</h2>
-<p>Realiza busca de contratos</p>
+<p>Realiza busca de contrato</p>
 
 <div class="api-endpoint">
   <div class="endpoint-data">
@@ -3105,7 +3113,7 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
     </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
-          <h2 id='buscar-faturamento'>Buscar Faturamento</h2>
+          <h2 id='busca-faturamentos'>Busca Faturamentos</h2>
 <p>Realiza busca de faturamentos por organização com base nos filtros especificados.</p>
 
 <div class="api-endpoint">
@@ -3372,7 +3380,7 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
     </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
-          <h2 id='buscar-faturamento-por-contrato'>Buscar Faturamento Por Contrato</h2>
+          <h2 id='busca-faturamentos-por-contrato'>Busca Faturamentos Por Contrato</h2>
 <p>Realiza busca de faturamentos por contrato, para o período especificado.</p>
 
 <div class="api-endpoint">
@@ -6244,6 +6252,186 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
       </span><span class="s2">"default_template"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
       </span><span class="s2">"subscription_default_template"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
       </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"11/02/2019 09:03:28 -03:00"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+          <h1 id='notas-fiscais'>Notas Fiscais</h1>
+          <h2 id='busca-notas-fiscais'>Busca Notas Fiscais</h2>
+<p>Realiza busca de notas fiscais de uma organização com base nos filtros especificados.</p>
+
+<div class="api-endpoint">
+  <div class="endpoint-data">
+    <i class="label label-get">GET</i>
+     api/v1/organizations/{organization_id}/nfses/search?{filtros}
+  </div>
+</div>
+
+<p><code>per_page</code> tem como características:</p>
+
+<ul>
+<li><strong>default</strong>: 50</li>
+<li><strong>valor máximo</strong>: 100</li>
+</ul>
+
+<p><code>status</code> pode ter os seguintes valores:</p>
+
+<ul>
+<li><strong>1</strong>: Emitida</li>
+<li><strong>2</strong>: Cancelada</li>
+<li><strong>4</strong>: Cancelando</li>
+<li><strong>6</strong>: Erro no cancelamento</li>
+</ul>
+
+<p><br>
+<strong> Exemplos de filtros para busca </strong></p>
+
+<table><thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead><tbody>
+<tr>
+<td>q[*_eq]</td>
+<td>Igual</td>
+<td>q[status_eq]=1</td>
+</tr>
+<tr>
+<td>q[*_not_eq]</td>
+<td>Diferente</td>
+<td>q[status_not_eq]=2</td>
+</tr>
+<tr>
+<td>q[*_gteq]</td>
+<td>Maior ou igual</td>
+<td>q[generated_at_gteq]=05/08/2024</td>
+</tr>
+<tr>
+<td>q[*_lteq]</td>
+<td>Menor ou igual</td>
+<td>q[generated_at_lteq]=05/08/2024</td>
+</tr>
+<tr>
+<td>q[*_in]</td>
+<td>Corresponder a quaisquer valores na matriz</td>
+<td>q[id_in][]=1010&amp;q[id_in][]=1011</td>
+</tr>
+<tr>
+<td>q[*_not_in]</td>
+<td>Não corresponde a nenhum valor na matriz</td>
+<td>q[id_not_in][]=1010&amp;q[id_not_in][]=1011</td>
+</tr>
+</tbody></table>
+
+<p>Exemplo: api/v1/organizations/2115/nfses/search?q[status]=1&amp;q[generated_at_gteq]=05/08/2024&amp;q[generated_at_lteq]=18/08/2024&amp;page=1&amp;per_page=50</p>
+
+<p>No exemplo acima é retornada a primeira página (<code>page=1</code>), contendo 50 notas fiscais por página (<code>per_page=50</code>), que estão com status igual a emitida (<code>status=1</code>) e a data da emissão esteja entre 05/08/2024 e 18/08/2024</p>
+
+<blockquote>
+<p>Exemplo de Corpo</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="w">  </span><span class="s2">"Essa requisição não possui corpo"</span><span class="w">
+</span></code></pre>
+<blockquote>
+<p>Exemplo do retorno</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="w">
+</span><span class="p">{</span><span class="w">
+  </span><span class="s2">"page"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"per_page"</span><span class="p">:</span><span class="w"> </span><span class="mi">50</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"total_pages"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"nfses"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"nfse_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3200"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"generated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"05/08/2024 01:00:32 -03:00"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10.0"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"verification_code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"LDCE-BCXB"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"city_nfse_url"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Emitida"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"invoice_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">62</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"customer_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Company"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"customer_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"05/08/2024 11:37:37 -03:00"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"05/08/2024 11:40:23 -03:00"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"external_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3f90b87d-1a8a-4c32-bddf-cf222f330932"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"servico_prestado_municipio_cliente"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"iss_retido_fonte"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"percentual_carga_tributaria"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.0"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"carga_tributaria_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.0"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"fonte_carga_tributaria"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"ir_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.0"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"pis_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.0"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"cofins_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.0"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"csll_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.0"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"inss_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.0"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"retained_iss_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.0"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"service_provided_city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Rio de Janeiro"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"service_provided_city_code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3304557"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"service_provided_state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"RJ"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"cancellation_requested_at"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"cancelled_at"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"integration_errors"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"request_sent"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"organization_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"customer_email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"customer@gmail.com"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"iss_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.5"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"customer_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Customer Name"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"customer_company_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Cutomer Company Name"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"customer_document_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"32403309000242"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"customer_city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"São Paulo"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"customer_city_ibge_code"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"customer_state"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"customer_city_inscription"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"customer_state_inscription"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"customer_address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Rua 01"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"customer_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"199"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"customer_complement"</span><span class="p">:</span><span class="w"> </span><span class="s2">"CONJ 91"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"customer_district"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Vila 01"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"customer_zipcode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"74552000"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"organization_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Organization Name"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"organization_company_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Organization Name"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"organization_document_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"23499377000123"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"organization_city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Rio de Janeiro"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"organization_city_ibge_code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"IBGE CODE"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"organization_state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"RJ"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"organization_city_inscription"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"organization_state_inscription"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"organization_address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Rua 01"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"organization_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"01"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"organization_complement"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"organization_district"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Centro"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"organization_zipcode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"74394455"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"organization_is_incentivador_cultural"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"organization_is_optante_simples_nacional"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"rps_number"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"rps_serie"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"nfse_environment"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Producao"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"accrual_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"05/08/2024"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"outras_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.0"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"servico_prestado_municipio_prestador"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"servico_prestado_municipio_codigo"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"pdf_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://faturamento.fintera.com.br/docs/MfyrCc2aQPxx81xaTDDhbgy3/nfse-01.pdf"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"xml_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://faturamento.fintera.com.br/docs/XRrVjp6QC6kPsx3NPFtNMDN5/nfse-01.xml"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"nfse_service_items"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Cobrança pelo volume da utilização do serviço. Conforme lei 12.741/12, a carga tributária aproximada é de R$ 1,63 (16,33%), segundo a fonte IBPT"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"codigo_servico_municipal"</span><span class="p">:</span><span class="w"> </span><span class="s2">"010601"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"item_lista_servico"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0106"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"external_service_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"cnae"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"100.0"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"aliquota_iss"</span><span class="p">:</span><span class="w"> </span><span class="s2">"5.0"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"units"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1.0"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"nfse_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"05/08/2024 11:37:37 -03:00"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"05/08/2024 11:37:37 -03:00"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"descricao_servico_municipal"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">]</span><span class="w">
     </span><span class="p">}</span><span class="w">
   </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
