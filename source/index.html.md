@@ -97,6 +97,8 @@ includes:
   - receivables/rec_busca
   - email_templates/email_templates
   - email_templates/email_templates_list
+  - nfses/nfses
+  - nfses/nfses_busca
   - nfse_templates/nfse_templates
   - nfse_templates/nfse_templates_list
   - financial/charge_templates/charge_templates
