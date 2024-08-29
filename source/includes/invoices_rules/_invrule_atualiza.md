@@ -50,6 +50,7 @@ O corpo da requisição deverá conter somente o(s) campo(s) que deseja(m) ser a
         "customer_type": "Company",
         "emites_service_values_id": null,
         "emites_service_value_name": null,
+        "nfse_template_id": null,
         "finance_category": null,
         "finance_category_id": null,
         "finance_revenue_center": null,
