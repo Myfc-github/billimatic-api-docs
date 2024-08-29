@@ -70,6 +70,7 @@ Cria uma regra de faturamento a partir de um modelo de faturamento
     "customer_type": "Person",
     "emites_service_values_id": null,
     "emites_service_value_name": "",
+    "nfse_template_id": null,
     "finance_category": "",
     "finance_category_id": null,
     "finance_revenue_center": "",

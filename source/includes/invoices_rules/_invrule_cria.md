@@ -21,6 +21,7 @@ Cria uma regra de faturamento
         "nfe_body": "Nfe Teste para Regra de Faturamento",
         "charge_type": "fixed_day",
         "issue_nfse": true,
+        "nfse_template_id": 2275,
         "additional_information": {
             "title": "Teste Documentacao",
             "init_date": "01-12-2018",
@@ -93,6 +94,7 @@ Cria uma regra de faturamento
         "customer_type": "Company",
         "emites_service_values_id": null,
         "emites_service_value_name": null,
+        "nfse_template_id": 2275,
         "finance_category": null,
         "finance_category_id": null,
         "finance_revenue_center": null,
