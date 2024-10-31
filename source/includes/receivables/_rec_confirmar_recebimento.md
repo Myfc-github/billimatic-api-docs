@@ -1,18 +1,23 @@
-## Desfazer Pagamento
+## Confirmar recebimento
 
-Atualiza a situação do recebimento para a receber.
+Atualiza a situação do recebimento para recebida.
 
 <div class="api-endpoint">
   <div class="endpoint-data">
     <i class="label label-get">PATCH</i>
-     api/v1/contracts/{contract_id}/receivables/{receivable_id}/undo_receipt
+     api/v1/contracts/{contract_id}/receivables/{receivable_id}/receive
   </div>
 </div>
 
 > Exemplo de Corpo
 
 ```json
-"Essa requisição não possui corpo"
+{
+  "receivable": {
+    "received_value": 50.00,
+    "received_at": "30/10/2024"
+  }
+}
 ```
 
 > Exemplo do retorno
@@ -29,7 +34,7 @@ Atualiza a situação do recebimento para a receber.
     "received_value": "50.0",
     "received_at": "30/10/2024",
     "created_at": "29/10/2024 17:54:53 -03:00",
-    "state": "to_receive",
+    "state": "received",
     "payment_gateway_status": null,
     "cobrato_charge_id": null,
     "cobrato_errors": null,

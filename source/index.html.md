@@ -95,8 +95,8 @@ includes:
   - invoice_template/invTem_busca
   - receivables/receivables
   - receivables/rec_busca
-  - receivables/rec_marcar_como_recebido
-  - receivables/rec_desfazer_pagamento
+  - receivables/rec_confirmar_recebimento
+  - receivables/rec_desfazer_recebimento
   - email_templates/email_templates
   - email_templates/email_templates_list
   - nfses/nfses
