@@ -73,7 +73,6 @@ includes:
   - invoices/inv_detalhes
   - invoices/inv_atualiza
   - invoices/inv_busca
-  - invoices/inv_busca_por_contrato
   - invoices/inv_inadimplementes
   - invoices/inv_bloqueio
   - invoices/inv_aprova

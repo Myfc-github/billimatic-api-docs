@@ -5,11 +5,11 @@ Realiza busca de faturamentos por organização com base nos filtros especificad
 <div class="api-endpoint">
   <div class="endpoint-data">
     <i class="label label-get">GET</i>
-     api/v1/organizations/{organization_id}/invoices/search?q[state_eq]=received&q[issue_date_gteq]=01-04-2018&q[issue_date_lteq]=31-12-2018&page=1&per_page=50
+     api/v1/organizations/{organization_id}/invoices/search?q[customer_id_eq]=1&q[customer_type_eq]=Person&q[contract_id_eq]=1&q[state_eq]=received&q[issue_date_gteq]=01-04-2018&q[issue_date_lteq]=31-12-2018&page=1&per_page=50
   </div>
 </div>
 
-No exemplo acima é retornada a primeira página(`page=1`), contendo 50 faturamentos por página(`per_page=50`), que já foram recebidos(`state=received`) e a data de faturamento esteja entre 01/04/2018 e 31/12/2018
+No exemplo acima é retornada a primeira página(`page=1`), contendo 50 faturamentos por página(`per_page=50`), que já foram recebidos(`state=received`), com data de faturamento entre 01/04/2018 e 31/12/2018 e que pertencem ao cliente do tipo pessoa com id igual a 1
 
 `per_page` tem como características:
 
@@ -24,6 +24,11 @@ No exemplo acima é retornada a primeira página(`page=1`), contendo 50 faturame
 * **cancelled**: faturamentos cancelados
 * **late**: faturamentos inadimplentes
 
+`customer_type` pode ter os seguintes valores:
+
+* **Person**: Pessoa
+* **Company**: Empresa
+
 <br>
 <strong> Filtros disponíveis para busca </strong>
 
@@ -34,6 +39,9 @@ No exemplo acima é retornada a primeira página(`page=1`), contendo 50 faturame
 | q[receivables_due_date_gteq]  | date   |  Data de vencimento maior que               |
 | q[receivables_due_date_lteq]  | date   |  Data de vencimento menor que               |
 | q[state_eq]                   | string |  Status igual a                             |
+| q[customer_id_eq]             | string |  Id do cliente igual a                      |
+| q[customer_type_eq]           | string |  Type do cliente igual a                    |
+| q[contract_id_eq]             | string |  Id do contrato igual a                     |
 
 > Exemplo de Corpo
 
@@ -89,6 +97,8 @@ No exemplo acima é retornada a primeira página(`page=1`), contendo 50 faturame
             "approval_status": "approved",
             "notification_ruler_id": null,
             "issue_nfse": true,
+            "nfse_url": null,
+            "fatura_url": null,
             "receivables": [
                 {
                     "id": 182348,
@@ -108,7 +118,8 @@ No exemplo acima é retornada a primeira página(`page=1`), contendo 50 faturame
                     "myfinance_sale_id": null,
                     "finance_entity_id": null,
                     "myfinance_errors": "Ocorreu um erro ao criar recebível no Myfinance. Verifique os erros: A entidade 57.757.975/0001-86 não foi encontrada no Myfinance. Corrija o faturamento e sincronize.",
-                    "myfinance_receivable_account_id": null
+                    "myfinance_receivable_account_id": null,
+                    "boleto_url": null
                 }
             ],
             "services": [
@@ -188,6 +199,8 @@ No exemplo acima é retornada a primeira página(`page=1`), contendo 50 faturame
             "automatic_email_template_id": null,
             "approval_status": "approved",
             "notification_ruler_id": null,
+            "nfse_url": null,
+            "fatura_url": null,
             "receivables": [
                 {
                     "id": 182335,
@@ -207,7 +220,8 @@ No exemplo acima é retornada a primeira página(`page=1`), contendo 50 faturame
                     "myfinance_sale_id": null,
                     "finance_entity_id": null,
                     "myfinance_errors": "Ocorreu um erro ao criar recebível no Myfinance. Verifique os erros: A entidade 57.757.975/0001-86 não foi encontrada no Myfinance. Corrija o faturamento e sincronize.",
-                    "myfinance_receivable_account_id": null
+                    "myfinance_receivable_account_id": null,
+                    "boleto_url": null
                 }
             ],
             "services": [
