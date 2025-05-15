@@ -49,12 +49,16 @@ Campo: approval_status poderá conter:  'approved' para aprovado, 'blocked' para
 <br>
 <strong> Campos do node Receivable  </strong>
 
-|              Campo                  |      Finalidade
-| ----------------------------------- | ------------------------------------------------------------- |
-| id (integer, optional)              | ID do vencimento                                              |
-| due_date (date)                     | Data do vencimento                                            |
-| value (integer, optional)           | % do valor bruto do faturamento                               |
-| _destroy (boolean, optional)        | Se o vencimento deve ser excluído                             |
+|              Campo                    |      Finalidade
+| ------------------------------------- | ------------------------------------------------------------- |
+| id (integer, optional)                | ID do vencimento                                              |
+| due_date (date)                       | Data do vencimento                                            |
+| value (float, optional, depreciado) | % do valor bruto do faturamento                               |
+| gross_value (float, optional)         | valor bruto do recebível                                      |
+| _destroy (boolean, optional)          | Se o vencimento deve ser excluído                             |
+
+* O campo `value` foi depreciado em favor do campo `gross_value`, se utilizados em conjunto o campo `value` prevalecerá.
+* Se informado, o campo `gross_value` torna-se obrigatório para os demais recebíveis do mesmo faturamento.
 
 
 <br>
