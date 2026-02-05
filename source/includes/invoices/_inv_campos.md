@@ -40,7 +40,19 @@
 | attachments (Attachment, optional)                      | Anexos (Array)                                                                    |
 | payment_information (PaymentInformation, optional)      | Informações de pagamento                                                          |
 | issue_nfse (boolean, optional)                          | Emitir nota fiscal                                                                |
+| charge_now (boolean, optional)                          | Se deve disparar o processo de cobrança imediatamente                             |
 | invoice_template_id (integer, optional)                 | ID do modelo de faturamento (É obrigatório ter periodicidade "uma única vez")     |
+
+<br>
+<strong> Importante sobre charge_now </strong>
+
+O campo `charge_now` funciona **apenas** para contratos com gestão automática (`management_type: 'automatic'`) e método de pagamento boleto (`payment_method: 'billet'`). 
+
+Quando definido como `true`, dispara um job em segundo plano que inicia o processo de cobrança imediatamente após a criação do faturamento.
+
+**Valor padrão:** `false` (não dispara cobrança imediata)
+
+**Caso de uso:** Útil quando o cliente precisa do `billet_url` (URL do boleto) o mais rápido possível, sem aguardar o processamento padrão.
 
 * Possibilidades
 Campo: approval_status poderá conter:  'approved' para aprovado, 'blocked' para bloqueado (apenas para criação de faturamentos)

@@ -1,17 +1,23 @@
 # Dockerfile
 
-FROM ruby:2.6.0
+FROM ruby:2.6-bullseye
 
 WORKDIR /app
 
-RUN echo "deb http://archive.debian.org/debian stretch main" > /etc/apt/sources.list
+# Install system dependencies
+RUN apt-get update \
+ && apt-get install -y nodejs npm \
+ && apt-get clean \
+ && rm -rf /var/lib/apt/lists/*
 
-RUN curl -sL https://deb.nodesource.com/setup_13.x -o nodesource_setup.sh  && \
-    bash nodesource_setup.sh && \
-    apt install -y --force-yes nodejs
-
+# Copy dependency files
 COPY Gemfile Gemfile.lock ./
 
-RUN gem install bundler:2.3.21 && bundle install --without debug && npm install
+# Install Ruby gems and Node packages
+# Use modern bundler config instead of deprecated --without flag
+RUN gem install bundler:2.3.21 \
+ && bundle config set --local without 'debug' \
+ && bundle install \
+ && npm install
 
 EXPOSE 4567

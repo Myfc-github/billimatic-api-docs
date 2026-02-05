@@ -38,6 +38,7 @@ Cria um faturamento
     "cobrato_charge_template_name": "",
     "days_until_automatic_nfe_emission": 0,
     "issue_nfse": false,
+    "charge_now": false,
     "comments": "",
     "invoice_template_id": 1,
     "receivables": [
