@@ -10,6 +10,34 @@
 
 <p align="center"><em>The example above was created with Slate. Check it out at <a href="https://lord.github.io/slate">lord.github.io/slate</a>.</em></p>
 
+---
+
+## Fintera Faturamento API Documentation
+
+This repository contains the API documentation for **Fintera Faturamento**, a Brazilian billing system.
+
+### Quick Start with Docker (Recommended)
+
+**Prerequisites:** Docker and Docker Compose installed on your system.
+
+```bash
+# Clone the repository
+git clone <repository-url>
+cd billimatic-api-docs
+
+# Start the development server
+docker-compose up
+
+# Access the documentation
+open http://localhost:4567
+```
+
+The documentation will auto-reload when you make changes to the Markdown files.
+
+**For detailed development instructions, troubleshooting, and coding guidelines**, see [AGENTS.md](AGENTS.md).
+
+---
+
 Features
 ------------
 
