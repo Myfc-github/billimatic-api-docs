@@ -2448,6 +2448,7 @@ abaixo</p>
     </span><span class="s2">"cobrato_charge_template_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
     </span><span class="s2">"days_until_automatic_nfe_emission"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
     </span><span class="s2">"issue_nfse"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"charge_now"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
     </span><span class="s2">"comments"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
     </span><span class="s2">"invoice_template_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
     </span><span class="s2">"receivables"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
@@ -2739,10 +2740,25 @@ abaixo</p>
 <td>Emitir nota fiscal</td>
 </tr>
 <tr>
+<td>charge_now (boolean, optional)</td>
+<td>Se deve disparar o processo de cobrança imediatamente</td>
+</tr>
+<tr>
 <td>invoice_template_id (integer, optional)</td>
 <td>ID do modelo de faturamento (É obrigatório ter periodicidade &quot;uma única vez&quot;)</td>
 </tr>
 </tbody></table>
+
+<p><br>
+<strong> Importante sobre charge_now </strong></p>
+
+<p>O campo <code>charge_now</code> funciona <strong>apenas</strong> para contratos com gestão automática (<code>management_type: &#39;automatic&#39;</code>) e método de pagamento boleto (<code>payment_method: &#39;billet&#39;</code>). </p>
+
+<p>Quando definido como <code>true</code>, dispara um job em segundo plano que inicia o processo de cobrança imediatamente após a criação do faturamento.</p>
+
+<p><strong>Valor padrão:</strong> <code>false</code> (não dispara cobrança imediata)</p>
+
+<p><strong>Caso de uso:</strong> Útil quando o cliente precisa do <code>billet_url</code> (URL do boleto) o mais rápido possível, sem aguardar o processamento padrão.</p>
 
 <ul>
 <li>Possibilidades
