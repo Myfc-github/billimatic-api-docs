@@ -25,6 +25,7 @@ includes:
   - webhooks/receivement_error
   - webhooks/change_plan
   - organizacoes/organizacoes
+  - organizacoes/org_lista
   - organizacoes/org_cria
   - organizacoes/org_campos
   - organizacoes/org_busca
