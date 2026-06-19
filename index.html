@@ -81,6 +81,9 @@
             <a href="#organizacoes" class="toc-h1 toc-link" data-title="Organizações">Organizações</a>
               <ul class="toc-list-h2">
                   <li>
+                    <a href="#lista-organizacoes" class="toc-h2 toc-link" data-title="Lista Organizações">Lista Organizações</a>
+                  </li>
+                  <li>
                     <a href="#cria-organizacao" class="toc-h2 toc-link" data-title="Cria Organização">Cria Organização</a>
                   </li>
                   <li>
@@ -660,6 +663,59 @@ de uma assinatura (e-commerce)</p>
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
           <h1 id='organizacoes'>Organizações</h1>
+          <h2 id='lista-organizacoes'>Lista Organizações</h2>
+<p>Lista as organizações da conta</p>
+
+<div class="api-endpoint">
+  <div class="endpoint-data">
+    <i class="label label-get">GET</i>
+     api/v1/organizations
+  </div>
+</div>
+
+<blockquote>
+<p>Exemplo de Corpo</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="w">   </span><span class="s2">"Essa requisição não possui corpo"</span><span class="w">
+</span></code></pre>
+<blockquote>
+<p>Exemplo do retorno</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"organizations"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2115</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"account_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">29</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Org Doc Bills"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"company_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Org Doc Bills"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"cnpj"</span><span class="p">:</span><span class="w"> </span><span class="s2">"57.757.975/0001-86"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Nossa Senhora das Graças"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"390"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"complement"</span><span class="p">:</span><span class="w"> </span><span class="s2">"-"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"zipcode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"02460100"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"district"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Centro"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"São Paulo"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SP"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"05/12/2018 16:54:00 -02:00"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">14008</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"account_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">29</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Mattos Bills"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"company_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Mattos Bills Ltda"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"cnpj"</span><span class="p">:</span><span class="w"> </span><span class="s2">"57.757.975/0001-86"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Nossa Senhora das Graças"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"390"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"complement"</span><span class="p">:</span><span class="w"> </span><span class="s2">"-"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"zipcode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"02460100"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"district"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Centro"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"São Paulo"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SP"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"03/12/2018 11:39:15 -02:00"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
           <h2 id='cria-organizacao'>Cria Organização</h2>
 <p>Cria nova organização</p>
 
