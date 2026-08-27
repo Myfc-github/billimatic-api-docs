@@ -24,6 +24,8 @@ includes:
   - webhooks/undo_receival
   - webhooks/receivement_error
   - webhooks/change_plan
+  - webhooks/charge_creation_success
+  - webhooks/charge_creation_error
   - organizacoes/organizacoes
   - organizacoes/org_lista
   - organizacoes/org_cria
@@ -78,6 +80,7 @@ includes:
   - invoices/inv_bloqueio
   - invoices/inv_aprova
   - invoices/inv_apaga
+  - invoices/inv_gerar_boletos
   - http_status/http_status
   - invoices_rules/invoices_rules
   - invoices_rules/invrule_cria
@@ -95,8 +98,10 @@ includes:
   - invoice_template/invTem_busca
   - receivables/receivables
   - receivables/rec_busca
+  - receivables/rec_detalhes
   - receivables/rec_confirmar_recebimento
   - receivables/rec_desfazer_recebimento
+  - receivables/rec_gerar_boleto
   - email_templates/email_templates
   - email_templates/email_templates_list
   - nfses/nfses

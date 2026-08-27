@@ -5,7 +5,7 @@ Atualiza a situação do recebimento para recebida.
 <div class="api-endpoint">
   <div class="endpoint-data">
     <i class="label label-get">PATCH</i>
-     api/v1/contracts/{contract_id}/receivables/{receivable_id}/receive
+     api/v1/contracts/{contract_id}/receivables/{id}/receive
   </div>
 </div>
 
