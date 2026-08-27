@@ -75,6 +75,12 @@
                   <li>
                     <a href="#change_plan" class="toc-h2 toc-link" data-title="Change_plan">Change_plan</a>
                   </li>
+                  <li>
+                    <a href="#charge_creation_success" class="toc-h2 toc-link" data-title="Charge_creation_success">Charge_creation_success</a>
+                  </li>
+                  <li>
+                    <a href="#charge_creation_error" class="toc-h2 toc-link" data-title="Charge_creation_error">Charge_creation_error</a>
+                  </li>
               </ul>
           </li>
           <li>
@@ -221,6 +227,9 @@
                   <li>
                     <a href="#exclui-faturamento" class="toc-h2 toc-link" data-title="Exclui Faturamento">Exclui Faturamento</a>
                   </li>
+                  <li>
+                    <a href="#gerar-boletos" class="toc-h2 toc-link" data-title="Gerar Boletos">Gerar Boletos</a>
+                  </li>
               </ul>
           </li>
           <li>
@@ -264,10 +273,16 @@
                     <a href="#buscar-recebimentos" class="toc-h2 toc-link" data-title="Buscar Recebimentos">Buscar Recebimentos</a>
                   </li>
                   <li>
+                    <a href="#detalhes-recebimento" class="toc-h2 toc-link" data-title="Detalhes Recebimento">Detalhes Recebimento</a>
+                  </li>
+                  <li>
                     <a href="#confirmar-recebimento" class="toc-h2 toc-link" data-title="Confirmar recebimento">Confirmar recebimento</a>
                   </li>
                   <li>
                     <a href="#desfazer-recebimento" class="toc-h2 toc-link" data-title="Desfazer recebimento">Desfazer recebimento</a>
+                  </li>
+                  <li>
+                    <a href="#recriar-boleto" class="toc-h2 toc-link" data-title="Recriar Boleto">Recriar Boleto</a>
                   </li>
               </ul>
           </li>
@@ -660,6 +675,58 @@ de uma assinatura (e-commerce)</p>
   </span><span class="s2">"event"</span><span class="p">:</span><span class="s2">"change_plan"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"plan_id"</span><span class="p">:</span><span class="s2">"id-do-novo-plano"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"contract_token"</span><span class="p">:</span><span class="s2">"token-do-contrato"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+          <h2 id='charge_creation_success'>Charge_creation_success</h2>
+<p><strong>Evento:</strong> charge_creation_success</p>
+
+<p><strong>Objeto:</strong> Receivable</p>
+
+<p><strong>Descrição:</strong>
+Quando o boleto de um recebimento é <strong>registrado com sucesso</strong></p>
+
+<div class="api-endpoint">
+  <div class="endpoint-data">
+      <i class="label label-get">POST</i>
+  </div>
+</div>
+
+<blockquote>
+<p>Exemplo de Corpo</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"event"</span><span class="p">:</span><span class="w"> </span><span class="s2">"charge_creation_success"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"object_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Receivable"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"object_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"id-do-objeto"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"invoice_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"id-do-faturamento"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"contract_token"</span><span class="p">:</span><span class="w"> </span><span class="s2">"token-do-contrato"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"contract_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"id-do-contrato"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+          <h2 id='charge_creation_error'>Charge_creation_error</h2>
+<p><strong>Evento:</strong> charge_creation_error</p>
+
+<p><strong>Objeto:</strong> Receivable</p>
+
+<p><strong>Descrição:</strong>
+Quando ocorre uma <strong>falha na geração ou no registro</strong> do boleto de um recebimento</p>
+
+<div class="api-endpoint">
+  <div class="endpoint-data">
+      <i class="label label-get">POST</i>
+  </div>
+</div>
+
+<blockquote>
+<p>Exemplo de Corpo</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"event"</span><span class="p">:</span><span class="w"> </span><span class="s2">"charge_creation_error"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"object_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Receivable"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"object_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"id-do-objeto"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"invoice_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"id-do-faturamento"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"contract_token"</span><span class="p">:</span><span class="w"> </span><span class="s2">"token-do-contrato"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"contract_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"id-do-contrato"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
           <h1 id='organizacoes'>Organizações</h1>
@@ -3847,6 +3914,34 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
 </blockquote>
 <pre class="highlight json tab-json"><code><span class="w">  </span><span class="s2">"Não há conteudo de retorno ao deletar"</span><span class="w">
 </span></code></pre>
+          <h2 id='gerar-boletos'>Gerar Boletos</h2>
+<p>Solicita a criação de boletos para os recebimentos do faturamento</p>
+
+<div class="api-endpoint notice">
+  <aside>
+    A geração dos boletos é processada de forma <strong>assíncrona</strong>
+    Por esse motivo, a requisição não retorna o resultado da geração dos boletos. O status de cada recebimento é enviado posteriormente via webhook, por meio dos eventos <code>charge_creation_success</code> (boleto registrado com sucesso)
+    e <code>charge_creation_error</code> (falha na geração ou no registro do boleto).
+  </aside>
+</div>
+
+<div class="api-endpoint">
+  <div class="endpoint-data">
+    <i class="label label-get">PATCH</i>
+     api/v1/contracts/{contract_id}/invoices/{id}/create_charges
+  </div>
+</div>
+
+<blockquote>
+<p>Exemplo de Corpo</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="w"> </span><span class="s2">"Essa requisição não possui corpo"</span><span class="w">
+</span></code></pre>
+<blockquote>
+<p>Exemplo do retorno</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="w"> </span><span class="s2">"Não há conteudo de retorno ao gerar os boletos"</span><span class="w">
+</span></code></pre>
           <p><br>
 <p><strong>HTTP Status Code</strong></p></p>
 
@@ -6113,13 +6208,55 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
   </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
+          <h2 id='detalhes-recebimento'>Detalhes Recebimento</h2>
+<p>Mostra detalhes de um recebimento através de seu id</p>
+
+<div class="api-endpoint">
+  <div class="endpoint-data">
+    <i class="label label-get">GET</i>
+      api/v1/contracts/{contract_id}/receivables/{id}
+  </div>
+</div>
+
+<blockquote>
+<p>Exemplo de Corpo</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="w">  </span><span class="s2">"Essa requisição não possui corpo"</span><span class="w">
+</span></code></pre>
+<blockquote>
+<p>Exemplo do retorno</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"receivable"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">182348</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"invoice_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">184535</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"due_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"02/12/2019"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"100.0"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"gross_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10000.0"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"payment_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.0"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"received_value"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"received_at"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10/12/2018 10:55:11 -02:00"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"to_emit"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"payment_gateway_status"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"cobrato_charge_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"cobrato_errors"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"finance_receivable_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"myfinance_sale_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"finance_entity_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"myfinance_errors"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Ocorreu um erro ao criar recebível no Myfinance. Verifique os erros: A entidade 57.757.975/0001-86 não foi encontrada no Myfinance. Corrija o faturamento e sincronize."</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"myfinance_receivable_account_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"billet_url"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
           <h2 id='confirmar-recebimento'>Confirmar recebimento</h2>
 <p>Atualiza a situação do recebimento para recebida.</p>
 
 <div class="api-endpoint">
   <div class="endpoint-data">
     <i class="label label-get">PATCH</i>
-     api/v1/contracts/{contract_id}/receivables/{receivable_id}/receive
+     api/v1/contracts/{contract_id}/receivables/{id}/receive
   </div>
 </div>
 
@@ -6165,7 +6302,7 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
 <div class="api-endpoint">
   <div class="endpoint-data">
     <i class="label label-get">PATCH</i>
-     api/v1/contracts/{contract_id}/receivables/{receivable_id}/undo_receipt
+     api/v1/contracts/{contract_id}/receivables/{id}/undo_receipt
   </div>
 </div>
 
@@ -6199,6 +6336,34 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
     </span><span class="s2">"myfinance_receivable_account_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
+</span></code></pre>
+          <h2 id='recriar-boleto'>Recriar Boleto</h2>
+<p>Solicita a geração de um novo boleto para o recebimento.</p>
+
+<div class="api-endpoint notice">
+  <aside>
+    A geração do boleto é processada de forma <strong>assíncrona</strong>
+    Por esse motivo, a requisição não retorna o resultado da geração do boleto. O status de cada recebimento é enviado posteriormente via webhook, por meio dos eventos <code>charge_creation_success</code> (boleto registrado com sucesso)
+    e <code>charge_creation_error</code> (falha na geração ou no registro do boleto).
+  </aside>
+</div>
+
+<div class="api-endpoint">
+  <div class="endpoint-data">
+    <i class="label label-get">PATCH</i>
+     api/v1/contracts/{contract_id}/receivables/{id}/create_charge
+  </div>
+</div>
+
+<blockquote>
+<p>Exemplo de Corpo</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="w"> </span><span class="s2">"Essa requisição não possui corpo"</span><span class="w">
+</span></code></pre>
+<blockquote>
+<p>Exemplo do retorno</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="w"> </span><span class="s2">"Não há conteudo de retorno ao gerar o boleto"</span><span class="w">
 </span></code></pre>
           <h1 id='notificacoes'>Notificações</h1>
           <h2 id='lista-notificacoes'>Lista Notificações</h2>
