@@ -87,6 +87,7 @@
 | day_quantity (integer, optional)    | Quantidade de dias para o vencimento (se charge_type for day_quantity)|
 | only_business_days (boolean, optional)| Considerar apenas dias úteis (se charge_type for day_quantity ou last_day_of_month)|
 | month_quantity (integer, optional)  | Quantidade de meses para o vencimento. (Se charge_type for fixed_day_and_month_quantity)|
+| week_day (integer, optional)        | Dia da semana do vencimento (0 = domingo ... 6 = sábado). Quando preenchido, o vencimento ocorre somente no dia da semana informado. Envie null para remover a restrição|
 
 
 <br>
