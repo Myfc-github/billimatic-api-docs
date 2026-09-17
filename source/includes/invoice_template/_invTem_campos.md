@@ -47,6 +47,8 @@
 | parcel_number (integer, optional)   | Número de parcelas do vencimento                    |
 | only_business_days (boolean, optional)| Considerar apenas dias úteis (se charge_type for day_quantity ou last_day_of_month)|
 | create_parcels (boolean, optional)  | Cria parcelas?                                                                       |
+| fixed_week_day (boolean, optional)  | Se o vencimento ocorre somente em um dia fixo da semana                              |
+| week_day (integer, optional)        | Dia da semana do vencimento (0 = domingo ... 6 = sábado). Preenchido quando fixed_week_day for true |
 
 
 

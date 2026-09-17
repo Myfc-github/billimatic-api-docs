@@ -31,6 +31,7 @@
 | month_quantity                | Quantidade de meses para o vencimento | Sim para sobrescrever ou completar escolha do modelo e se charge_type for 'fixed_day_and_month_quantity'|
 | parcel_number                 | Quantidade de parcelas                | Sim para sobrescrever ou completar escolha do modelo
 | only_business_days            | Considerar apenas dias úteis          | Sim para sobrescrever ou completar escolha do modelo e se charge_type for 'day_quantity' ou 'last_day_of_month'|
+| week_day                      | Dia da semana do vencimento (0 = domingo ... 6 = sábado) | Não. Apenas se for sobrescrever a escolha do modelo. Envie null para remover a restrição definida no modelo|
 
 
 

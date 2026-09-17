@@ -172,7 +172,8 @@ Cria uma regra de faturamento a partir de um modelo de faturamento
       "updated_at": "2018-12-20T13:45:05.520-02:00",
       "day_quantity": null,
       "month_quantity": null,
-      "only_business_days": false
+      "only_business_days": false,
+      "week_day": null
     }
   }
 }

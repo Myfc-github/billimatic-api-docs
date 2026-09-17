@@ -123,7 +123,8 @@ Lista as regras de faturamento em um contrato
                 "updated_at": "2018-12-10T17:03:19.196-02:00",
                 "day_quantity": null,
                 "month_quantity": null,
-                "only_business_days": false
+                "only_business_days": false,
+                "week_day": 4
             }
         },
         {
@@ -195,7 +196,8 @@ Lista as regras de faturamento em um contrato
                 "updated_at": "2018-12-10T16:32:26.606-02:00",
                 "day_quantity": null,
                 "month_quantity": null,
-                "only_business_days": null
+                "only_business_days": null,
+                "week_day": null
             }
         },
         {
@@ -265,7 +267,8 @@ Lista as regras de faturamento em um contrato
                 "updated_at": "2018-12-10T16:31:47.812-02:00",
                 "day_quantity": null,
                 "month_quantity": null,
-                "only_business_days": null
+                "only_business_days": null,
+                "week_day": null
             }
         },
         {
@@ -353,7 +356,8 @@ Lista as regras de faturamento em um contrato
                 "updated_at": "2018-12-10T10:02:38.824-02:00",
                 "day_quantity": null,
                 "month_quantity": null,
-                "only_business_days": false
+                "only_business_days": false,
+                "week_day": null
             }
         }
     ]
