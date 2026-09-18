@@ -86,6 +86,7 @@
 | day_number (integer, optional)      | Dia do mês do vencimento. (se charge_type for fixed_day ou fixed_day_and_month_quantity)|
 | day_quantity (integer, optional)    | Quantidade de dias para o vencimento (se charge_type for day_quantity)|
 | only_business_days (boolean, optional)| Considerar apenas dias úteis (se charge_type for day_quantity ou last_day_of_month)|
+| move_due_date_to_business_day (boolean, optional)| Mover vencimento para dia útil quando cair em fim de semana ou feriado|
 | month_quantity (integer, optional)  | Quantidade de meses para o vencimento. (Se charge_type for fixed_day_and_month_quantity)|
 
 
