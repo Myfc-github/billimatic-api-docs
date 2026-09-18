@@ -43,6 +43,7 @@ Onde `type` pode ter dois valores:
         "month_quantity": null,
         "parcel_number": null,
         "only_business_days": true,
+        "move_due_date_to_business_day": false,
         "create_parcels": true
       },
       "emites_service_values_id": null,
@@ -96,6 +97,7 @@ Onde `type` pode ter dois valores:
         "month_quantity": 3,
         "parcel_number": 4,
         "only_business_days": null,
+        "move_due_date_to_business_day": false,
         "create_parcels": true
       },
       "emites_service_values_id": 65,

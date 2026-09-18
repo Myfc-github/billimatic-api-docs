@@ -46,6 +46,7 @@
 | month_quantity (integer, optional)  | Quantidade de meses para o vencimento. (Se charge_type for fixed_day_and_month_quantity)|
 | parcel_number (integer, optional)   | Número de parcelas do vencimento                    |
 | only_business_days (boolean, optional)| Considerar apenas dias úteis (se charge_type for day_quantity ou last_day_of_month)|
+| move_due_date_to_business_day (boolean, optional)| Mover vencimento para dia útil quando cair em fim de semana ou feriado|
 | create_parcels (boolean, optional)  | Cria parcelas?                                                                       |
 
 

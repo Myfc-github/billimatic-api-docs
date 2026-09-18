@@ -40,6 +40,7 @@ Exemplo de chamada:  api/v1/organizations/1/invoice_templates/14
       "month_quantity": 3,
       "parcel_number": 4,
       "only_business_days": null,
+      "move_due_date_to_business_day": false,
       "create_parcels": true
     },
     "emites_service_values_id": 65,
