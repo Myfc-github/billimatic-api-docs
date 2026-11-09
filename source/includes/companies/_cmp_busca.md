@@ -51,3 +51,42 @@ Onde o cnpj=55391268000193 deverá conter o número do cnpj desejado
     ]
 }
 ```
+
+### Busca Empresa por nome
+
+<div class="api-endpoint">
+  <div class="endpoint-data">
+    <i class="label label-get">GET</i>
+     api/v1/companies/search?name=fintatec&page=1&per_page=50
+  </div>
+</div>
+
+Busca empresas clientes por um trecho do nome, em qualquer posição, sem diferenciar maiúsculas, minúsculas nem acentos.
+
+* Procura no nome fantasia (`name`) e na razão social (`company_name`).
+* Retorna só empresas clientes; as organizações (emissoras) não aparecem.
+* A resposta é paginada: `page` (padrão 1) e `per_page` (padrão 50, máximo 100), com `page`, `per_page` e
+  `total_pages` no retorno, em ordem de nome.
+* Se `cnpj` também for enviado, a busca é feita pelo `cnpj`, no formato da busca acima, e o `name` é ignorado.
+
+> Exemplo do retorno (busca por nome)
+
+```json
+{
+    "page": 1,
+    "per_page": 50,
+    "total_pages": 1,
+    "companies": [
+        {
+            "id": 2122,
+            "account_id": 29,
+            "name": "Fintatec Ação",
+            "company_name": "Fintatec Tecnologia Ltda",
+            "cnpj": "55.391.268/0001-93",
+            "kind": "company",
+            "created_at": "10/12/2018 15:26:12 -02:00",
+            "updated_at": "10/12/2018 15:26:12 -02:00"
+        }
+    ]
+}
+```

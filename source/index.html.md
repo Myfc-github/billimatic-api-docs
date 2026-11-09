@@ -69,6 +69,12 @@ includes:
   - contratos/ctt_detalhes
   - contratos/ctt_atualiza
   - contratos/ctt_apaga
+  - contratos_anexos/anexos
+  - contratos_anexos/anx_lista
+  - contratos_anexos/anx_detalhes
+  - contratos_anexos/anx_download
+  - contratos_anexos/anx_conteudo
+  - contratos_anexos/anx_fluxo
   - plan_modifications/plan_modifications
   - invoices/invoices
   - invoices/inv_cria

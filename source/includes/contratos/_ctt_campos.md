@@ -18,3 +18,13 @@
 | cobrato_payment_gateway_charge_config_id (integer, optional)  | ID da Configuração de Cobrança para Cartão de Crédito                                                                                 |
 | cobrato_payment_gateway_charge_config_name (string, optional) | Nome da Configuração de Cobrança para Cartão de Crédito                                                                               |
 | overdue_automatic_management (boolean, optional)              | Permitir faturamento automático em caso de inadimplência. (Se 'registration_method' for 'subscription', ou não informado, será false) |
+| attachments (Attachment, optional)                            | Anexos (Array). Até 5 por requisição, até 10 MB cada; tipos PDF, DOCX, TXT, PNG e JPG                                                  |
+
+<br>
+<strong> Campos do node Attachment </strong>
+
+|              Campo                  |      Finalidade                                               |
+| ----------------------------------- | ------------------------------------------------------------- |
+| filename (string)                   | Nome original do arquivo. Ex: contrato-assinado.pdf           |
+| content (string)                    | Representação em Base64 do conteúdo do arquivo                |
+| content_type (string)               | Tipo de conteúdo do arquivo. Ex: application/pdf              |
