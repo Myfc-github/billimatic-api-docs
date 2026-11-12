@@ -128,7 +128,8 @@ O corpo da requisição deverá conter somente o(s) campo(s) que deseja(m) ser a
             "updated_at": "2018-12-10T17:03:19.196-02:00",
             "day_quantity": null,
             "month_quantity": null,
-            "only_business_days": false
+            "only_business_days": false,
+            "week_day": null
         }
     }
 }

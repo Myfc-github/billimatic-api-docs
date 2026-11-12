@@ -40,7 +40,9 @@ Exemplo de chamada:  api/v1/organizations/1/invoice_templates/14
       "month_quantity": 3,
       "parcel_number": 4,
       "only_business_days": null,
-      "create_parcels": true
+      "create_parcels": true,
+      "fixed_week_day": true,
+      "week_day": 1
     },
     "emites_service_values_id": 65,
     "emites_service_value_name": "Aluguel de software com retenção de ISS",
