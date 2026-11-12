@@ -4028,7 +4028,8 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
             </span><span class="s2">"day_number"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
             </span><span class="s2">"day_quantity"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
             </span><span class="s2">"only_business_days"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"month_quantity"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
+            </span><span class="s2">"month_quantity"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"week_day"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="w">
         </span><span class="p">},</span><span class="w">
         </span><span class="s2">"payment_information"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
             </span><span class="s2">"payment_method"</span><span class="p">:</span><span class="w"> </span><span class="s2">"billet"</span><span class="p">,</span><span class="w">
@@ -4145,7 +4146,8 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
             </span><span class="s2">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-12-10T17:03:19.196-02:00"</span><span class="p">,</span><span class="w">
             </span><span class="s2">"day_quantity"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
             </span><span class="s2">"month_quantity"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"only_business_days"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+            </span><span class="s2">"only_business_days"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"week_day"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="w">
         </span><span class="p">}</span><span class="w">
     </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
@@ -4431,6 +4433,10 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
 <td>month_quantity (integer, optional)</td>
 <td>Quantidade de meses para o vencimento. (Se charge_type for fixed_day_and_month_quantity)</td>
 </tr>
+<tr>
+<td>week_day (integer, optional)</td>
+<td>Dia da semana do vencimento (0 = domingo ... 6 = sábado). Quando preenchido, o vencimento ocorre somente no dia da semana informado. Envie null para remover a restrição</td>
+</tr>
 </tbody></table>
 
 <p><br>
@@ -4639,7 +4645,8 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
       </span><span class="s2">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-12-20T13:45:05.520-02:00"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"day_quantity"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
       </span><span class="s2">"month_quantity"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"only_business_days"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+      </span><span class="s2">"only_business_days"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"week_day"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
     </span><span class="p">}</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
@@ -4740,6 +4747,11 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
 <td>only_business_days</td>
 <td>Considerar apenas dias úteis</td>
 <td>Sim para sobrescrever ou completar escolha do modelo e se charge_type for &#39;day_quantity&#39; ou &#39;last_day_of_month&#39;</td>
+</tr>
+<tr>
+<td>week_day</td>
+<td>Dia da semana do vencimento (0 = domingo ... 6 = sábado)</td>
+<td>Não. Apenas se for sobrescrever a escolha do modelo. Envie null para remover a restrição definida no modelo</td>
 </tr>
 </tbody></table>
 
@@ -4952,7 +4964,8 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
                 </span><span class="s2">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-12-10T17:03:19.196-02:00"</span><span class="p">,</span><span class="w">
                 </span><span class="s2">"day_quantity"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
                 </span><span class="s2">"month_quantity"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-                </span><span class="s2">"only_business_days"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+                </span><span class="s2">"only_business_days"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"week_day"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="w">
             </span><span class="p">}</span><span class="w">
         </span><span class="p">},</span><span class="w">
         </span><span class="p">{</span><span class="w">
@@ -5024,7 +5037,8 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
                 </span><span class="s2">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-12-10T16:32:26.606-02:00"</span><span class="p">,</span><span class="w">
                 </span><span class="s2">"day_quantity"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
                 </span><span class="s2">"month_quantity"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-                </span><span class="s2">"only_business_days"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+                </span><span class="s2">"only_business_days"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"week_day"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
             </span><span class="p">}</span><span class="w">
         </span><span class="p">},</span><span class="w">
         </span><span class="p">{</span><span class="w">
@@ -5094,7 +5108,8 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
                 </span><span class="s2">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-12-10T16:31:47.812-02:00"</span><span class="p">,</span><span class="w">
                 </span><span class="s2">"day_quantity"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
                 </span><span class="s2">"month_quantity"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-                </span><span class="s2">"only_business_days"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+                </span><span class="s2">"only_business_days"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"week_day"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
             </span><span class="p">}</span><span class="w">
         </span><span class="p">},</span><span class="w">
         </span><span class="p">{</span><span class="w">
@@ -5182,7 +5197,8 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
                 </span><span class="s2">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-12-10T10:02:38.824-02:00"</span><span class="p">,</span><span class="w">
                 </span><span class="s2">"day_quantity"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
                 </span><span class="s2">"month_quantity"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-                </span><span class="s2">"only_business_days"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+                </span><span class="s2">"only_business_days"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+                </span><span class="s2">"week_day"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
             </span><span class="p">}</span><span class="w">
         </span><span class="p">}</span><span class="w">
     </span><span class="p">]</span><span class="w">
@@ -5316,7 +5332,8 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
             </span><span class="s2">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-12-10T17:03:19.196-02:00"</span><span class="p">,</span><span class="w">
             </span><span class="s2">"day_quantity"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
             </span><span class="s2">"month_quantity"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"only_business_days"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+            </span><span class="s2">"only_business_days"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"week_day"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
         </span><span class="p">}</span><span class="w">
     </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
@@ -5412,7 +5429,9 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
       </span><span class="s2">"month_quantity"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
       </span><span class="s2">"parcel_number"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
       </span><span class="s2">"only_business_days"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"create_parcels"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+      </span><span class="s2">"create_parcels"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"fixed_week_day"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"week_day"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
     </span><span class="p">},</span><span class="w">
     </span><span class="s2">"emites_service_values_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">65</span><span class="p">,</span><span class="w">
     </span><span class="s2">"emites_service_value_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Aluguel de software com retenção de ISS"</span><span class="p">,</span><span class="w">
@@ -5653,6 +5672,14 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
 <td>create_parcels (boolean, optional)</td>
 <td>Cria parcelas?</td>
 </tr>
+<tr>
+<td>fixed_week_day (boolean, optional)</td>
+<td>Se o vencimento ocorre somente em um dia fixo da semana</td>
+</tr>
+<tr>
+<td>week_day (integer, optional)</td>
+<td>Dia da semana do vencimento (0 = domingo ... 6 = sábado). Preenchido quando fixed_week_day for true</td>
+</tr>
 </tbody></table>
 
 <p><br>
@@ -5793,7 +5820,9 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
         </span><span class="s2">"month_quantity"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
         </span><span class="s2">"parcel_number"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
         </span><span class="s2">"only_business_days"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"create_parcels"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+        </span><span class="s2">"create_parcels"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"fixed_week_day"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"week_day"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
       </span><span class="p">},</span><span class="w">
       </span><span class="s2">"emites_service_values_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
       </span><span class="s2">"emites_service_value_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
@@ -5846,7 +5875,9 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
         </span><span class="s2">"month_quantity"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
         </span><span class="s2">"parcel_number"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
         </span><span class="s2">"only_business_days"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"create_parcels"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+        </span><span class="s2">"create_parcels"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"fixed_week_day"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"week_day"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
       </span><span class="p">},</span><span class="w">
       </span><span class="s2">"emites_service_values_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">65</span><span class="p">,</span><span class="w">
       </span><span class="s2">"emites_service_value_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Aluguel de software com retenção de ISS"</span><span class="p">,</span><span class="w">
@@ -5968,7 +5999,9 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
         </span><span class="s2">"month_quantity"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
         </span><span class="s2">"parcel_number"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
         </span><span class="s2">"only_business_days"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"create_parcels"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+        </span><span class="s2">"create_parcels"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"fixed_week_day"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"week_day"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
       </span><span class="p">},</span><span class="w">
       </span><span class="s2">"emites_service_values_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
       </span><span class="s2">"emites_service_value_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
@@ -6021,7 +6054,9 @@ Campo: approval_status poderá conter:  &#39;approved&#39; para aprovado, &#39;b
         </span><span class="s2">"month_quantity"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
         </span><span class="s2">"parcel_number"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
         </span><span class="s2">"only_business_days"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"create_parcels"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+        </span><span class="s2">"create_parcels"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"fixed_week_day"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"week_day"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
       </span><span class="p">},</span><span class="w">
       </span><span class="s2">"emites_service_values_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">65</span><span class="p">,</span><span class="w">
       </span><span class="s2">"emites_service_value_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Aluguel de software com retenção de ISS"</span><span class="p">,</span><span class="w">
