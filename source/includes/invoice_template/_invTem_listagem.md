@@ -38,6 +38,7 @@ Lista os modelos de faturamento(s)
         "month_quantity": null,
         "parcel_number": null,
         "only_business_days": true,
+        "move_due_date_to_business_day": false,
         "create_parcels": true,
         "fixed_week_day": true,
         "week_day": 1
@@ -93,6 +94,7 @@ Lista os modelos de faturamento(s)
         "month_quantity": 3,
         "parcel_number": 4,
         "only_business_days": null,
+        "move_due_date_to_business_day": false,
         "create_parcels": true,
         "fixed_week_day": false,
         "week_day": null

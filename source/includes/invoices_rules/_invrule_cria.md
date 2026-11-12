@@ -54,6 +54,7 @@ Cria uma regra de faturamento
             "day_number": 1,
             "day_quantity": 1,
             "only_business_days": false,
+            "move_due_date_to_business_day": false,
             "month_quantity": 10,
             "week_day": 4
         },
@@ -174,6 +175,7 @@ Cria uma regra de faturamento
             "day_quantity": null,
             "month_quantity": null,
             "only_business_days": false,
+            "move_due_date_to_business_day": false
             "week_day": 4
         }
     }
