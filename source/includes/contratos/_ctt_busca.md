@@ -9,7 +9,13 @@ Realiza busca de contrato
   </div>
 </div>
 
-Onde "teste" deverá ser o nome do seu contrato, e `customer_id` se refere ao ID do cliente
+Onde "teste" deverá ser o nome do seu contrato, e `customer_id` se refere ao ID do cliente. Informe pelo menos um dos dois;
+para listar todos os contratos de um cliente, use só o `customer_id` (`api/v1/contracts/search?customer_id=1617`).
+
+* Retorna contratos ativos e encerrados, com `state` (`active` ou `inactive`) e `status`.
+* `attachments_count` é a quantidade de anexos do contrato ([Anexos de contrato](#anexos-de-contrato)).
+* O `customer_id` não diferencia o tipo do cliente: uma empresa e uma pessoa da mesma conta podem ter o mesmo ID.
+  Confira o `customer_type` de cada contrato no retorno.
 
 > Exemplo de Corpo
 
@@ -47,6 +53,7 @@ Onde "teste" deverá ser o nome do seu contrato, e `customer_id` se refere ao ID
             "cancel_date": null,
             "cancel_reason": null,
             "overdue_automatic_management": false,
+            "attachments_count": 2,
             "plan": null
         }
     ]

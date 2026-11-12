@@ -14,12 +14,31 @@ Onde 11985 é o ID do contrato que deseja atualizar
 
 O corpo da requisição deverá conter somente o(s) campo(s) que deseja(m) ser atualizado(s), tomando como base a mesma estrutura de criação.
 
+No campo `attachments`, os anexos enviados são **adicionados** aos que o contrato já tem; nenhum anexo é removido. As
+regras e o formato são os mesmos de [Cria Contrato](#cria-contrato), inclusive o corpo dentro de `"contract"`.
+
 > Exemplo de Corpo
 
 ```json
 {
   "comments": "Contrato de cliente vips",
   "overdue_automatic_management": true
+}
+```
+
+> Exemplo de Corpo com anexos
+
+```json
+{
+  "contract": {
+    "attachments": [
+      {
+        "filename": "aditivo-01.docx",
+        "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "content": "UEsDBBQAAAAIAAAAIQB..."
+      }
+    ]
+  }
 }
 ```
 
