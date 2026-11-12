@@ -39,7 +39,9 @@ Lista os modelos de faturamento(s)
         "parcel_number": null,
         "only_business_days": true,
         "move_due_date_to_business_day": false,
-        "create_parcels": true
+        "create_parcels": true,
+        "fixed_week_day": true,
+        "week_day": 1
       },
       "emites_service_values_id": null,
       "emites_service_value_name": "",
@@ -93,7 +95,9 @@ Lista os modelos de faturamento(s)
         "parcel_number": 4,
         "only_business_days": null,
         "move_due_date_to_business_day": false,
-        "create_parcels": true
+        "create_parcels": true,
+        "fixed_week_day": false,
+        "week_day": null
       },
       "emites_service_values_id": 65,
       "emites_service_value_name": "Aluguel de software com retenção de ISS",

@@ -124,7 +124,8 @@ Lista as regras de faturamento em um contrato
                 "day_quantity": null,
                 "month_quantity": null,
                 "only_business_days": false,
-                "move_due_date_to_business_day": false
+                "move_due_date_to_business_day": false,
+                "week_day": 4
             }
         },
         {
@@ -197,7 +198,8 @@ Lista as regras de faturamento em um contrato
                 "day_quantity": null,
                 "month_quantity": null,
                 "only_business_days": null,
-                "move_due_date_to_business_day": false
+                "move_due_date_to_business_day": false,
+                "week_day": null
             }
         },
         {
@@ -268,7 +270,8 @@ Lista as regras de faturamento em um contrato
                 "day_quantity": null,
                 "month_quantity": null,
                 "only_business_days": null,
-                "move_due_date_to_business_day": false
+                "move_due_date_to_business_day": false,
+                "week_day": null
             }
         },
         {
@@ -357,7 +360,8 @@ Lista as regras de faturamento em um contrato
                 "day_quantity": null,
                 "month_quantity": null,
                 "only_business_days": false,
-                "move_due_date_to_business_day": false
+                "move_due_date_to_business_day": false,
+                "week_day": null
             }
         }
     ]

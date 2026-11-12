@@ -173,7 +173,8 @@ Cria uma regra de faturamento a partir de um modelo de faturamento
       "day_quantity": null,
       "month_quantity": null,
       "only_business_days": false,
-      "move_due_date_to_business_day": false
+      "move_due_date_to_business_day": false,
+      "week_day": null
     }
   }
 }

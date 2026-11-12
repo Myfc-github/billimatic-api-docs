@@ -32,6 +32,7 @@
 | parcel_number                 | Quantidade de parcelas                | Sim para sobrescrever ou completar escolha do modelo
 | only_business_days            | Considerar apenas dias úteis          | Sim para sobrescrever ou completar escolha do modelo e se charge_type for 'day_quantity' ou 'last_day_of_month'|
 | move_due_date_to_business_day | Mover vencimento para dia útil        | Sim para sobrescrever ou completar escolha do modelo|
+| week_day                      | Dia da semana do vencimento (0 = domingo ... 6 = sábado) | Não. Apenas se for sobrescrever a escolha do modelo. Envie null para remover a restrição definida no modelo|
 
 
 

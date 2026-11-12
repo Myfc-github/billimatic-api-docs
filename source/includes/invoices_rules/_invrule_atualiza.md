@@ -130,6 +130,7 @@ O corpo da requisição deverá conter somente o(s) campo(s) que deseja(m) ser a
             "month_quantity": null,
             "only_business_days": false,
             "move_due_date_to_business_day": false
+            "week_day": null
         }
     }
 }
